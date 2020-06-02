@@ -1,0 +1,57 @@
+<script>
+        window["aa127"] = {
+            indice: "aa127",
+            status: false
+        }
+    
+        $("body").on('navegacaoComplete', function() {
+    
+            if ((course.config[course.indice].id).toUpperCase() == ("aa127").toUpperCase()) {
+    
+                var _tela = window[course.config[course.indice].id];
+                var _containerTela = $(".container" + (_tela.indice).toUpperCase());
+    
+                //posiciona o elemento com base no tamanho real da imagem de fundo COVER
+                _containerTela.find(".posicionar").positionCSS({
+                    img_H: course.height,
+                    img_W: course.width
+                });
+    
+        
+    
+                if (_tela.status == false) {
+                    _tela.status = true;
+    
+    
+    
+                } else {
+    
+                }
+            }
+        })
+    </script>
+    
+    
+    <div class="template4 containerAA127">
+    
+        <div class="fundo posicionar animated fadeIn delay0_2" px="0" py="85"> 
+            <img src="includes/img/tela127.jpg" alt="">
+        </div>
+    
+        <div class="texto posicionar branco animated fadeIn delay0_4" px="40" py="150">
+            <div>
+                <div class="tx animated fadeInRight delay0_4">
+                    EMERGÊNCIA MÉDICA INTERNACIONAL
+                </div>
+                <div class="size22 light pb10 animated fadeInRight delay0_6">
+                    Quem viaja para fora do Brasil, a trabalho ou turismo, 
+                    não quer (nem gosta) de se preocupar com eventuais 
+                    complicações clínicas. Por isso, Visa garante compensação 
+                    e/ou assistência médica completa aos clientes que 
+                    tenham problemas de saúde no exterior. 
+                    Para sentir-se em casa até fora de casa.
+                </div>
+            </div>
+        </div>
+        
+    </div>

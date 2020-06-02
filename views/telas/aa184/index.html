@@ -1,0 +1,76 @@
+<script>
+        window["aa184"] = {
+            indice: "aa184",
+            status: false
+        }
+    
+        $("body").on('navegacaoComplete', function() {
+    
+            if ((course.config[course.indice].id).toUpperCase() == ("aa184").toUpperCase()) {
+    
+                var _tela = window[course.config[course.indice].id];
+                var _containerTela = $(".container" + (_tela.indice).toUpperCase());
+    
+                //posiciona o elemento com base no tamanho real da imagem de fundo COVER
+                _containerTela.find(".posicionar").positionCSS({
+                    img_H: course.height,
+                    img_W: course.width
+                });
+    
+                //
+                _containerTela.find(".pop").css('display', 'none');
+                if (_tela.status == false) {
+                    _tela.status = true;
+    
+                    _containerTela.find(".btnTabela").on('click', function(){
+                        _containerTela.find(".pop").css('display', 'flex');
+                    });
+                    _containerTela.find(".closeX").on('click', function(){
+                        _containerTela.find(".pop").css('display', 'none');
+                    });
+    
+                } else {
+    
+                }
+            }
+        })
+    </script>
+    
+    
+    <div class="template5 containerAA184">
+    
+        <div class="fundo posicionar animated fadeIn delay0_2" px="0" py="85"> 
+            <div class="baseTxt branco">
+                <!-- <div class="tx t1">Sala Vip</div> -->
+                <div class="tx2 t2">Regras Oficiais</div>
+            </div>
+    
+        </div>
+    
+        <div class="texto posicionar animated fadeIn delay0_4 cinza2 size20" px="00" py="450">
+            <div class="bloco blocoX">
+                <ul>
+                    <li>
+                        Esse benefício não tem nenhuma regra especial.
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+            
+    
+           
+        </div>
+    
+        <div class="pop posicionar animated fadeIn delay0_2" px="0" py="85"> 
+            <div class="baseClose">
+                <div class="closeX">
+                    <i class="far fa-times-circle size40 animated zoomIn delay1_2"></i>
+                </div>
+            </div>
+            <div class="tabela">
+                <img src="includes/img/tabela130.png" alt="">
+            </div>
+        </div>
+        
+    </div>

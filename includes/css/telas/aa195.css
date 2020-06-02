@@ -1,0 +1,109 @@
+
+/*= AA3
+	----------------------------*/
+
+  .containerAA195 {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 99999999;
+}
+
+.containerAA195 .fundo{
+  position: absolute;
+  width: 1366px;
+  height: 662px;
+  /* border-radius: 10px; */
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+.containerAA195 .texto{
+    position: absolute;
+    width: 1000px;
+    height: 600px;
+    padding: 30px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 3px 6px 11px #00000057;
+    border-radius: 20px;
+    padding-top: 30px;
+
+}
+
+.containerAA195 .texto .img{
+  position: absolute;
+  width: 1000px;
+  height: 250px;
+  /* background: url(../../img/galaxi2.jpg) no-repeat top;
+  background-size: cover; */
+  top: 0;
+  left: 0;
+}
+
+.containerAA195 .blocoInfo{
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  background-color: #003EA9;
+  margin-top: 20px;
+}
+
+.containerAA195 .blocX{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.containerAA195 .blocX .ico{
+  font-size: 80px;
+  margin-right: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerAA195 .blocY{
+  background-color: #F7B600;
+  color: #003EA9;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.containerAA195 .blocD{
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.containerAA195 .menu{
+  position: relative;
+  margin: 20px auto;
+  width: 200px;
+  border-radius: 10px;
+  background: #ffc359;
+  color: rgb(52, 51, 51);
+  padding: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+.containerAA195 .menu i{
+  padding-right: 10px;
+  margin-top: 5px;
+}
+.containerAA195 .menu:hover{
+  background: #e4a73d;
+}
+.containerAA195 .satelitetIco{
+  width: 50px;
+  height: 50px;
+  background: url('../../img/sateliteIco2.png') no-repeat center;
+  background-size: contain;
+  margin: 0 auto;
+}

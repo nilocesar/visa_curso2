@@ -1,0 +1,121 @@
+<script>
+    window["aa136"] = {
+        indice: "aa136",
+        status: false
+    }
+
+    $("body").on('navegacaoComplete', function() {
+
+        if ((course.config[course.indice].id).toUpperCase() == ("aa136").toUpperCase()) {
+
+            var _tela = window[course.config[course.indice].id];
+            var _containerTela = $(".container" + (_tela.indice).toUpperCase());
+
+            //posiciona o elemento com base no tamanho real da imagem de fundo COVER
+            _containerTela.find(".posicionar").positionCSS({
+                img_H: course.height,
+                img_W: course.width
+            });
+
+            //
+            _containerTela.find(".pop").css('display', 'none');
+            if (_tela.status == false) {
+                _tela.status = true;
+
+                _containerTela.find(".btnTabela").on('click', function(){
+                    _containerTela.find(".pop").css('display', 'flex');
+                });
+                _containerTela.find(".closeX").on('click', function(){
+                    _containerTela.find(".pop").css('display', 'none');
+                });
+
+            } else {
+
+            }
+        }
+    })
+</script>
+
+
+<div class="template5 containerAA136">
+
+    <div class="fundo posicionar animated fadeIn delay0_2" px="0" py="85"> 
+        <div class="baseTxt branco">
+            <!-- <div class="tx t1">Sala Vip</div> -->
+            <div class="tx2 t2">Regras Oficiais</div>
+        </div>
+
+    </div>
+
+    <div class="texto posicionar animated fadeIn delay0_4 cinza2 size17" px="00" py="450">
+        <div class="bloco blocoX">
+            <ul>
+                <li>
+                    O que determina os prazos de entrega do novo cartão e do 
+                    recebimento do saque é o produto escolhido pelo cliente.
+                </li>
+                <li>
+                    A Substituição Emergencial de Cartão, assim como o Saque Emergencial e o seu limite são
+                    administrados e estão sujeitos à aprovação do emissor do Cartão Visa.<br>
+                    <span class="bold">1</span> - O serviço não está disponível na Síria, Irã, Coreia do Norte, Sudão, Cuba e Crimeia.<br>
+                    <span class="bold">2</span> - Para ligações feitas de telefone celular, todas as taxas de roaming são de
+                    responsabilidade do usuário.<br>
+                    <span class="bold">3</span> - Chamada a cobrar através de um operador internacional.
+
+                </li>
+                
+            </ul>
+        </div>
+        
+
+        <!-- <div class="bloco bloco2">
+            <ul>
+                <li>
+                    Cobertura até 60 dias consecutivos de viagem. 
+                </li>
+                <li>
+                    A cobertura é ativada assim que o segurado desembarcar da 
+                    embarcação de transporte comum no destino final de viagem 
+                    (conforme designado no bilhete) e expirar assim que o segurado 
+                    embarcar em uma embarcação de transporte comum para retornar 
+                    (perna de ida e volta no bilhete).
+                </li>
+               
+            </ul>
+        </div> -->
+        <!-- <div class="bloco">
+            <ul>
+                <li>
+                    A oferta do produto com o preço inferior deve estar dentro 
+                    de 100km do local da compra em que o produto foi adquirido. 
+                </li>
+                <li>
+                    Para anúncios de internet, não serão válidas comparações 
+                    para itens encontrados em sites de leilão. 
+                </li>
+            </ul>
+        </div>
+        <div class="bloco">
+            <ul>
+                <li>
+                    Para anúncios impressos, cópia do anúncio publicado ou postado após a data de compra, que apresenta o preço inferior ao originalmente pago. 
+                </li>
+                <li>
+                    A oferta do produto com o preço inferior deve estar no mesmo país onde o item foi originalmente comprado.
+                </li>
+            </ul>
+        </div> -->
+    </div>
+
+    <div class="pop posicionar animated fadeIn delay0_2" px="0" py="85"> 
+        <div class="baseClose">
+            <div class="closeX">
+                <i class="far fa-times-circle size40 animated zoomIn delay1_2"></i>
+            </div>
+        </div>
+        <div class="tabela">
+            <img src="includes/img/tabela130.png" alt="">
+        </div>
+    </div>
+    
+</div>

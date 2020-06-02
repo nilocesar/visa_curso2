@@ -1,0 +1,185 @@
+<script>
+    window["aa188"] = {
+        indice: "aa188",
+        status: false
+    }
+
+    $("body").on('navegacaoComplete', function() {
+
+        if ((course.config[course.indice].id).toUpperCase() == ("aa188").toUpperCase()) {
+
+            var _tela = window[course.config[course.indice].id];
+            var _containerTela = $(".container" + (_tela.indice).toUpperCase());
+
+            //posiciona o elemento com base no tamanho real da imagem de fundo COVER
+            _containerTela.find(".posicionar").positionCSS({
+                img_H: course.height,
+                img_W: course.width
+            });
+
+
+
+            if (_tela.status == false) {
+                _tela.status = true;
+
+                _containerTela.find(".confirmar").css('display', 'none');
+                _containerTela.find(".item").on('click', function(){
+                    
+                    _containerTela.find(".item").removeClass('itemAtivo');
+                    $(this).addClass('itemAtivo');
+                    
+                    _containerTela.find(".confirmar").css('display', 'block');
+                    
+                });
+
+                _containerTela.find(".confirmar").on('click', function(){
+                    var _res = _containerTela.find(".itemAtivo").attr('res');
+                    _containerTela.find(".item").addClass('itemInativo');
+                    _containerTela.find(".confirmar").css('display', 'none');
+
+                    _containerTela.find(".pop").css('display', 'block');
+                    _containerTela.find(".feed").css('display', 'none');
+                    
+                    if( _res == 1 ){
+                        _containerTela.find(".positivo").css('display', 'block');
+                    }else{
+                        _containerTela.find(".negativo").css('display', 'block');
+                    }
+
+                });
+
+                _containerTela.find(".closeX").on('click', function(){
+                    
+                    _containerTela.find(".pop").css('display', 'none');
+                    course.liberarNavegacao();
+
+                    _containerTela.find(".item").each(function(indice, item){
+                        
+                        if($(item).attr('res') == '0'){
+                            $(item).addClass('erradas');
+                        }
+                    });
+
+                });
+
+            } else {
+
+            }
+        }
+    })
+</script>
+
+
+<div class="template7 containerAA188">
+    <div class="fundoTemp2 posicionar animated fadeIn delay0_2" px="0" py="85">
+        <div class="subFundo"></div>
+    </div>
+
+    <div class="quizBase posicionar animated fadeIn delay0_2 azulEscuro" px="100" py="85">
+
+        <div class="titulo">
+            <div class="img">
+                <img src="includes/img/circuloAA188.png" alt="">
+            </div>
+            <div class="text size22">
+                <div>
+                    Carlos sempre tira férias com a família e 
+                    não quer nenhum imprevisto, ele costuma alugar carros 
+                    nos locais para onde vai. Escolha o benefício que melhor 
+                    se combina com ele. 
+                </div>
+                <div class="amarelo size18">
+                    Selecione uma alternativa
+                </div>
+            </div>
+        </div>
+
+        <div class="subQuiz">
+            <div class="item item1 size22" res=0>
+                <div class="check">
+                    <i class="fas fa-check"></i>
+                </div>
+                <div class="alt">
+                    Seguro para Atraso de Bagagem
+                </div>
+            </div>
+
+
+            <div class="item item2 size22" res=0>
+                <div class="check">
+                    <i class="fas fa-check"></i>
+                </div>
+                <div class="alt">
+                    Seguro para Atraso de Embarque
+                </div>
+            </div>
+
+            <div class="item item3 size22" res=1>
+                <div class="check">
+                    <i class="fas fa-check"></i>
+                </div>
+                <div class="alt">
+                    Seguro para Veículo de Locadora
+                </div>
+            </div>
+        </div>
+
+
+        <div class="confirmar size26 animated zoomIn">
+            Responder
+        </div>
+
+
+    </div>
+
+
+
+
+    <div class="pop">
+
+
+        <div class="fundo posicionar animated fadeIn delay0_2" px="0" py="85">
+            <div class="sub"></div>
+
+            <div class="baseClose">
+                <div class="closeX">
+                    <i class="far fa-times-circle size50 animated zoomIn delay1_2"></i>
+                </div>
+            </div>
+
+            <div class="torre">
+                <div class="visaTorre"></div>
+            </div>
+
+            <div class="baseText azul">
+                
+                <div class="feed positivo light">
+                    <div class="t1">
+                        Parabéns!
+                    </div>
+                    <div class="size30">
+                         A resposta correta é Seguro para Veículo 
+                         de Locadora! Isso mesmo!
+                    </div>
+                </div>
+
+                <div class="feed negativo light">
+                    <div class="t1">
+                        Mais atenção!
+                    </div>
+                    <div class="size30">
+                        A resposta correta é Seguro para Veículo de Locadora, 
+                        que deixa nosso cliente viajar tranquilo!
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+</div>

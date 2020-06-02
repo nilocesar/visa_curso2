@@ -1,0 +1,130 @@
+<script>
+        window["aa38"] = {
+            indice: "aa38",
+            status: false
+        }
+    
+        $("body").on('navegacaoComplete', function() {
+    
+            if ((course.config[course.indice].id).toUpperCase() == ("aa38").toUpperCase()) {
+    
+                var _tela = window[course.config[course.indice].id];
+                var _containerTela = $(".container" + (_tela.indice).toUpperCase());
+    
+                //posiciona o elemento com base no tamanho real da imagem de fundo COVER
+                _containerTela.find(".posicionar").positionCSS({
+                    img_H: course.height,
+                    img_W: course.width
+                });
+    
+    
+    
+                if (_tela.status == false) {
+                    _tela.status = true;
+    
+                    
+    
+                } else {
+    
+                }
+            }
+        })
+    </script>
+    
+    
+    <div class="template3 containerAA38">
+    
+        <div class="leftCont posicionar animated fadeIn delay0_2" px="0" py="85">
+            <div class="text1 branco">
+                <div class="tx size40 animated fadeInUp delay0_4">
+                    QUADRO DE REFERÊNCIA
+                </div>
+                <div class="sub1 size20 light animated fadeIn delay0_8">
+                    Viajar para outra cidade ou país, alugar um carro e ter problemas com ele. 
+                    Este pesadelo passa longe dos clientes Visa. 
+                    <br><br>
+                    Protegemos o veículo alugado e até os itens comprados com Visa 
+                    e deixados dentro dele. Mesmo!
+                </div>
+            </div>
+        </div>
+    
+    
+        <div class="cartaoBase posicionar animated fadeIn delay1_0" px="20" py='425'>
+            <div class="azulEscuro ml20 mb2 size22">
+                Disponível nos seguintes produtos:
+            </div>
+            <div class="cartaoD">
+    
+                <div class="carT">
+                    <div class="cartao cartao1 animated zoomIn delay1_4">
+                        <div class="img"></div>
+                        <div class="color border_gold"></div>  
+                    </div>
+                    <div class="cartao cartao2 animated zoomIn delay1_5">
+                        <div class="img"></div>
+                        <div class="color border_platinum"></div>  
+                    </div>
+                    <div class="cartao cartao3 animated zoomIn delay1_6">
+                        <div class="img"></div>
+                        <div class="color border_infinit"></div>  
+                    </div>
+                </div>
+    
+    
+                <div class="carT">
+                    <div class="cartao cartao4 animated zoomIn delay1_7">
+                        <div class="img"></div>
+                        <div class="color border_debito"></div>  
+                    </div>
+                    <div class="cartao cartao5 animated zoomIn delay1_8">
+                        <div class="img"></div>
+                        <div class="color border_classic"></div>  
+                    </div>
+                    <div class="cartao cartao6 animated zoomIn delay1_9">
+                        <div class="img"></div>
+                        <div class="color border_pj"></div>  
+                    </div>
+                </div>
+                
+               
+            </div>
+    
+        </div>
+    
+        <div class="tit posicionar animated fadeIn delay1_2 size20" px="682" py='105'>
+            <div class="titulo azul size30 book">
+                Mas, como eu vendo isso?
+            </div>
+        </div>
+    
+        <div class="baseRight posicionar animated fadeIn delay1_2 size20" px="652" py='85'>
+            <div class="item1">
+                <div class="ico1"></div>
+                <span class="bold">Faça uma abordagem assertiva e direta:</span> 
+                <span>
+                    “Assistência 24 x 7 em tempo real e ao redor do mundo? Só com Digital Concierge. “
+                </span>
+            </div>
+            <div class="item2">
+                <div class="ico2"></div>
+                <span class="bold">Explique com mais detalhes:</span> 
+                “É o Visa Concierge disponível online para que você possa acessar quando e onde quiser.”
+            </div>
+            <div class="item3">
+                <div class="ico3"></div>
+                <span class="bold">Elabore com argumentos:</span>
+                “Bem vindo a personalização 2.0 Por quê? Com o Digital 
+                Concierge, você pode, remotamente, ter o mundo na palma da sua mão. “
+            </div>
+            <div class="item4">
+                <div class="ico4"></div>
+                <span class="bold">Feche a venda:</span> 
+                “O seu cartão atual ainda não possui esse benefício, mas
+                 posso ver que você ficou interessado, acho que está 
+                 na hora de um upgrade!”
+            </div>
+            
+        </div>
+    
+    </div>

@@ -1,0 +1,150 @@
+<script>
+        window["aa6"] = {
+            indice: "aa6",
+            status: false
+        }
+    
+        $("body").on('navegacaoComplete', function() {
+    
+            if ((course.config[course.indice].id).toUpperCase() == ("aa6").toUpperCase()) {
+    
+                var _tela = window[course.config[course.indice].id];
+                var _containerTela = $(".container" + (_tela.indice).toUpperCase());
+    
+                //posiciona o elemento com base no tamanho real da imagem de fundo COVER
+                _containerTela.find(".posicionar").positionCSS({
+                    img_H: course.height,
+                    img_W: course.width
+                });
+    
+        
+                reset();
+                if (_tela.status == false) {
+                    _tela.status = true;
+    
+                    nav();
+    
+                } else {
+    
+                }
+
+                function nav() {
+
+                    var section = _containerTela.find(".flexbox-slide");
+
+                    function toggleAccordion() {
+                        
+                        section.removeClass('activeSlide');
+                        $(this).addClass('activeSlide');
+                        $(this).attr('comp', 1);
+
+                        var _comp = true;
+                        section.each(function(indice,item){
+                            if(!$(item).attr('comp'))
+                            _comp = false;
+                        });
+
+                        if(_comp){
+                            course.liberarNavegacao();
+                        }
+                    }
+
+                    section.on('click', toggleAccordion);
+
+                }
+
+                function reset() {
+
+                }
+            }
+        })
+    </script>
+    
+    
+    <div class="containerAA containerAA6">
+    
+        <div class="fundo posicionar animated fadeIn delay0_2" px="0" py="85"> </div>
+    
+        <div class="bloco posicionar animated fadeIn delay0_4" px="853" py="202">
+                <div class="flexbox-slider">
+                    <div class="flexbox-slide activeSlide" comp=1 >
+                        <div class="fundoColor"></div>
+                        
+                        <div class="text-tab azul">
+                            <span class="bold size22">
+                                A VISA
+                            </span>
+                            <i class="fas fa-angle-down"></i>
+                        </div>
+        
+        
+                        <div class="textSlide branco size20">
+                            A Visa é uma empresa de tecnologia, que viabiliza meios de 
+                            pagamento, para a realização dos sonhos das pessoas. É a 
+                            empresa líder em pagamentos digitais no mundo. À medida 
+                            que o mundo se transforma em digital, a Visa insere sua 
+                            marca, produtos, pessoas, rede e escala para remodelar o 
+                            futuro do comércio.
+                        </div>
+            
+        
+                    </div>
+                    <div class="flexbox-slide">
+                        <div class="fundoColor"></div>
+                        
+                        <div class="text-tab azul">
+                            <span class="bold size22">
+                                A REDE
+                            </span>
+                            <i class="fas fa-angle-down"></i>
+                        </div>
+        
+                        <div class="textSlide branco size20">
+                            A rede da Visa processa mais de 160 bilhões de transações 
+                            por ano no mundo, sempre com muita segurança. A Visa conecta 
+                            pessoas todos os dias através de soluções inovadores de pagamento.
+                        </div>
+                
+        
+        
+                    </div>
+                    <div class="flexbox-slide">
+                        <div class="fundoColor"></div>
+                        
+                        <div class="text-tab azul">
+                            <span class="bold size22">
+                                A COBERTURA
+                            </span>
+                            <i class="fas fa-angle-down"></i>
+                        </div>
+
+                        <div class="textSlide branco size20">
+                            Com aceitação em mais de 200 países e territórios, 
+                            podemos dizer que a Visa é aceita onde você estiver. 
+                            Nós permitimos que consumidores e estabelecimentos comerciais 
+                            realizem negócios com confiança.
+                        </div>
+        
+                    </div>
+                    <div class="flexbox-slide">
+                            <div class="fundoColor"></div>
+                            
+                            <div class="text-tab azul">
+                                <span class="bold size22">
+                                    NOSSO NEGÓCIO
+                                </span>
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+    
+                            <div class="textSlide branco size20">
+                                Nossas inovações tornam pagamentos digitais uma 
+                                realidade para consumidores, negócios, bancos e 
+                                governos. Queremos ser a melhor maneira de pagar 
+                                e ser pago para todos, em todos os lugares.
+                            </div>
+        
+                        </div>
+                </div>
+            </div>
+        
+    </div>

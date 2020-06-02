@@ -1,0 +1,54 @@
+/*= AA1
+	----------------------------*/
+
+  .template6 {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 99999999;
+}
+
+.template6 .fundo{
+  position: absolute;
+  background: url(../../img/quiz.jpg) no-repeat center;
+  background-size: cover;
+  width: 1366px;
+  height: 662px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+.template6 .texto{
+  position: absolute;
+  width: 800px;
+  height: 550px;
+  padding: 30px;
+  overflow: hidden;
+  background-color: #003EA9;
+  box-shadow: 3px 6px 11px #00000057;
+  border-bottom: 10px solid #ffc359;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.template6 .menu{
+  position: relative;
+  margin: 20px auto;
+  width: 200px;
+  border-radius: 10px;
+  background: #ffc359;
+  color: rgb(52, 51, 51);
+  padding: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.template6 .menu:hover{
+  background: #e4a73d;
+}
+

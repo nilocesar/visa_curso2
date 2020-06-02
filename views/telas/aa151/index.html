@@ -1,0 +1,54 @@
+<script>
+        window["aa151"] = {
+            indice: "aa151",
+            status: false
+        }
+    
+        $("body").on('navegacaoComplete', function() {
+    
+            if ((course.config[course.indice].id).toUpperCase() == ("aa151").toUpperCase()) {
+    
+                var _tela = window[course.config[course.indice].id];
+                var _containerTela = $(".container" + (_tela.indice).toUpperCase());
+    
+                //posiciona o elemento com base no tamanho real da imagem de fundo COVER
+                _containerTela.find(".posicionar").positionCSS({
+                    img_H: course.height,
+                    img_W: course.width
+                });
+    
+        
+    
+                if (_tela.status == false) {
+                    _tela.status = true;
+    
+    
+    
+                } else {
+    
+                }
+            }
+        })
+    </script>
+    
+    
+    <div class="template4 containerAA151">
+    
+        <div class="fundo posicionar animated fadeIn delay0_2" px="0" py="85"> 
+            <img src="includes/img/tela127.jpg" alt="">
+        </div>
+    
+        <div class="texto posicionar branco animated fadeIn delay0_4" px="40" py="150">
+            <div>
+                <div class="tx animated fadeInRight delay0_4">
+                    SEGURO PARA ATRASO <br>DE EMBARQUE
+                </div>
+                <div class="size22 light pb10 animated fadeInRight delay0_6">
+                    Tempestades, greves, acidentes, falhas técnicas. Tudo pode atrasar uma viagem. 
+                    Nada pode interferir no bem-estar do cliente que paga as passagens com Visa. 
+                    Cliente conta com cobertura para as despesas com hospedagem e alimentação geradas pelo atraso no embarque.
+                </div>
+            </div>
+        </div>
+        
+    </div>

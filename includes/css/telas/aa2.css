@@ -1,0 +1,41 @@
+/*= AA1
+	----------------------------*/
+
+.containerAA2 {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 99999999;
+}
+
+.containerAA2 .fundo{
+  position: absolute;
+  background: url(../../img/tela2.jpg) no-repeat center;
+  background-size: cover;
+  width: 1366px;
+  height: 662px;
+  /* border-radius: 10px; */
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+.containerAA2 .texto{
+  position: absolute;
+  width: 600px;
+  height: 450px;
+  padding: 30px;
+  /* text-align: right; */
+  overflow: hidden;
+  /* padding-top:200px;
+  padding-left: 100px; */
+  background-color: #003EA9;
+  box-shadow: 3px 6px 11px #00000057;
+  border-bottom: 10px solid #C68D1F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+

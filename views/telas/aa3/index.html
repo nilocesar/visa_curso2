@@ -1,0 +1,56 @@
+<script>
+    window["aa3"] = {
+        indice: "aa3",
+        status: false
+    }
+
+    $("body").on('navegacaoComplete', function() {
+
+        if ((course.config[course.indice].id).toUpperCase() == ("aa3").toUpperCase()) {
+
+            var _tela = window[course.config[course.indice].id];
+            var _containerTela = $(".container" + (_tela.indice).toUpperCase());
+
+            //posiciona o elemento com base no tamanho real da imagem de fundo COVER
+            _containerTela.find(".posicionar").positionCSS({
+                img_H: course.height,
+                img_W: course.width
+            });
+
+    
+
+            if (_tela.status == false) {
+                _tela.status = true;
+
+
+
+            } else {
+
+            }
+        }
+    })
+</script>
+
+
+<div class="containerAA3">
+
+    <div class="fundo posicionar animated fadeIn delay0_2" px="0" py="85"> </div>
+
+    <div class="texto posicionar azul animated fadeIn delay0_4" px="175" py="114">
+        <div class="img"></div>
+        <div>
+            <div class="tx animated fadeInRight delay0_4">
+                BENEFÍCIO NÃO É ALGO BOM... É ÓTIMO!
+            </div>
+            <div class="size22 light pb10 animated fadeInRight delay0_6">
+                Na Visa, temos mais de 20 Benefícios para oferecer aos nossos clientes.
+                <br><br>
+                Reunimos aqui as principais informações dos seguros e serviços 
+                desenvolvidos para pessoas físicas e jurídicas nos quatro pilares 
+                que são objeto de desejo no mercado: compras, viagem, 
+                segurança <br>e estilo de vida.
+            </div>
+        </div>
+    </div>
+    
+</div>

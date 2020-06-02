@@ -1,0 +1,201 @@
+<script>
+    window["aa5"] = {
+        indice: "aa5",
+        status: false
+    }
+
+    $("body").on('navegacaoComplete', function() {
+
+        if ((course.config[course.indice].id).toUpperCase() == ("aa5").toUpperCase()) {
+
+            var _tela = window[course.config[course.indice].id];
+            var _containerTela = $(".container" + (_tela.indice).toUpperCase());
+
+            //posiciona o elemento com base no tamanho real da imagem de fundo COVER
+            _containerTela.find(".posicionar").positionCSS({
+                img_H: course.height,
+                img_W: course.width
+            });
+
+            controle();
+    
+
+            if (_tela.status == false) {
+                _tela.status = true;
+
+                _containerTela.find(".item").on("click", function (event) {
+
+                    var _telaM = $(this).attr('tela');
+                    var _indice = 0;
+
+                    $.each( course.config, function(indice,item){
+
+                        if( String(item.id).toUpperCase() == String(_telaM).toUpperCase() ){
+                            _indice = item.indice;
+                        }
+                    });
+
+                    course.indice = _indice;
+                    $("body").attr("nav", "go");
+                    $("body").trigger("navegacao");
+
+                });
+
+                _containerTela.find(".popFinal .closeX").on("click", function (event) {
+                    _containerTela.find(".popFinal").css('display', 'none');
+                });
+
+            } else {
+
+            }
+
+            function controle(){
+
+                _containerTela.find(".item .img").removeClass('animated infinite pulse');
+                
+                var menu = 0;
+                var i = 0;
+                var all = _containerTela.find('.item').length;
+
+                if( course.scorm_get_suspendData("controleMenu")) {
+                    menu = parseInt(course.scorm_get_suspendData("controleMenu"));
+                    course.scorm_set_suspendData("men_"+menu, 1);
+                }
+
+                
+                var _comp = true;
+                while ( i < all ) {
+                    i+=1;
+                    if( course.scorm_get_suspendData("men_"+i) ){
+                        _containerTela.find('.item' + i + ' .check' ).css('display', 'flex');
+                    }
+                    else{
+                        _comp = false;
+                    }
+                }
+
+                if( _comp ){
+                    _containerTela.find(".popFinal").css('display', 'block');
+                    course.completeScorm();
+                }
+
+
+                _containerTela.find(".item" + (menu+1) + ' .img' ).addClass('animated infinite pulse');
+
+            }
+        }
+    })
+</script>
+
+
+<div class="containerAA5">
+
+    <div class="fundo posicionar animated fadeIn" px="0" py="85"> </div>
+
+    <div class="estrela posicionar animated zoomOut delay0_4" px="0" py="95"></div>
+    <div class="estrela posicionar animated zoomIn delay0_4" px="0" py="95"></div>
+    
+    <div class="planeta1 posicionar animated zoomIn delay0_6" px="420" py="180"></div>
+    <div class="planeta2 posicionar animated zoomIn delay0_8" px="120" py="380"></div>
+    <div class="planeta3 posicionar animated zoomIn delay1_0" px="1060" py="250"></div>
+    <div class="planeta4 posicionar animated zoomIn delay1_2" px="960" py="450"></div>
+    <div class="planeta3 posicionar animated zoomIn delay1_4" px="470" py="630"></div>
+
+    <div class="predio posicionar animated fadeIn delay1_4" px="430" py="250">
+        <div class="animated zoomIn fadeIn delay1_4">
+            <div class="img"></div>
+        </div>
+    </div>
+
+
+    <div class="item item2 posicionar animated fadeIn delay3_0" px="390" py="373" tela='menu1'>
+        <div class="check">
+            <i class="fas fa-check-circle"></i>
+        </div>
+        <div class="speech-bubble">
+            Compras
+        </div>
+        <div class="hit"></div>
+        <div class="animated fadeInRight delay3_0">
+            <div class="img"></div>
+        </div>
+    </div>
+
+    <div class="item item3 posicionar animated fadeIn delay2_6" px="605" py="520" tela='menu2'>
+        <div class="check">
+            <i class="fas fa-check-circle"></i>
+        </div>
+        <div class="speech-bubble">
+            Lifestyle
+        </div>
+        <div class="hit"></div>
+        <div class="animated fadeInDown delay2_6">
+            <div class="img"></div>
+        </div>
+    </div>
+
+    <div class="item item4 posicionar animated fadeIn delay2_2" px="760" py="360" tela='menu3'>
+        <div class="check">
+            <i class="fas fa-check-circle"></i>
+        </div>
+        <div class="speech-bubble">
+            PJ
+        </div>
+        <div class="hit"></div>
+        <div class="animated fadeInLeft delay2_2">
+            <div class="img"></div>
+        </div>
+    </div>
+        
+
+    <div class="item item5 posicionar animated fadeIn delay1_8" px="585" py="165" tela='menu4'>
+        <div class="check">
+            <i class="fas fa-check-circle"></i>
+        </div>
+        <div class="speech-bubble">
+            Viagens
+        </div>
+        <div class="hit"></div>
+        <div class="animated fadeInUp delay1_8">
+            <div class="img"></div>
+        </div>
+    </div>
+
+
+
+    <div class="satelite posicionar animated fadeIn delay1_0" px="520" py="270">
+        <div class="animated zoomIn fadeIn delay1_0">
+            <div class="img animated rotateIn fadeIn delay1_0"></div>
+        </div>
+    </div>
+
+    <div class="item item1 posicionar animated fadeIn delay3_4" px="590" py="375" tela='AA6'>
+        <div class="check">
+            <i class="fas fa-check-circle"></i>
+        </div>
+        <div class="speech-bubble">
+            Visa
+        </div>
+        <div class="hit"></div>
+        <div class="img"></div>
+    </div>
+
+    <div class="popFinal">
+        <div class="fundoFinal posicionar" px="0" py="85"> </div>
+
+        <div class="texto posicionar branco animated fadeIn delay0_4" px="400" py="190">
+            <div class="closeX size50 animated zoomIn delay1_2">
+                <i class="far fa-times-circle"></i>
+            </div>
+            <div>
+                <div class="tx animated fadeInRight delay0_4 size50 center">
+                    Parabéns!
+                </div>
+                <div class="size30 light pb10 animated fadeInRight delay0_6">
+                    Você completou todos os módulos do Mundo de Benefícios VISA.
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>

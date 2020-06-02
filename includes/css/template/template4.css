@@ -1,0 +1,106 @@
+/*= AA1
+	----------------------------*/
+
+.template4 {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 99999999;
+}
+
+.template4 .fundo{
+  position: absolute;
+  /* background: url(../../img/tela11.jpg) no-repeat center;
+  background-size: cover; */
+  width: 1366px;
+  height: 662px;
+}
+
+.template4 .fundo img{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.template4 .texto{
+  position: absolute;
+  width: 500px;
+  height: 550px;
+  padding: 30px;
+  overflow: hidden;
+  background-color: #003EA9;
+  box-shadow: 3px 6px 11px #00000057;
+  border-bottom: 10px solid #ffc359;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.template4 .texto2{
+  position: absolute;
+  width: 800px;
+  height: 350px;
+  padding: 30px;
+  overflow: hidden;
+  background-color: #003EA9;
+  box-shadow: 3px 6px 11px #00000057;
+  border-bottom: 10px solid #ffc359;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.template4 .icoVisa{
+  position: relative;
+  width: 110px;
+  height: 110px;
+  background: url(../../img/icoVisa2.svg) no-repeat top;
+  background-size: contain;
+  margin: 20px auto;
+}
+
+.template4 .circuloAA{
+  position: relative;
+  width: 100px;
+  height: 100px;
+  /* background: url(../../img/circuloAA17.png) no-repeat top;
+  background-size: contain; */
+  margin: 20px auto;
+}
+
+.template4 .circuloAA img{
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.template4 .menu{
+  position: relative;
+  margin: 20px auto;
+  width: 200px;
+  border-radius: 10px;
+  background: #ffc359;
+  color: rgb(52, 51, 51);
+  padding: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.template4 .menu i{
+  padding-right: 10px;
+  margin-top: 5px;
+}
+
+.template4 .menu:hover{
+  background: #e4a73d;
+}
+
+.template4 .satelitetIco{
+  width: 60px;
+  height: 60px;
+  background: url('../../img/sateliteIco2.png') no-repeat center;
+  background-size: contain;
+  margin: 0 auto;
+}

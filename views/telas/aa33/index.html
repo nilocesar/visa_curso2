@@ -1,0 +1,62 @@
+<script>
+        window["aa33"] = {
+            indice: "aa33",
+            status: false,
+            item:2 //final do topico 2 
+        }
+    
+        $("body").on('navegacaoComplete', function() {
+    
+            if ((course.config[course.indice].id).toUpperCase() == ("aa33").toUpperCase()) {
+    
+                var _tela = window[course.config[course.indice].id];
+                var _containerTela = $(".container" + (_tela.indice).toUpperCase());
+    
+                //posiciona o elemento com base no tamanho real da imagem de fundo COVER
+                _containerTela.find(".posicionar").positionCSS({
+                    img_H: course.height,
+                    img_W: course.width
+                });
+    
+        
+    
+                if (_tela.status == false) {
+                    _tela.status = true;
+    
+                    _containerTela.find(".menu").on('click', function(){
+                        
+                        course.retornoMenu( _tela.item );
+                    });
+    
+                } else {
+    
+                }
+            }
+        })
+    </script>
+    
+    
+    <div class="template4 containerAA33">
+    
+        <div class="fundo posicionar animated fadeIn delay0_2" px="0" py="85"> 
+            <img src="includes/img/tela11.jpg" alt="">
+        </div>
+    
+        <div class="texto posicionar branco animated fadeIn delay0_4" px="50" py="130">
+            <div>
+                <div class="icoVisa animated zoomIn delay0_4"></div>
+                <!-- <div class="tx animated fadeInRight delay0_6">
+                    PERFIL DE CLIENTE
+                </div> -->
+                <div class="size22 light pb10 animated fadeInRight delay0_8">
+                    Parabéns, você concluiu o módulo Compras.<br><br> 
+                    Clique no <span class="bold">botão</span> para voltar ao 
+                    Mundo de Benefícios VISA e continuar explorando.
+                </div>
+                <div class="menu size30 xbold animated zoomIn delay1_4">
+                    <div class="satelitetIco"></div>
+                </div>
+            </div>
+        </div>
+        
+    </div>

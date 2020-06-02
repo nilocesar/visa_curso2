@@ -1,0 +1,67 @@
+<script>
+        window["aa117"] = {
+            indice: "aa117",
+            status: false,
+            submenu:3, // avisa qual tela de submenu tem que retornar
+            item:3 // avisa qual assunto do submenu foi visto
+        }
+    
+        $("body").on('navegacaoComplete', function() {
+    
+            if ((course.config[course.indice].id).toUpperCase() == ("aa117").toUpperCase()) {
+    
+                var _tela = window[course.config[course.indice].id];
+                var _containerTela = $(".container" + (_tela.indice).toUpperCase());
+    
+                //posiciona o elemento com base no tamanho real da imagem de fundo COVER
+                _containerTela.find(".posicionar").positionCSS({
+                    img_H: course.height,
+                    img_W: course.width
+                });
+    
+        
+    
+                if (_tela.status == false) {
+                    _tela.status = true;
+    
+                    _containerTela.find(".menu").on('click', function(){
+                        
+                        course.retornosubMenu( _tela.submenu, _tela.item );
+                    });
+    
+                } else {
+    
+                }
+            }
+        })
+    </script>
+    
+    
+    <div class="template4 containerAA117">
+    
+        <div class="fundo posicionar animated fadeIn delay0_2" px="0" py="85"> 
+            <img src="includes/img/tela11.jpg" alt="">
+        </div>
+    
+        <div class="texto posicionar branco animated fadeIn delay0_4" px="50" py="130">
+            <div>
+                <div class="circuloAA animated zoomIn delay0_4">
+                    <img src="includes/img/circuloAA117.png" alt="">
+                </div>
+                <div class="tx animated fadeInRight delay0_6">
+                    PERFIL DE CLIENTE
+                </div>
+                <div class="size22 light pb10 animated fadeInRight delay0_8">
+                    João tem uma família grande e é o único provedor do seu lar, 
+                    ele viaja muito a trabalho sozinho e não possui seguro de vida 
+                    e nem nunca pensou em fazer algo do tipo. Ele tem o perfil de 
+                    alguém que se daria grande importância para esse tipo de benefício.
+                </div>
+                <div class="menu size30 xbold animated zoomIn delay1_4">
+                    <i class="fas fa-undo-alt"></i>
+                    PJ
+                </div>
+            </div>
+        </div>
+        
+    </div>

@@ -1,0 +1,55 @@
+<script>
+    window["aa4"] = {
+        indice: "aa4",
+        status: false
+    }
+
+    $("body").on('navegacaoComplete', function() {
+
+        if ((course.config[course.indice].id).toUpperCase() == ("aa4").toUpperCase()) {
+
+            var _tela = window[course.config[course.indice].id];
+            var _containerTela = $(".container" + (_tela.indice).toUpperCase());
+
+            //posiciona o elemento com base no tamanho real da imagem de fundo COVER
+            _containerTela.find(".posicionar").positionCSS({
+                img_H: course.height,
+                img_W: course.width
+            });
+
+    
+
+            if (_tela.status == false) {
+                _tela.status = true;
+
+
+
+            } else {
+
+            }
+        }
+    })
+</script>
+
+
+<div class="containerAA4">
+
+    <div class="fundo posicionar animated fadeIn delay0_2" px="0" py="85"> </div>
+
+    <div class="texto posicionar azul animated fadeIn delay0_4" px="175" py="114">
+        <div class="img"></div>
+        <div>
+            <div class="tx animated fadeInRight delay0_4">
+                Sim, tem um Benefício certo para cada um,<br> para cada momento...
+            </div>
+            <div class="size22 light animated fadeInRight delay0_6">
+                Agora você conhecerá não só os benefícios, mas os pilares e o público-alvo de cada benefício. 
+                Você entrará no Mundo VISA e saíra de lá capaz de criar valor verdadeiro para os nossos clientes. 
+                <br><br>
+                Você fará com que os Benefícios não sejam bons nem ótimos, mas excelentes! 
+            </div>
+        </div>
+    </div>
+
+    
+</div>

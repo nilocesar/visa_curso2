@@ -1,0 +1,53 @@
+<script>
+        window["aa118"] = {
+            indice: "aa118",
+            status: false
+        }
+    
+        $("body").on('navegacaoComplete', function() {
+    
+            if ((course.config[course.indice].id).toUpperCase() == ("aa118").toUpperCase()) {
+    
+                var _tela = window[course.config[course.indice].id];
+                var _containerTela = $(".container" + (_tela.indice).toUpperCase());
+    
+                //posiciona o elemento com base no tamanho real da imagem de fundo COVER
+                _containerTela.find(".posicionar").positionCSS({
+                    img_H: course.height,
+                    img_W: course.width
+                });
+    
+        
+    
+                if (_tela.status == false) {
+                    _tela.status = true;
+    
+    
+    
+                } else {
+    
+                }
+            }
+        })
+    </script>
+    
+    
+    <div class="template4 containerAA118">
+    
+        <div class="fundo posicionar animated fadeIn delay0_2" px="0" py="85"> 
+            <img src="includes/img/tela100.jpg" alt="">
+        </div>
+    
+        <div class="texto posicionar branco animated fadeIn delay0_4" px="40" py="150">
+            <div>
+                <div class="tx animated fadeInRight delay0_4">
+                    ROUBO EM CAIXA ELETRÔNICO
+                </div>
+                <div class="size22 light pb10 animated fadeInRight delay0_6">
+                    Para os clientes PJ, Visa oferece proteção em casos de 
+                    roubo ou assalto em caixas eletrônicos.
+                </div>
+            </div>
+        </div>
+        
+    </div>

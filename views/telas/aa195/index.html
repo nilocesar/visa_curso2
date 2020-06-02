@@ -1,0 +1,84 @@
+<script>
+    window["aa195"] = {
+        indice: "aa195",
+        status: false,
+        item:1
+    }
+
+    $("body").on('navegacaoComplete', function() {
+
+        if ((course.config[course.indice].id).toUpperCase() == ("aa195").toUpperCase()) {
+
+            var _tela = window[course.config[course.indice].id];
+            var _containerTela = $(".container" + (_tela.indice).toUpperCase());
+
+            //posiciona o elemento com base no tamanho real da imagem de fundo COVER
+            _containerTela.find(".posicionar").positionCSS({
+                img_H: course.height,
+                img_W: course.width
+            });
+
+    
+
+            if (_tela.status == false) {
+                _tela.status = true;
+
+                _containerTela.find(".menu").on('click', function(){
+                        
+                    course.retornoMenu( _tela.item );
+                });
+
+            } else {
+
+            }
+        }
+    })
+</script>
+
+
+<div class="containerAA195">
+
+    <div class="fundo posicionar animated fadeIn delay0_2" px="0" py="85"> </div>
+
+    <div class="texto posicionar azul animated fadeIn delay0_4" px="175" py="114">
+        <div class="img"></div>
+        <div>
+            <div class="tx animated fadeInRight delay0_4">
+                Central de Atendimento Visa
+            </div>
+            <div class="size21 light animated fadeInRight delay0_6">
+                Ligue para a <span class="bold">Central de Atendimento Visa</span>. Nossa equipe lhe 
+                dará assistência em seu próprio idioma, 24 horas ao dia, 
+                365 dias ao ano, e o ajudará em suas necessidades, como localizar 
+                o caixa eletrônico mais próximo, solicitar um cartão ou 
+                saque emergencial ou obter informações sobre os benefícios e serviços Visa.
+            </div>
+            <div class="blocoInfo branco size20">
+                <div class="blocX">
+                    <div class="ico">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div class="dat light">
+                        <span class="bold">Central de Atendimento VISA:</span><br> 
+                        Brasil: 0800 891 3679 <br>
+                        EUA/Canadá: 1 800 396 9665<br> 
+                        Outros países: 1 303 967 1098
+                    </div>
+                </div>
+                <div class="blocY size18">
+                    <span class="bold">1.</span> Para ligações feitas de telefone celular, todas as taxas de roaming são de responsabilidade do usuário.<br>
+                    <span class="bold">2.</span> Chamada a cobrar através de um operador internacional. O serviço não está disponível na Síria, Irã, Coreia do Norte, Sudão, Cuba e Crimea.
+                </div>
+                <div class="blocD">
+                     Clique no <span class="bold">botão</span> para voltar ao Mundo de Benefícios 
+                    VISA e continuar explorando.
+                </div>
+                 <div class="menu size30 xbold animated zoomIn delay1_4">
+                    <div class="satelitetIco"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</div>

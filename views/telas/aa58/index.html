@@ -1,0 +1,55 @@
+<script>
+        window["aa58"] = {
+            indice: "aa58",
+            status: false
+        }
+    
+        $("body").on('navegacaoComplete', function() {
+    
+            if ((course.config[course.indice].id).toUpperCase() == ("aa58").toUpperCase()) {
+    
+                var _tela = window[course.config[course.indice].id];
+                var _containerTela = $(".container" + (_tela.indice).toUpperCase());
+    
+                //posiciona o elemento com base no tamanho real da imagem de fundo COVER
+                _containerTela.find(".posicionar").positionCSS({
+                    img_H: course.height,
+                    img_W: course.width
+                });
+    
+        
+    
+                if (_tela.status == false) {
+                    _tela.status = true;
+    
+    
+    
+                } else {
+    
+                }
+            }
+        })
+    </script>
+    
+    
+    <div class="template4 containerAA58">
+    
+        <div class="fundo posicionar animated fadeIn delay0_2" px="0" py="85"> 
+            <img src="includes/img/tela34.jpg" alt="">
+        </div>
+    
+        <div class="texto posicionar branco animated fadeIn delay0_4" px="40" py="150">
+            <div>
+                <div class="tx animated fadeInRight delay0_4">
+                    Free Parking Aeroporto
+                </div>
+                <div class="size22 light pb10 animated fadeInRight delay0_6">
+                    Cliente Visa não paga a primeira hora do estacionamento nos 
+                    aeroportos do Rio de Janeiro (Santos Dumont), Brasília e Recife. 
+                    Perfeito para quem está passando pelo aeroporto para buscar 
+                    ou levar amigos. 
+                </div>
+            </div>
+        </div>
+        
+    </div>

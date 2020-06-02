@@ -1,0 +1,359 @@
+<estrutura>
+    <nivel id="modulo" titulo="Game">
+
+        <nivel id="aa1A" titulo="Introdução">
+            <nivel id="aa1" titulo="" cartoes='0' path="aa1/index.html" avancar="-1"  transicao="alpha"  setas="nenhuma" />
+            <nivel id="aa11" titulo="" cartoes='0' path="aa11/index.html" avancar="2"  transicao="alpha" setas="direita"   />
+            <nivel id="aa2" titulo="" cartoes='0' path="aa2/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+            <nivel id="aa3" titulo="" cartoes='0' path="aa3/index.html" avancar="2"  transicao="alpha" setas="ambas"  />
+            <nivel id="aa4" titulo="" cartoes='0' path="aa4/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+            <nivel id="aa5" titulo="" cartoes='0' path="aa5/index.html" avancar="-1"  transicao="alpha" setas="nenhuma"   />
+        </nivel>  
+        
+        <nivel id="step1" titulo="portal">
+            <nivel id="aa1A" titulo="Portal de Benefícios Visa">
+                <nivel id="aa6" titulo="" cartoes='0' path="aa6/index.html" avancar="-1"  transicao="alpha" setas="direita"   />
+                <nivel id="aa7" titulo=""  cartoes='0' path="aa7/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa8" titulo=""  cartoes='1,2,3,4,5,6' path="aa8/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa9" titulo=""  cartoes='0' path="aa9/index.html" avancar="-1"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa10" titulo="" cartoes='1,2,3,4,5,6' path="aa10/index.html" avancar="2"  transicao="alpha" setas="ambas" /> 
+                
+                <nivel id="aa181" titulo="" cartoes='0' path="aa181/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa182" titulo="" cartoes='1,2,3,5' path="aa182/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa183" titulo="" cartoes='0' path="aa183/index.html" avancar="-1"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa184" titulo="" cartoes='0' path="aa184/index.html" avancar="2"  transicao="alpha" setas="ambas"   /> 
+                <nivel id="aa185" titulo="" cartoes='1,2,3,5' path="aa185/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa186" titulo="" cartoes='0' path="aa186/index.html" avancar="2"  transicao="alpha" setas="ambas"  />
+
+                 <nivel id="aa195" titulo="" cartoes='0' path="aa195/index.html" avancar="-1"  transicao="alpha" setas="esquerda"   />
+
+            </nivel>
+        </nivel>
+
+        <nivel id="step2" titulo="compras">
+        
+            <nivel id="menuG1" titulo="Compras">
+                <nivel id="menu1" titulo="" cartoes='0' path="menu1/index.html" avancar="-1"  transicao="alpha" setas="nenhuma"   />
+            </nivel>
+
+            <nivel id="menuG11" titulo="Proteção de Compra">
+                <nivel id="aa12" titulo="" cartoes='0' path="aa12/index.html" avancar="2"  transicao="alpha" setas="direita"   />
+                <nivel id="aa13" titulo="" cartoes='1,2,3' path="aa13/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa14" titulo="" cartoes='0' path="aa14/index.html" avancar="-1"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa15" titulo="" cartoes='0' path="aa15/index.html" avancar="2"  transicao="alpha" setas="ambas"   /> 
+                <nivel id="aa16" titulo="" cartoes='1,2,3' path="aa16/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa17" titulo="" cartoes='0' path="aa17/index.html" avancar="-1"  transicao="alpha" setas="esquerda"   />         
+            </nivel>
+
+        
+        <nivel id="menuG12" titulo="Proteção de Preço">
+                <nivel id="aa18" titulo="" cartoes='0' path="aa18/index.html" avancar="2"  transicao="alpha" setas="direita"   />
+                <nivel id="aa19" titulo="" cartoes='1,2,3' path="aa19/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa20" titulo="" cartoes='0' path="aa20/index.html" avancar="-1"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa21" titulo="" cartoes='0' path="aa21/index.html" avancar="2"  transicao="alpha" setas="ambas"   /> 
+                <nivel id="aa22" titulo="" cartoes='1,2,3' path="aa22/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa23" titulo="" cartoes='0' path="aa23/index.html" avancar="-1"  transicao="alpha" setas="esquerda"   />         
+            </nivel>
+
+            
+            <nivel id="menuG13" titulo="Seguro de Garantia Estendida Original">
+                <nivel id="aa24" titulo="" cartoes='0' path="aa24/index.html" avancar="2"  transicao="alpha" setas="direita"   />
+                <nivel id="aa25" titulo="" cartoes='1,2,3' path="aa25/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa26" titulo="" cartoes='0' path="aa26/index.html" avancar="-1"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa27" titulo="" cartoes='0' path="aa27/index.html" avancar="2"  transicao="alpha" setas="ambas"   /> 
+                <nivel id="aa28" titulo="" cartoes='1,2,3' path="aa28/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa29" titulo="" cartoes='0' path="aa29/index.html" avancar="-1"  transicao="alpha" setas="esquerda"   />         
+            </nivel>
+
+        
+            <nivel id="quiz1" titulo="Quiz">
+                <nivel id="aa30" titulo="" cartoes='0' path="aa30/index.html" avancar="-1"  transicao="alpha" setas="esquerda"   />
+                <nivel id="aa31" titulo="" cartoes='0' path="aa31/index.html" avancar="-1"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa32" titulo="" cartoes='0' path="aa32/index.html" avancar="-1"  transicao="alpha" setas="ambas"   /> 
+                <nivel id="aa33" titulo="" cartoes='0' path="aa33/index.html" avancar="-1"  transicao="alpha" setas="ambas"   />  
+            </nivel> 
+
+        </nivel>
+
+        <nivel id="step3" titulo="lifestyle">
+            <nivel id="menuG2" titulo="Lifestyle">
+                <nivel id="menu2" titulo="" cartoes='0' path="menu2/index.html" avancar="-1"  transicao="alpha" setas="nenhuma"   />
+            </nivel>
+
+            <nivel id="menuG21" titulo="Visa Digital Concierge">
+                <nivel id="aa34" titulo="" cartoes='0' path="aa34/index.html" avancar="2"  transicao="alpha" setas="direita"   />
+                <nivel id="aa35" titulo="" cartoes='2,3' path="aa35/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa36" titulo="" cartoes='0' path="aa36/index.html" avancar="-1"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa37" titulo="" cartoes='0' path="aa37/index.html" avancar="2"  transicao="alpha" setas="ambas"   /> 
+                <nivel id="aa38" titulo="" cartoes='2,3' path="aa38/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa39" titulo="" cartoes='0' path="aa39/index.html" avancar="-1"  transicao="alpha" setas="esquerda"   />         
+            </nivel>
+
+            <nivel id="menuG22" titulo="Visa Concierge">
+                <nivel id="aa40" titulo="" cartoes='0' path="aa40/index.html" avancar="2"  transicao="alpha" setas="direita"   />
+                <nivel id="aa41" titulo="" cartoes='2,3' path="aa41/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa42" titulo="" cartoes='0' path="aa42/index.html" avancar="-1"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa43" titulo="" cartoes='0' path="aa43/index.html" avancar="2"  transicao="alpha" setas="ambas"   /> 
+                <nivel id="aa44" titulo="" cartoes='2,3' path="aa44/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa45" titulo="" cartoes='0' path="aa45/index.html" avancar="-1"  transicao="alpha" setas="esquerda"   />         
+            </nivel>
+
+            <nivel id="menuG23" titulo="Luxury Hotel">
+                <nivel id="aa46" titulo="" cartoes='0' path="aa46/index.html" avancar="2"  transicao="alpha" setas="direita"   />
+                <nivel id="aa47" titulo="" cartoes='2,3' path="aa47/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa48" titulo="" cartoes='0' path="aa48/index.html" avancar="-1"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa49" titulo="" cartoes='0' path="aa49/index.html" avancar="2"  transicao="alpha" setas="ambas"   /> 
+                <nivel id="aa50" titulo="" cartoes='2,3' path="aa50/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa51" titulo="" cartoes='0' path="aa51/index.html" avancar="-1"  transicao="alpha" setas="esquerda"   />         
+            </nivel>
+
+
+            <nivel id="menuG24" titulo="Sala Vip">
+                <nivel id="aa52" titulo="" cartoes='0' path="aa52/index.html" avancar="2"  transicao="alpha" setas="direita"   />
+                <nivel id="aa53" titulo="" cartoes='3' path="aa53/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa54" titulo="" cartoes='0' path="aa54/index.html" avancar="-1"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa55" titulo="" cartoes='0' path="aa55/index.html" avancar="2"  transicao="alpha" setas="ambas"   /> 
+                <nivel id="aa56" titulo="" cartoes='3' path="aa56/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa57" titulo="" cartoes='0' path="aa57/index.html" avancar="-1"  transicao="alpha" setas="esquerda"   />         
+            </nivel>
+
+            <nivel id="menuG25" titulo="Free Parking Aeroporto">
+                <nivel id="aa58" titulo="" cartoes='0' path="aa58/index.html" avancar="2"  transicao="alpha" setas="direita"   />
+                <nivel id="aa59" titulo="" cartoes='3' path="aa59/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa60" titulo="" cartoes='0' path="aa60/index.html" avancar="-1"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa61" titulo="" cartoes='0' path="aa61/index.html" avancar="2"  transicao="alpha" setas="ambas"   /> 
+                <nivel id="aa62" titulo="" cartoes='3' path="aa62/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa63" titulo="" cartoes='0' path="aa63/index.html" avancar="-1"  transicao="alpha" setas="esquerda"   />         
+            </nivel>
+
+            <nivel id="menuG26" titulo="Free Valet Shoppings/Restaurantes">
+                <nivel id="aa64" titulo="" cartoes='0' path="aa64/index.html" avancar="2"  transicao="alpha" setas="direita"   />
+                <nivel id="aa65" titulo="" cartoes='2,3' path="aa65/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa66" titulo="" cartoes='0' path="aa66/index.html" avancar="-1"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa67" titulo="" cartoes='0' path="aa67/index.html" avancar="2"  transicao="alpha" setas="ambas"   /> 
+                <nivel id="aa68" titulo="" cartoes='2,3' path="aa68/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa69" titulo="" cartoes='0' path="aa69/index.html" avancar="-1"  transicao="alpha" setas="esquerda"   />         
+            </nivel>
+
+            <nivel id="menuG27" titulo="Transfer Aeroporto">
+                <nivel id="aa70" titulo="" cartoes='0' path="aa70/index.html" avancar="2"  transicao="alpha" setas="direita"   />
+                <nivel id="aa71" titulo="" cartoes='3' path="aa71/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa72" titulo="" cartoes='0' path="aa72/index.html" avancar="-1"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa73" titulo="" cartoes='0' path="aa73/index.html" avancar="2"  transicao="alpha" setas="ambas"   /> 
+                <nivel id="aa74" titulo="" cartoes='3' path="aa74/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa75" titulo="" cartoes='0' path="aa75/index.html" avancar="-1"  transicao="alpha" setas="esquerda"   />         
+            </nivel>
+
+            <nivel id="menuG28" titulo="Free Valet Aeroporto de Congonhas">
+                <nivel id="aa76" titulo="" cartoes='0' path="aa76/index.html" avancar="2"  transicao="alpha" setas="direita"   />
+                <nivel id="aa77" titulo="" cartoes='3' path="aa77/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa78" titulo="" cartoes='0' path="aa78/index.html" avancar="-1"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa79" titulo="" cartoes='0' path="aa79/index.html" avancar="2"  transicao="alpha" setas="ambas"   /> 
+                <nivel id="aa80" titulo="" cartoes='3' path="aa80/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa81" titulo="" cartoes='0' path="aa81/index.html" avancar="-1"  transicao="alpha" setas="esquerda"   />         
+            </nivel>
+
+            <nivel id="menuG29" titulo="Chip de Viagem Internacional">
+                <nivel id="aa82" titulo="" cartoes='0' path="aa82/index.html" avancar="2"  transicao="alpha" setas="direita"   />
+                <nivel id="aa83" titulo="" cartoes='3' path="aa83/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa84" titulo="" cartoes='0' path="aa84/index.html" avancar="-1"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa85" titulo="" cartoes='0' path="aa85/index.html" avancar="2"  transicao="alpha" setas="ambas"   /> 
+                <nivel id="aa86" titulo="" cartoes='3' path="aa86/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa87" titulo="" cartoes='0' path="aa87/index.html" avancar="-1"  transicao="alpha" setas="esquerda"   />         
+            </nivel>
+
+            <nivel id="menuG210" titulo="Airport Companion">
+                <nivel id="aa88" titulo="" cartoes='0' path="aa88/index.html" avancar="2"  transicao="alpha" setas="direita"   />
+                <nivel id="aa89" titulo="" cartoes='1,2,3,5' path="aa89/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa90" titulo="" cartoes='0' path="aa90/index.html" avancar="-1"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa91" titulo="" cartoes='0' path="aa91/index.html" avancar="2"  transicao="alpha" setas="ambas"   /> 
+                <nivel id="aa92" titulo="" cartoes='1,2,3,5' path="aa92/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa93" titulo="" cartoes='0' path="aa93/index.html" avancar="-1"  transicao="alpha" setas="esquerda"   />         
+            </nivel>
+
+            <nivel id="quiz2" titulo="Quiz">
+                <nivel id="aa94" titulo="" cartoes='0' path="aa94/index.html" avancar="-1"  transicao="alpha" setas="esquerda"   />
+                <nivel id="aa95" titulo="" cartoes='0' path="aa95/index.html" avancar="-1"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa96" titulo="" cartoes='0' path="aa96/index.html" avancar="-1"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa97" titulo="" cartoes='0' path="aa97/index.html" avancar="-1"  transicao="alpha" setas="ambas"   /> 
+                <nivel id="aa98" titulo="" cartoes='0' path="aa98/index.html" avancar="-1"  transicao="alpha" setas="ambas"   /> 
+                <nivel id="aa99" titulo="" cartoes='0' path="aa99/index.html" avancar="-1"  transicao="alpha" setas="ambas"   /> 
+            </nivel> 
+        </nivel> 
+
+        <nivel id="step4" titulo="pj">
+            <nivel id="menuG3" titulo="PJ">
+                <nivel id="menu3" titulo="" cartoes='0' path="menu3/index.html" avancar="-1"  transicao="alpha" setas="nenhuma"   />
+            </nivel>
+
+            <nivel id="menuG31" titulo="Isenção de Responsabilidade Corporativa">
+                <nivel id="aa100" titulo="" cartoes='0' path="aa100/index.html" avancar="2"  transicao="alpha" setas="direita"   />
+                <nivel id="aa101" titulo="" cartoes='4,5,6' path="aa101/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa102" titulo="" cartoes='0' path="aa102/index.html" avancar="-1"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa103" titulo="" cartoes='0' path="aa103/index.html" avancar="2"  transicao="alpha" setas="ambas"   /> 
+                <nivel id="aa104" titulo="" cartoes='4,5,6' path="aa104/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa105" titulo="" cartoes='0' path="aa105/index.html" avancar="-1"  transicao="alpha" setas="esquerda"   />         
+            </nivel>
+
+            <nivel id="menuG32" titulo="Seguro de Morte ou Invalidez em Transporte Público Autorizado">
+                <nivel id="aa106" titulo="" cartoes='0' path="aa106/index.html" avancar="2"  transicao="alpha" setas="direita"   />
+                <nivel id="aa107" titulo="" cartoes='2,3' path="aa107/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa108" titulo="" cartoes='0' path="aa108/index.html" avancar="-1"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa109" titulo="" cartoes='0' path="aa109/index.html" avancar="2"  transicao="alpha" setas="ambas"   /> 
+                <nivel id="aa110" titulo="" cartoes='2,3' path="aa110/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa111" titulo="" cartoes='0' path="aa111/index.html" avancar="-1"  transicao="alpha" setas="esquerda"   />         
+            </nivel>
+
+            <nivel id="menuG33" titulo="Seguro Acidental Viagens">
+                <nivel id="aa112" titulo="" cartoes='0' path="aa112/index.html" avancar="2"  transicao="alpha" setas="direita"   />
+                <nivel id="aa113" titulo="" cartoes='2,3' path="aa113/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa114" titulo="" cartoes='0' path="aa114/index.html" avancar="-1"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa115" titulo="" cartoes='0' path="aa115/index.html" avancar="2"  transicao="alpha" setas="ambas"   /> 
+                <nivel id="aa116" titulo="" cartoes='2,3' path="aa116/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa117" titulo="" cartoes='0' path="aa117/index.html" avancar="-1"  transicao="alpha" setas="esquerda"   />         
+            </nivel>
+
+            <nivel id="menuG34" titulo="Roubo de Caixa Eletrônico">
+                <nivel id="aa118" titulo="" cartoes='0' path="aa118/index.html" avancar="2"  transicao="alpha" setas="direita"   />
+                <nivel id="aa119" titulo="" cartoes='3,4,5,6' path="aa119/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa120" titulo="" cartoes='0' path="aa120/index.html" avancar="-1"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa121" titulo="" cartoes='0' path="aa121/index.html" avancar="2"  transicao="alpha" setas="ambas"   /> 
+                <nivel id="aa122" titulo="" cartoes='3,4,5,6' path="aa122/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa123" titulo="" cartoes='0' path="aa123/index.html" avancar="-1"  transicao="alpha" setas="esquerda"   />         
+            </nivel>
+
+            <nivel id="quiz3" titulo="Quiz">
+                <nivel id="aa124" titulo="" cartoes='0' path="aa124/index.html" avancar="-1"  transicao="alpha" setas="esquerda"   />
+                <nivel id="aa125" titulo="" cartoes='0' path="aa125/index.html" avancar="-1"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa126" titulo="" cartoes='0' path="aa126/index.html" avancar="-1"  transicao="alpha" setas="ambas"   /> 
+            </nivel> 
+        </nivel> 
+
+        <nivel id="step5" titulo="viagens">
+            <nivel id="menuG4" titulo="Viagens">
+                <nivel id="menu4" titulo="" cartoes='0' path="menu4/index.html" avancar="-1"  transicao="alpha" setas="nenhuma"   />
+            </nivel>
+
+            <nivel id="menuG41" titulo="Emergência Médica Internacional">
+                <nivel id="aa127" titulo="" cartoes='0' path="aa127/index.html" avancar="2"  transicao="alpha" setas="direita"   />
+                <nivel id="aa128" titulo="" cartoes='2,3' path="aa128/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa129" titulo="" cartoes='0' path="aa129/index.html" avancar="-1"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa130" titulo="" cartoes='0' path="aa130/index.html" avancar="2"  transicao="alpha" setas="ambas"   /> 
+                <nivel id="aa131" titulo="" cartoes='2,3' path="aa131/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa132" titulo="" cartoes='0' path="aa132/index.html" avancar="-1"  transicao="alpha" setas="esquerda"   />         
+            </nivel>
+
+            <nivel id="menuG42" titulo="Cartão e Saque Emergencial">
+                <nivel id="aa133" titulo="" cartoes='0' path="aa133/index.html" avancar="2"  transicao="alpha" setas="direita"   />
+                <nivel id="aa134" titulo="" cartoes='1,2,3,5' path="aa134/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa135" titulo="" cartoes='0' path="aa135/index.html" avancar="-1"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa136" titulo="" cartoes='0' path="aa136/index.html" avancar="2"  transicao="alpha" setas="ambas"   /> 
+                <nivel id="aa137" titulo="" cartoes='1,2,3,5' path="aa137/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa138" titulo="" cartoes='0' path="aa138/index.html" avancar="-1"  transicao="alpha" setas="esquerda"   />         
+            </nivel>
+
+            <nivel id="menuG43" titulo="Seguro para Perda e Roubo de Bagagem">
+                <nivel id="aa139" titulo="" cartoes='0' path="aa139/index.html" avancar="2"  transicao="alpha" setas="direita"   />
+                <nivel id="aa140" titulo="" cartoes='3' path="aa140/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa141" titulo="" cartoes='0' path="aa141/index.html" avancar="-1"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa142" titulo="" cartoes='0' path="aa142/index.html" avancar="2"  transicao="alpha" setas="ambas"   /> 
+                <nivel id="aa143" titulo="" cartoes='3' path="aa143/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa144" titulo="" cartoes='0' path="aa144/index.html" avancar="-1"  transicao="alpha" setas="esquerda"   />         
+            </nivel>
+
+            <nivel id="menuG44" titulo="Seguro para Atraso de Bagagem">
+                <nivel id="aa145" titulo="" cartoes='0' path="aa145/index.html" avancar="2"  transicao="alpha" setas="direita"   />
+                <nivel id="aa146" titulo="" cartoes='3' path="aa146/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa147" titulo="" cartoes='0' path="aa147/index.html" avancar="-1"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa148" titulo="" cartoes='0' path="aa148/index.html" avancar="2"  transicao="alpha" setas="ambas"   /> 
+                <nivel id="aa149" titulo="" cartoes='3' path="aa149/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa150" titulo="" cartoes='0' path="aa150/index.html" avancar="-1"  transicao="alpha" setas="esquerda"   />         
+            </nivel>
+
+            <nivel id="menuG45" titulo="Seguro para Atraso de Embarque">
+                <nivel id="aa151" titulo="" cartoes='0' path="aa151/index.html" avancar="2"  transicao="alpha" setas="direita"   />
+                <nivel id="aa152" titulo="" cartoes='3' path="aa152/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa153" titulo="" cartoes='0' path="aa153/index.html" avancar="-1"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa154" titulo="" cartoes='0' path="aa154/index.html" avancar="2"  transicao="alpha" setas="ambas"   /> 
+                <nivel id="aa155" titulo="" cartoes='3' path="aa155/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa156" titulo="" cartoes='0' path="aa156/index.html" avancar="-1"  transicao="alpha" setas="esquerda"   />         
+            </nivel>
+
+            <nivel id="menuG46" titulo="Seguro para Veículo de Locadora">
+                <nivel id="aa157" titulo="" cartoes='0' path="aa157/index.html" avancar="2"  transicao="alpha" setas="direita"   />
+                <nivel id="aa158" titulo="" cartoes='1,2,3' path="aa158/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa159" titulo="" cartoes='0' path="aa159/index.html" avancar="-1"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa160" titulo="" cartoes='0' path="aa160/index.html" avancar="2"  transicao="alpha" setas="ambas"   /> 
+                <nivel id="aa161" titulo="" cartoes='1,2,3' path="aa161/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa162" titulo="" cartoes='0' path="aa162/index.html" avancar="-1"  transicao="alpha" setas="esquerda"   />         
+            </nivel>
+
+
+        <nivel id="menuG47" titulo="Seguro de Cancelamento de Viagem">
+                <nivel id="aa163" titulo="" cartoes='0' path="aa163/index.html" avancar="2"  transicao="alpha" setas="direita"   />
+                <nivel id="aa164" titulo="" cartoes='3' path="aa164/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa165" titulo="" cartoes='0' path="aa165/index.html" avancar="-1"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa166" titulo="" cartoes='0' path="aa166/index.html" avancar="2"  transicao="alpha" setas="ambas"   /> 
+                <nivel id="aa167" titulo="" cartoes='3' path="aa167/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa168" titulo="" cartoes='0' path="aa168/index.html" avancar="-1"  transicao="alpha" setas="esquerda"   />         
+            </nivel>
+
+            <nivel id="menuG48" titulo="Visa Médico Online">
+                <nivel id="aa169" titulo="" cartoes='0' path="aa169/index.html" avancar="2"  transicao="alpha" setas="direita"   />
+                <nivel id="aa170" titulo="" cartoes='2,3' path="aa170/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa171" titulo="" cartoes='0' path="aa171/index.html" avancar="-1"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa172" titulo="" cartoes='0' path="aa172/index.html" avancar="2"  transicao="alpha" setas="ambas"   /> 
+                <nivel id="aa173" titulo="" cartoes='2,3' path="aa173/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa174" titulo="" cartoes='0' path="aa174/index.html" avancar="-1"  transicao="alpha" setas="esquerda"   />         
+            </nivel>
+
+            <nivel id="menuG49" titulo="Seguro para Perda de Conexão Aérea">
+                <nivel id="aa175" titulo="" cartoes='0' path="aa175/index.html" avancar="2"  transicao="alpha" setas="direita"   />
+                <nivel id="aa176" titulo="" cartoes='3' path="aa176/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa177" titulo="" cartoes='0' path="aa177/index.html" avancar="-1"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa178" titulo="" cartoes='0' path="aa178/index.html" avancar="2"  transicao="alpha" setas="ambas"   /> 
+                <nivel id="aa179" titulo="" cartoes='3' path="aa179/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa180" titulo="" cartoes='0' path="aa180/index.html" avancar="-1"  transicao="alpha" setas="esquerda"   />         
+            </nivel>
+
+            <!-- <nivel id="menuG410" titulo="Serviço de Conveniência em Viagem">
+                <nivel id="aa181" titulo="" cartoes='0' path="aa181/index.html" avancar="2"  transicao="alpha" setas="direita"   />
+                <nivel id="aa182" titulo="" cartoes='1,2,3,5' path="aa182/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa183" titulo="" cartoes='0' path="aa183/index.html" avancar="-1"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa184" titulo="" cartoes='0' path="aa184/index.html" avancar="2"  transicao="alpha" setas="ambas"   /> 
+                <nivel id="aa185" titulo="" cartoes='1,2,3,5' path="aa185/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa186" titulo="" cartoes='0' path="aa186/index.html" avancar="-1"  transicao="alpha" setas="esquerda"   />         
+            </nivel> -->
+
+            <nivel id="quiz4" titulo="Quiz">
+                <nivel id="aa187" titulo="" cartoes='0' path="aa187/index.html" avancar="-1"  transicao="alpha" setas="esquerda"   />
+                <nivel id="aa188" titulo="" cartoes='0' path="aa188/index.html" avancar="-1"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa189" titulo="" cartoes='0' path="aa189/index.html" avancar="-1"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa190" titulo="" cartoes='0' path="aa190/index.html" avancar="-1"  transicao="alpha" setas="ambas"   /> 
+                <nivel id="aa191" titulo="" cartoes='0' path="aa191/index.html" avancar="-1"  transicao="alpha" setas="ambas"   /> 
+                <nivel id="aa192" titulo="" cartoes='0' path="aa192/index.html" avancar="-1"  transicao="alpha" setas="ambas"   /> 
+                <nivel id="aa193" titulo="" cartoes='0' path="aa193/index.html" avancar="-1"  transicao="alpha" setas="ambas"   /> 
+                <nivel id="aa194" titulo="" cartoes='0' path="aa194/index.html" avancar="-1"  transicao="alpha" setas="ambas"   /> 
+            </nivel> 
+        </nivel> 
+       
+                    
+    </nivel>
+    <info>
+        
+        <debug>false</debug>
+        <cache>true</cache>
+        <retornar>nao</retornar>
+        <width>1366</width>
+        <height>768</height>
+        
+        <compilador>
+            <titulo>visa</titulo>
+            <zip_name>visa</zip_name>
+            <padrao>scorm1.2</padrao>
+            <resize>sim</resize>
+            <speed>nao</speed>
+            <log>sim</log>
+        </compilador>
+    </info>
+</estrutura>

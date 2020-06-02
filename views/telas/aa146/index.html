@@ -1,0 +1,89 @@
+<script>
+        window["aa146"] = {
+            indice: "aa146",
+            status: false
+        }
+    
+        $("body").on('navegacaoComplete', function() {
+    
+            if ((course.config[course.indice].id).toUpperCase() == ("aa146").toUpperCase()) {
+    
+                var _tela = window[course.config[course.indice].id];
+                var _containerTela = $(".container" + (_tela.indice).toUpperCase());
+    
+                //posiciona o elemento com base no tamanho real da imagem de fundo COVER
+                _containerTela.find(".posicionar").positionCSS({
+                    img_H: course.height,
+                    img_W: course.width
+                });
+    
+    
+    
+                if (_tela.status == false) {
+                    _tela.status = true;
+    
+    
+    
+                } else {
+    
+                }
+            }
+        })
+    </script>
+    
+    
+    <div class="template1 containerAA146">
+    
+        <div class="leftCont posicionar animated fadeIn delay0_2" px="0" py="85">
+            <div class="text1">
+                <div class="tx size50 branco animated fadeInUp delay0_4">
+                    <span class="book">DISPONÍVEL NOS</span><br>
+                    SEGUINTES PRODUTOS
+                </div>
+            </div>
+        </div>
+    
+    
+        <div class="rightCont posicionar animated fadeIn delay0_2" px="669" py="85">
+            
+            <div class="cartaoD">
+    
+                <div class="carT">
+                    <div class="cartao cartao1 animated zoomIn delay1_4">
+                        <div class="img"></div>
+                        <div class="color border_gold"></div>  
+                    </div>
+                    <div class="cartao cartao2 animated zoomIn delay1_5">
+                        <div class="img"></div>
+                        <div class="color border_platinum"></div>  
+                    </div>
+                </div>
+    
+                <div class="carT">
+                    <div class="cartao cartao3 animated zoomIn delay1_6">
+                        <div class="img"></div>
+                        <div class="color border_infinit"></div>  
+                    </div>
+                    <div class="cartao cartao4 animated zoomIn delay1_7">
+                        <div class="img"></div>
+                        <div class="color border_debito"></div>  
+                    </div>
+                </div>
+    
+                <div class="carT">
+                    <div class="cartao cartao5 animated zoomIn delay1_8">
+                        <div class="img"></div>
+                        <div class="color border_classic"></div>  
+                    </div>
+                    <div class="cartao cartao6 animated zoomIn delay1_9">
+                        <div class="img"></div>
+                        <div class="color border_pj"></div>  
+                    </div>
+                </div>
+                
+               
+            </div>
+    
+        </div>
+    
+    </div>

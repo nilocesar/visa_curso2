@@ -1,0 +1,384 @@
+
+/*= AA5
+	----------------------------*/
+
+  .containerAA5 {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 99999999;
+}
+
+.containerAA5 .fundo{
+  position: absolute;
+  background: #003EA9;
+  background: linear-gradient(180deg, rgba(26,30,90,1) 0%, rgba(18,45,152,1) 100%);
+  width: 1366px;
+  height: 662px;
+}
+
+.containerAA5 .estrela{
+  position: absolute;
+  background: url(../../img/estrela.png) no-repeat center;
+  background-size: 100%;
+  width: 1366px;
+  height: 662px;
+}
+
+.containerAA5 .satelite{
+  position: absolute;
+  width: 254px;
+  height: 273px;
+}
+
+.containerAA5 .satelite .img{
+  position: relative;
+  background: url(../../img/globo.png) no-repeat center;
+  background-size: 100%;
+  width: 254px;
+  height: 273px;
+  z-index: 1;
+}
+
+.containerAA5 .predio{
+  position: absolute;
+  width: 377px;
+  height: 321px;
+  z-index: 0;
+}
+
+.containerAA5 .predio .img{
+  position: relative;
+  background: url(../../img/prediosFundo.png) no-repeat center;
+  background-size: 100%;
+  width: 377px;
+  height: 321px;
+}
+
+.containerAA5 .item{
+  cursor: pointer;
+}
+
+.containerAA5 .item:hover .speech-bubble {
+  display: flex;
+}
+
+.containerAA5 .item1{
+  position: absolute;
+  width: 103px;
+  height: 101px;
+  cursor: pointer;
+}
+
+.containerAA5 .item1 .img{
+  position: relative;
+  background: url(../../img/ico1.png) no-repeat center;
+  background-size: 100%;
+  width: 103px;
+  height: 101px;
+  cursor: pointer;
+}
+
+.containerAA5 .item2{
+  position: absolute;
+  width: 140px;
+  height: 107px;
+  cursor: pointer;
+}
+
+.containerAA5 .item2 .img{
+  position: relative;
+  background: url(../../img/item2.png) no-repeat center;
+  background-size: 100%;
+  width: 140px;
+  height: 107px;
+  cursor: pointer;
+}
+
+.containerAA5 .item3{
+  position: absolute;
+  width: 117px;
+  height: 144px;
+  cursor: pointer;
+}
+
+.containerAA5 .item3 .img{
+  position: relative;
+  background: url(../../img/item3.png) no-repeat center;
+  background-size: 100%;
+  width: 117px;
+  height: 144px;
+  cursor: pointer;
+}
+
+
+.containerAA5 .item4{
+  position: absolute;
+  width: 193px;
+  height: 110px;
+  cursor: pointer;
+}
+
+.containerAA5 .item4 .img{
+  position: relative;
+  background: url(../../img/item4.png) no-repeat center;
+  background-size: 100%;
+  width: 193px;
+  height: 110px;
+  cursor: pointer;
+}
+
+.containerAA5 .item5{
+  position: absolute;
+  width: 96px;
+  height: 124px;
+  cursor: pointer;
+}
+
+.containerAA5 .item5 .img{
+  position: relative;
+  background: url(../../img/item1.png) no-repeat center;
+  background-size: 100%;
+  width: 96px;
+  height: 124px;
+  cursor: pointer;
+}
+
+.containerAA5 .planeta1{
+  position: absolute;
+  background: url(../../img/platena1.png) no-repeat center;
+  background-size: 100%;
+  width: 50px;
+  height: 50px;
+}
+
+.containerAA5 .planeta2{
+  position: absolute;
+  background: url(../../img/platena2.png) no-repeat center;
+  background-size: 100%;
+  width: 48px;
+  height: 48px;
+}
+
+.containerAA5 .planeta3{
+  position: absolute;
+  background: url(../../img/platena3.png) no-repeat center;
+  background-size: 100%;
+  width: 36px;
+  height: 36px;
+}
+
+.containerAA5 .planeta4{
+  position: absolute;
+  background: url(../../img/platena4.png) no-repeat center;
+  background-size: 100%;
+  width: 62px;
+  height: 62px;
+}
+
+
+
+.containerAA5 .hit{
+  position: absolute;
+  /* width: 117px;
+  height: 144px;
+  background-color: rgb(169, 62, 0); */
+  z-index: 999999999999999999999999999;
+}
+
+.containerAA5 .speech-bubble {
+  z-index: 999999999999999999999999999;
+}
+
+.containerAA5 .item1 .speech-bubble,
+.containerAA5 .item5 .speech-bubble {
+	position: absolute;
+	background: #fff;
+  border-radius: .4em;
+  top: -60px;
+  left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  width: 100px;
+  padding: 10px;
+}
+
+.containerAA5 .item1 .speech-bubble:after,
+.containerAA5 .item5 .speech-bubble:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 6px solid transparent;
+	border-top-color: #fff;
+	border-bottom: 0;
+	margin-left: -6px;
+	margin-bottom: -6px;
+}
+
+
+.containerAA5 .item4 .speech-bubble {
+	position: absolute;
+	background: #fff;
+  border-radius: .4em;
+  top: 25px;
+  right: -110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  width: 100px;
+  padding: 10px;
+}
+
+.containerAA5 .item4 .speech-bubble:after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 0%;
+	width: 0;
+	height: 0;
+	border: 6px solid transparent;
+	border-right-color: #fff;
+	border-left: 0;
+	margin-top: -6px;
+  margin-left: -6px;
+}
+
+.containerAA5 .item3 .speech-bubble {
+	position: absolute;
+	background: #fff;
+  border-radius: .4em;
+  bottom: -40px;
+  left: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  width: 100px;
+  padding: 10px;
+}
+
+.containerAA5 .item3 .speech-bubble:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 6px solid transparent;
+	border-bottom-color: #fff;
+	border-top: 0;
+	margin-left: -6px;
+  margin-top: -6px;
+}
+
+.containerAA5 .item2 .speech-bubble {
+	position: absolute;
+	background: #fff;
+  border-radius: .4em;
+  top: 35px;
+  left: -110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  width: 100px;
+  padding: 10px;
+}
+
+.containerAA5 .item2 .speech-bubble:after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	right: 0%;
+	width: 0;
+	height: 0;
+	border: 6px solid transparent;
+	border-left-color: #fff;
+	border-right: 0;
+	margin-top: -6px;
+	margin-right: -6px;
+}
+
+
+.containerAA5 .check{
+  color:#ffc359;
+  font-size:30px;
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  z-index: 99999999;
+  display: none;
+}
+
+.containerAA5 .item1 .check{
+  top: -50px;
+  left: 45px;
+}
+
+.containerAA5 .item4 .check{
+  top: 30px;
+  left: 205px;
+}
+
+.containerAA5 .item3 .check{
+  top: 140px;
+  left: 50px;
+}
+
+.containerAA5 .item2 .check{
+  top: 40px;
+  left: -40px;
+}
+
+.containerAA5 .popFinal{
+  display: none;
+}
+
+.containerAA5 .popFinal .fundoFinal{
+  position: absolute;
+  background: #ffc359;
+  background: linear-gradient(180deg, #ffc359 0%, #F7B600 100%);
+  width: 1366px;
+  height: 662px;
+  opacity: 0.9;
+}
+
+.containerAA5 .popFinal .texto{
+  position: absolute;
+  width: 600px;
+  height: 450px;
+  padding: 30px;
+  /* text-align: right; */
+  overflow: hidden;
+  /* padding-top:200px;
+  padding-left: 100px; */
+  background-color: #003EA9;
+  box-shadow: 3px 6px 11px #00000057;
+  border-bottom: 10px solid #C68D1F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.containerAA5 .popFinal .closeX{
+  position: absolute;
+  right:10px;
+  top: 10px;
+  color: #fff;
+  z-index: 999999999;
+  cursor: pointer;
+}
+
+.containerAA5 .popFinal .closeX:hover{
+  color: #C68D1F;
+}

@@ -1,0 +1,54 @@
+<script>
+        window["aa100"] = {
+            indice: "aa100",
+            status: false
+        }
+    
+        $("body").on('navegacaoComplete', function() {
+    
+            if ((course.config[course.indice].id).toUpperCase() == ("aa100").toUpperCase()) {
+    
+                var _tela = window[course.config[course.indice].id];
+                var _containerTela = $(".container" + (_tela.indice).toUpperCase());
+    
+                //posiciona o elemento com base no tamanho real da imagem de fundo COVER
+                _containerTela.find(".posicionar").positionCSS({
+                    img_H: course.height,
+                    img_W: course.width
+                });
+    
+        
+    
+                if (_tela.status == false) {
+                    _tela.status = true;
+    
+    
+    
+                } else {
+    
+                }
+            }
+        })
+    </script>
+    
+    
+    <div class="template4 containerAA100">
+    
+        <div class="fundo posicionar animated fadeIn delay0_2" px="0" py="85"> 
+            <img src="includes/img/tela100.jpg" alt="">
+        </div>
+    
+        <div class="texto posicionar branco animated fadeIn delay0_4" px="40" py="150">
+            <div>
+                <div class="tx animated fadeInRight delay0_4">
+                    ISENÇÃO DE RESPONSABILIDADE CORPORATIVA
+                </div>
+                <div class="size22 light pb10 animated fadeInRight delay0_6">
+                    As empresas são, muitas vezes, sujeitas à irresponsabilidade 
+                    de maus profissionais. Pensando nisso, Visa criou um serviço 
+                    para proteger as empresas de casos de corrupção e irresponsabilidade.
+                </div>
+            </div>
+        </div>
+        
+    </div>

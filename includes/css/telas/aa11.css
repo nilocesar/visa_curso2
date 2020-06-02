@@ -1,0 +1,84 @@
+/*= AA1
+	----------------------------*/
+
+  .containerAA11 {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 99999999;
+}
+
+.containerAA11 .fundo{
+  position: absolute;
+  /* background: url(../../img/tela11.jpg) no-repeat center;
+  background-size: cover; */
+  width: 1366px;
+  height: 662px;
+}
+
+.containerAA11 .fundo img{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.containerAA11 .texto{
+  position: absolute;
+  width: 1250px;
+  height: 580px;
+  padding: 60px;
+  overflow: hidden;
+  background-color: #003EA9;
+  box-shadow: 3px 6px 11px #00000057;
+  border-bottom: 10px solid #ffc359;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerAA11 .circuloAA{
+  position: relative;
+  width: 100px;
+  height: 100px;
+  /* background: url(../../img/circuloAA17.png) no-repeat top;
+  background-size: contain; */
+  margin: 20px auto;
+}
+
+.containerAA11 .circuloAA img{
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.containerAA11 .menu{
+  position: relative;
+  margin: 20px auto;
+  width: 200px;
+  border-radius: 10px;
+  background: #ffc359;
+  color: rgb(52, 51, 51);
+  padding: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.containerAA11 .menu i{
+  padding-right: 10px;
+  margin-top: 5px;
+}
+
+.containerAA11 .menu:hover{
+  background: #e4a73d;
+}
+
+.containerAA11 .satelitetIco{
+  width: 60px;
+  height: 60px;
+  background: url('../../img/sateliteIco2.png') no-repeat center;
+  background-size: contain;
+  margin: 0 auto;
+}

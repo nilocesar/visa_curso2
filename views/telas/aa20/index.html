@@ -1,0 +1,261 @@
+<script>
+        window["aa20"] = {
+            indice: "aa20",
+            status: false
+        }
+    
+        $("body").on('navegacaoComplete', function() {
+    
+            if ((course.config[course.indice].id).toUpperCase() == ("aa20").toUpperCase()) {
+    
+                var _tela = window[course.config[course.indice].id];
+                var _containerTela = $(".container" + (_tela.indice).toUpperCase());
+    
+                //posiciona o elemento com base no tamanho real da imagem de fundo COVER
+                _containerTela.find(".posicionar").positionCSS({
+                    img_H: course.height,
+                    img_W: course.width
+                });
+    
+    
+                reset();
+                if (_tela.status == false) {
+                    _tela.status = true;
+    
+                    itens();
+    
+    
+                } else {
+    
+                }
+    
+                function itens() {
+    
+                    _containerTela.find(".item").addClass('inativo')
+                    _containerTela.find(".item1").removeClass('inativo')
+                    _containerTela.find(".item1").addClass('animated infinite pulse');
+    
+                    var _length = _containerTela.find(".item").length;
+                    _containerTela.find(".item").on('click', function() {
+    
+                        var _step = parseInt($(this).attr('step'));
+                        var _next = _step + 1;
+    
+                        $(this).removeClass('animated infinite pulse');
+    
+                        if (_containerTela.find(".item" + _next).hasClass('inativo')) {
+                            _containerTela.find(".item" + _next).removeClass('inativo');
+                            _containerTela.find(".item" + _next).addClass('animated infinite pulse');
+                        }
+    
+    
+    
+                        _containerTela.find(".pop").css('display', 'block');
+                        _containerTela.find(".int").css('display', 'none');
+                        _containerTela.find(".int" + _step).css('display', 'block');
+                        _containerTela.find(".int" + _step).attr('open', 1);
+    
+                      
+    
+                    });
+    
+    
+                    _containerTela.find(".closeX").on('click', function() {
+                        _containerTela.find(".pop").css('display', 'none');
+                        _containerTela.find(".int").css('display', 'none');
+    
+                        var _comp = true;
+                        _containerTela.find(".int").each(function(indice, item) {
+                            if (!$(item).attr('open'))
+                                _comp = false;
+                        });
+    
+                        if (_comp) {
+                            course.liberarNavegacao();
+                        }
+    
+                    });
+    
+                }
+    
+    
+    
+                function reset() {
+    
+                    _containerTela.find(".pop").css('display', 'none');
+                    _containerTela.find(".int").css('display', 'none');
+    
+    
+                }
+            }
+        })
+    </script>
+    
+    
+    <div class="template2 containerAA20">
+    
+        <div class="fundoTemp2 posicionar animated fadeIn delay0_2" px="0" py="85">
+            <div class="subFundo"></div>
+        </div>
+    
+        <div class="bloco bg_azul posicionar animated fadeIn delay0_4" px="50" py="135">
+            <div class="subBloco branco">
+                <div class="tx">
+                    MAS, COMO EU VENDO?
+                </div>
+                <div class="sub light size22">
+
+                    É importante sempre ouvir o cliente, entender como é o hábito de consumo dele para poder oferecer 
+                    o benefício trazendo exemplos que se encaixem a realidade dele.
+
+
+                    <br><br>
+                    <span class="gold">
+                            Selecione ao lado para navegar pelas etapas de venda desse benefício.
+                        </span>
+                </div>
+            </div>
+        </div>
+    
+        <div class="menu posicionar animated fadeIn delay0_8 azul size22" px="705" py="205">
+            <div class="item item1" step=1>
+                <div class="ico mb20"></div>
+                <div class="txt">
+                    Abordagem
+                </div>
+            </div>
+    
+            <div class="item item2" step=2>
+                <div class="ico mb20"></div>
+                <div class="txt">
+                    Explicação
+                </div>
+            </div>
+    
+            <div class="item item3" step=3>
+                <div class="ico mb20"></div>
+                <div class="txt">
+                    Argumentação
+                </div>
+            </div>
+    
+            <div class="item item4" step=4>
+                <div class="ico mb20"></div>
+                <div class="txt">
+                    Fechamento
+                </div>
+            </div>
+    
+        </div>
+    
+        <div class="pop">
+            
+            <div class="int int1">
+                <div class="fundo posicionar animated fadeIn delay0_2" px="0" py="85"> 
+                    <div class="sub"></div>
+                </div>
+    
+                <div class="texto posicionar azul animated fadeIn delay0_4" px="175" py="114">
+                    
+                    <div class="closeX size50 animated zoomIn delay1_2">
+                        <i class="far fa-times-circle"></i>
+                    </div>
+    
+                    <div class="img"></div>
+                    <div>
+                        <div class="icoX animated zoomIn delay0_4"></div>
+                        <div class="tx animated fadeInRight delay0_6">
+                            FAÇA UMA ABORDAGEM ASSERTIVA E DIRETA:
+                        </div>
+                        <div class="size20 light animated fadeInRight delay0_8">
+                            “Com esse benefício você pode comprar o que, onde e quando quiser, sem se preocupar com o valor!”
+                            <br><br>
+                            “Não tenha mais medo de comprar algum produto, seja o preço que for!”
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="int int2">
+                <div class="fundo posicionar animated fadeIn delay0_2" px="0" py="85"> 
+                    <div class="sub"></div>
+                </div>
+    
+                <div class="texto posicionar azul animated fadeIn delay0_4" px="175" py="114">
+                    
+                    <div class="closeX size50 animated zoomIn delay1_2">
+                        <i class="far fa-times-circle"></i>
+                    </div>
+    
+                    <div class="img"></div>
+                    <div>
+                        <div class="icoX animated zoomIn delay0_4"></div>
+                        <div class="tx animated fadeInRight delay0_6">
+                            EXPLIQUE COM MAIS DETALHES:
+                        </div>
+                        <div class="size20 light animated fadeInRight delay0_8">
+                            “Esse benefício reembolsa a diferença de preço caso o mesmo produto (número, modelo e ano e fabricante) seja encontrado 
+                            a um preço menor ao valor pago com o cartão Visa, num anúncio impresso ou Internet.”
+                            <br><br>
+                            “A Visa devolve a diferença de valor caso você encontre outro produto com preço menor do que o que você comprou!”
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="int int3">
+                <div class="fundo posicionar animated fadeIn delay0_2" px="0" py="85"> 
+                    <div class="sub"></div>
+                </div>
+    
+                <div class="texto posicionar azul animated fadeIn delay0_4" px="175" py="114">
+                    
+                    <div class="closeX size50 animated zoomIn delay1_2">
+                        <i class="far fa-times-circle"></i>
+                    </div>
+    
+                    <div class="img"></div>
+                    <div>
+                        <div class="icoX animated zoomIn delay0_4"></div>
+                        <div class="tx animated fadeInRight delay0_6">
+                            ELABORE COM ARGUMENTOS:
+                        </div>
+                        <div class="size20 light animated fadeInRight delay0_8">
+                            “Se você adora uma comprinha, este benefício é incrível. Por quê? Você pode adquirir o que deseja tranquilamente, sem realizar várias pesquisas prévias e ter a certeza que vai fazer um ótimo negócio.”
+                            <br><br>
+                            “Você pode aproveitar os prazeres de uma compra impulsiva sem se preocupar de ser passado para trás!”
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="int int4">
+                <div class="fundo posicionar animated fadeIn delay0_2" px="0" py="85"> 
+                    <div class="sub"></div>
+                </div>
+    
+                <div class="texto posicionar azul animated fadeIn delay0_4" px="175" py="114">
+                    
+                    <div class="closeX size50 animated zoomIn delay1_2">
+                        <i class="far fa-times-circle"></i>
+                    </div>
+    
+                    <div class="img"></div>
+                    <div>
+                        <div class="icoX animated zoomIn delay0_4"></div>
+                        <div class="tx animated fadeInRight delay0_6">
+                            FECHE A VENDA!
+                        </div>
+                        <div class="size20 light animated fadeInRight delay0_8">
+                            “Este benefício está presente no cartão que acabei de te oferecer, vamos fechar?” 
+                            <br><br>
+                            “O seu cartão atual ainda não possui esse benefício, mas posso ver que você ficou interessado, acho que está na hora de um upgrade!"
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    
+    
+    </div>

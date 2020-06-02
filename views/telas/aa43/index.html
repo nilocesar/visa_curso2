@@ -1,0 +1,80 @@
+<script>
+    window["aa43"] = {
+        indice: "aa43",
+        status: false
+    }
+
+    $("body").on('navegacaoComplete', function() {
+
+        if ((course.config[course.indice].id).toUpperCase() == ("aa43").toUpperCase()) {
+
+            var _tela = window[course.config[course.indice].id];
+            var _containerTela = $(".container" + (_tela.indice).toUpperCase());
+
+            //posiciona o elemento com base no tamanho real da imagem de fundo COVER
+            _containerTela.find(".posicionar").positionCSS({
+                img_H: course.height,
+                img_W: course.width
+            });
+
+    
+
+            if (_tela.status == false) {
+                _tela.status = true;
+
+
+
+            } else {
+
+            }
+        }
+    })
+</script>
+
+
+<div class="template5 containerAA43">
+
+    <div class="fundo posicionar animated fadeIn delay0_2" px="0" py="85"> 
+        <div class="baseTxt branco">
+            <!-- <div class="tx t1">VISA CONCIERGE</div> -->
+            <div class="tx2 t2">Regras Oficiais</div>
+        </div>
+
+    </div>
+
+    <div class="texto posicionar animated fadeIn delay0_4 cinza2 size17" px="00" py="450">
+        <div class="bloco blocoX">
+            <ul>
+                <li>
+                    Esse benefício não tem nenhuma regra especial.
+                </li>
+                <!-- <li>
+                    A comunicação do sinistro deverá ser imediatamente após a constatação do defeito.
+                </li> -->
+            </ul>
+        </div>
+        <!-- <div class="bloco">
+            <ul>
+                <li>
+                    A oferta do produto com o preço inferior deve estar dentro 
+                    de 100km do local da compra em que o produto foi adquirido. 
+                </li>
+                <li>
+                    Para anúncios de internet, não serão válidas comparações 
+                    para itens encontrados em sites de leilão. 
+                </li>
+            </ul>
+        </div>
+        <div class="bloco">
+            <ul>
+                <li>
+                    Para anúncios impressos, cópia do anúncio publicado ou postado após a data de compra, que apresenta o preço inferior ao originalmente pago. 
+                </li>
+                <li>
+                    A oferta do produto com o preço inferior deve estar no mesmo país onde o item foi originalmente comprado.
+                </li>
+            </ul>
+        </div> -->
+    </div>
+    
+</div>

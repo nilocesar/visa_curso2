@@ -1,0 +1,61 @@
+/*--------------------------*/
+/*FRAMEWORKS
+----------------------------*/
+
+@import url("reset.css");
+@import url("bootstrap-grid.min.css");
+@import url("bootstrap-reboot.min.css");
+@import url("bootstrap-slider.min.css");
+@import url("bootstrap.min.css");
+@import url("icones.css");
+@import url("fonts.css");
+@import url("animate.css");
+@import url("slick.css");
+@import url("balloon.min.css");
+
+/*--------------------------*/
+/* PROPS
+----------------------------*/
+@import url("colors.css");
+@import url("props.css");
+
+/*--------------------------*/
+/*INTERFACE
+----------------------------*/
+
+@import url("interface.css");
+@import url("custom.css");
+@import url("debug.css");
+
+/*--------------------------*/
+/*TEMPLAITES
+----------------------------*/
+
+@import url("template/template1.css");
+@import url("template/template2.css");
+@import url("template/template3.css");
+@import url("template/template4.css");
+@import url("template/template5.css");
+@import url("template/template6.css");
+@import url("template/template7.css");
+
+
+@import url("template/menu1.css");
+@import url("template/menu2.css");
+@import url("template/menu3.css");
+@import url("template/menu4.css");
+
+
+/*--------------------------*/
+/*TELAS
+----------------------------*/
+
+@import url("telas/aa1.css");
+@import url("telas/aa2.css");
+@import url("telas/aa3.css");
+@import url("telas/aa4.css");
+@import url("telas/aa5.css");
+@import url("telas/aa6.css");
+@import url("telas/aa11.css");
+@import url("telas/aa195.css");
+

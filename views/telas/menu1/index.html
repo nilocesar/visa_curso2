@@ -1,0 +1,172 @@
+<script>
+    window["menu1"] = {
+        indice: "menu1",
+        status: false,
+        menu: 1
+    }
+
+    $("body").on('navegacaoComplete', function() {
+
+        if ((course.config[course.indice].id).toUpperCase() == ("menu1").toUpperCase()) {
+
+            var _tela = window[course.config[course.indice].id];
+            var _containerTela = $(".container" + (_tela.indice).toUpperCase());
+
+            //posiciona o elemento com base no tamanho real da imagem de fundo COVER
+            _containerTela.find(".posicionar").positionCSS({
+                img_H: course.height,
+                img_W: course.width
+            });
+
+            controle();
+
+
+            if (_tela.status == false) {
+                _tela.status = true;
+
+                _containerTela.find(".itD").on("click", function(event) {
+
+                    var _telaM = $(this).attr('tela');
+                    var _indice = 0;
+
+                    $.each(course.config, function(indice, item) {
+
+                        if (String(item.parentNivel1.id) == String(_telaM) ){
+                            if( _indice == 0 ){
+                                _indice = item.indice;
+                            }
+                        } 
+                    });
+
+                    course.indice = _indice;
+                    $("body").attr("nav", "go");
+                    $("body").trigger("navegacao");
+
+                });
+
+
+
+            } else {
+
+            }
+
+            function controle() {
+
+                _containerTela.find(".item .img").removeClass('animated infinite pulse');
+                _containerTela.find(".item .indicador").css('display','none');
+                
+                var submenu = 0;
+                if( course.scorm_get_suspendData("submenu" + _tela.menu) ) {
+                    submenu = parseInt(course.scorm_get_suspendData("submenu" + _tela.menu));
+                    course.scorm_set_suspendData("sub_"+_tela.menu+"_"+submenu, 1);
+                }
+
+                var i = 0;
+                var all = _containerTela.find('.item').length;
+                var _comp = true;
+
+                while ( i < all ) {
+                    i+=1;
+                    if( course.scorm_get_suspendData("sub_"+_tela.menu+"_"+i) ){
+                        _containerTela.find('.item' + i + ' .check' ).css('display', 'flex');
+                    }
+                    else{
+                        _comp = false;
+                    }
+                }
+
+                if( _comp ){
+                    _containerTela.find(".quiz").css('display', 'block');
+                }
+
+
+                _containerTela.find(".item" + (submenu+1) + ' .img' ).addClass('animated infinite pulse');
+                //_containerTela.find(".item" + (submenu+1) + ' .indicador').css('display','block');
+
+            }
+        }
+    })
+</script>
+
+
+<div class="containerMENU1">
+
+    <div class="fundo posicionar animated fadeIn" px="0" py="85"> </div>
+
+    <div class="estrela posicionar animated zoomOut delay0_4" px="0" py="95"></div>
+    <div class="estrela posicionar animated zoomIn delay0_4" px="0" py="95"></div>
+
+    <div class="planeta1 posicionar animated zoomIn delay0_6" px="420" py="180"></div>
+    <div class="planeta2 posicionar animated zoomIn delay0_8" px="120" py="380"></div>
+    <div class="planeta3 posicionar animated zoomIn delay1_0" px="1060" py="250"></div>
+    <div class="planeta4 posicionar animated zoomIn delay1_2" px="960" py="450"></div>
+
+
+    <div class="baseMenu posicionar animated fadeIn delay1_0" px="0" py="85">
+        <div class="img animated fadeInUp delay1_0"> </div>
+    </div>
+
+
+    <div class="itD item item2 posicionar animated fadeIn delay1_8" px="740" py="650" tela='menuG12'>
+        <div class="indicador gold size40 animated fadeIn delay0_4">
+            <i class="fas fa-hand-point-down animated infinite fadeInDown"></i>
+        </div>
+        <div class="check">
+            <i class="fas fa-check-circle"></i>
+        </div>
+        <div class="speech-bubble">
+            Proteção de Preço
+        </div>
+        <div class="hit"></div>
+        <div class="animated fadeIn delay2_0">
+            <div class="img"></div>
+        </div>
+    </div>
+
+    <div class="itD item item3 posicionar animated fadeIn delay1_8" px="620" py="400" tela='menuG13'>
+        <div class="indicador gold size40 animated fadeIn delay0_4">
+            <i class="fas fa-hand-point-down animated infinite fadeInDown"></i>
+        </div>
+        <div class="check">
+            <i class="fas fa-check-circle"></i>
+        </div>
+        <div class="speech-bubble">
+            Seguro de Garantia Estendida Original
+        </div>
+        <div class="hit"></div>
+        <div class="animated zoomIn delay2_0">
+            <div class="img"></div>
+        </div>
+    </div>
+
+    <div class="itD item item1 posicionar animated fadeIn delay1_4" px="600" py="540" tela='menuG11'>
+        <div class="indicador gold size40 animated fadeIn delay0_4">
+            <i class="fas fa-hand-point-down animated infinite fadeInDown"></i>
+        </div>
+        <div class="check">
+            <i class="fas fa-check-circle"></i>
+        </div>
+        <div class="speech-bubble">
+            Proteção de Compras
+        </div>
+        <div class="hit"></div>
+        <div class="animated fadeIn delay1_6">
+            <div class="img"></div>
+        </div>
+    </div>
+
+
+    <div class="itD quiz posicionar animated fadeIn" px="830" py="190" tela='quiz1'>
+        <div class="indicador gold size40 animated fadeIn delay0_4">
+            <i class="fas fa-hand-point-down animated infinite fadeInDown"></i>
+        </div>
+        <div class="quizB animated infinite pulse">
+            <i class="fas fa-question"></i>
+            <div class="xbold">Quiz</div> 
+        </div>
+    </div>
+
+
+
+
+</div>

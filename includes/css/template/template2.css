@@ -1,0 +1,308 @@
+.template2 {
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 9999;
+}
+
+.template2 .fundoTemp2{
+  position: absolute;
+  background: rgb(3,4,6);
+  background: linear-gradient(67deg, #C68D1F 0%, #FDCF8E 100%);
+  width: 1366px;
+  height: 662px;
+}
+
+.template2 .subFundo{
+  position: absolute;
+  width: 1366px;
+  height: 100px;
+  top: 0;
+  left: 0;
+  background: rgb(3,4,6);
+  background: linear-gradient(45deg, rgba(3,4,6,1) 0%, rgba(34,60,113,1) 100%);
+}
+
+.template2 .bloco{
+  position: absolute;
+  width: 566px;
+  height: 580px;
+  background: rgba(34,60,113,1);
+  box-shadow: 3px 6px 11px #00000057;
+}
+
+.template2 .bloco .subBloco{
+  position: relative;
+  width: 100%;
+  height: 80%;
+  top:20%;
+  /* background-color: aliceblue; */
+  border-top: 5px solid #C68D1F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.template2 .bloco .subBloco .sub{
+  padding: 0 75px;
+  width: 100%;
+}
+
+
+.template2 .feed{
+  position: absolute;
+  width: 690px;
+  height: 440px;
+  display: none;
+}
+
+.template2 .feed .feedBase{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  background-size: cover;
+  z-index: 999999;
+  padding-top: 70px;
+  display: none;
+}
+
+
+.template2 .feed .inf{
+  position: relative;
+  width: 95%;
+  padding: 10px 40px;
+  color: #fff;
+  background-color: #004990;
+}
+
+.template2 .feed .continuar{
+  position: relative;
+  text-align: center;
+  background-color: #FF5900;
+  font-size: 26px;
+  color: #fff;
+  cursor: pointer;
+  width: 200px;
+  margin: 20px auto;
+  padding: 10px 0;
+
+}
+
+.template2 .feed .continuar:hover {
+  background-color: #FFCC00;
+  color: #606163;
+}
+
+.template2 .icos{
+  position: absolute;
+  right: -25px;
+  top: 50%;
+  margin-top: -10px;
+  display: none;
+}
+
+.template2 .icos .icoNeg{
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgb(255, 0, 0);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  display: none;
+}
+
+.template2 .icos .icoPos{
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgb(16, 174, 34);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  display: none;
+}
+
+.template2 .alInativo{
+  pointer-events: none;
+}
+
+.template2 .menu{
+  position: absolute;
+  width: 650px;
+  /* background: #FF5900; */
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+.template2 .menu .item{
+  position: relative;
+  width: 280px;
+  /* border-radius: 50%; */
+  margin: 10px;
+  cursor: pointer;
+}
+
+.template2 .menu .item .ico{
+  position: relative;
+  width: 77px;
+  height: 60px;
+  background: url(../../img/icoVisa.png) no-repeat center;
+  background-size: contain; 
+  z-index: 999999;
+ }
+
+.template2 .menu .item .txt{
+  position: relative;
+  /* top: 92px; */
+  text-align: center;
+  background-color: #fff;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height:150px;
+}
+
+.template2 .pop{
+  display:none;
+}
+
+.template2 .pop .int{
+  
+}
+
+.template2 .pop .int .fundo{
+  position: absolute;
+  width: 1366px;
+  height: 662px;
+  background-color: #003EA9;
+}
+
+.template2 .pop .int .fundo .sub{
+  position: absolute;
+  width: 1366px;
+  height: 280px;
+  top: 0;
+  left: 0;
+  background: rgb(3,4,6);
+  background: linear-gradient(45deg, rgba(3,4,6,1) 0%, rgba(34,60,113,1) 100%);
+}
+
+.template2 .pop .int .texto{
+    position: absolute;
+    width: 1000px;
+    height: 600px;
+    padding: 30px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 3px 6px 11px #00000057;
+    border-radius: 20px;
+    padding-top: 250px;
+
+}
+
+.template2 .pop .int1 .texto .img{
+  position: absolute;
+  width: 1000px;
+  height: 250px;
+  background: url(../../img/pop1AA9.jpg) no-repeat top;
+  background-size: cover;
+  top: 0;
+  left: 0;
+}
+
+.template2 .pop .int2 .texto .img{
+  position: absolute;
+  width: 1000px;
+  height: 250px;
+  background: url(../../img/pop1AA9.jpg) no-repeat top;
+  background-size: cover;
+  top: 0;
+  left: 0;
+}
+
+.template2 .pop .int3 .texto .img{
+  position: absolute;
+  width: 1000px;
+  height: 250px;
+  background: url(../../img/pop1AA9.jpg) no-repeat top;
+  background-size: cover;
+  top: 0;
+  left: 0;
+}
+
+.template2 .pop .int4 .texto .img{
+  position: absolute;
+  width: 1000px;
+  height: 250px;
+  background: url(../../img/pop1AA9.jpg) no-repeat top;
+  background-size: cover;
+  top: 0;
+  left: 0;
+}
+
+
+.template2 .pop .closeX{
+  position: absolute;
+  right:10px;
+  top: 260px;
+  color: #283272;
+  z-index: 999999999;
+  cursor: pointer;
+}
+
+.template2 .pop .closeX:hover{
+  color: #003EA9;
+}
+
+
+.template2 .inativo{
+  pointer-events: none;
+  opacity: 0.2;
+}
+
+
+.template2 .int1 .icoX{
+  position: relative;
+  width: 151px;
+  height: 151px;
+  background: url(../../img/ico1AA9.png) no-repeat top;
+  background-size: contain;
+}
+
+.template2 .int2 .icoX{
+  position: relative;
+  width: 151px;
+  height: 151px;
+  background: url(../../img/ico2AA9.png) no-repeat top;
+  background-size: contain;
+}
+
+.template2 .int3 .icoX{
+  position: relative;
+  width: 151px;
+  height: 151px;
+  background: url(../../img/ico3AA9.png) no-repeat top;
+  background-size: contain;
+}
+
+.template2 .int4 .icoX{
+  position: relative;
+  width: 151px;
+  height: 151px;
+  background: url(../../img/ico4AA9.png) no-repeat top;
+  background-size: contain;
+}

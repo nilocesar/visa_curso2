@@ -1,0 +1,108 @@
+<script>
+    window["aa154"] = {
+        indice: "aa154",
+        status: false
+    }
+
+    $("body").on('navegacaoComplete', function() {
+
+        if ((course.config[course.indice].id).toUpperCase() == ("aa154").toUpperCase()) {
+
+            var _tela = window[course.config[course.indice].id];
+            var _containerTela = $(".container" + (_tela.indice).toUpperCase());
+
+            //posiciona o elemento com base no tamanho real da imagem de fundo COVER
+            _containerTela.find(".posicionar").positionCSS({
+                img_H: course.height,
+                img_W: course.width
+            });
+
+            //
+            _containerTela.find(".pop").css('display', 'none');
+            if (_tela.status == false) {
+                _tela.status = true;
+
+                _containerTela.find(".btnTabela").on('click', function(){
+                    _containerTela.find(".pop").css('display', 'flex');
+                });
+                _containerTela.find(".closeX").on('click', function(){
+                    _containerTela.find(".pop").css('display', 'none');
+                });
+
+            } else {
+
+            }
+        }
+    })
+</script>
+
+
+<div class="template5 containerAA154">
+
+    <div class="fundo posicionar animated fadeIn delay0_2" px="0" py="85"> 
+        <div class="baseTxt branco">
+            <!-- <div class="tx t1">Sala Vip</div> -->
+            <div class="tx2 t2">Regras Oficiais</div>
+        </div>
+
+    </div>
+
+    <div class="texto posicionar animated fadeIn delay0_4 cinza2 size17" px="00" py="450">
+        
+
+        <div class="bloco">
+            <ul>
+                <li>
+                    Ter comprado uma passagem nacional ou internacional de um 
+                    Transporte Público Autorizado com um cartão de crédito Visa emitido no Brasil. 
+                </li>
+                <li>
+                    Cobertura para viagens nacionais e internacionais de até 60 dias de duração. 
+                </li>
+                <li>
+                    Válido para atrasos de empresas de transporte regular e autorizada.
+                </li>
+            </ul>
+        </div>
+
+        <div class="bloco">
+            <ul>
+                <li>
+                    Apresentação de documento da empresa de transporte comprovando o atraso.
+                </li>
+                <li>
+                    Viagem atrasada ou interrompida devido à falha ou ruptura mecânica 
+                    repentina ou imprevista de equipamentos de embarcações comuns, 
+                    mau tempo, greve ou conflitos trabalhistas que atrasam uma chegada ou saída programada.
+                </li>
+               
+            </ul>
+        </div>
+
+        <div class="bloco">
+            <ul>
+                <li>
+                    Exclui atrasos devido a riscos conhecidos do público antes do início da
+                    viagem e despesas cobertas pela transportadora comum ou qualquer outra entidade.
+                </li>
+                <li>
+                    É necessária a emissão do bilhete de seguro no Portal de Benefícios:<br>
+                    <a href="https://visabenefitslac.axa-assistance.us/" target="_blank">www.visa.com.br/portaldebeneficios</a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+
+    <div class="pop posicionar animated fadeIn delay0_2" px="0" py="85"> 
+        <div class="baseClose">
+            <div class="closeX">
+                <i class="far fa-times-circle size40 animated zoomIn delay1_2"></i>
+            </div>
+        </div>
+        <div class="tabela">
+            <img src="includes/img/tabela130.png" alt="">
+        </div>
+    </div>
+    
+</div>

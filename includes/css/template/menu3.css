@@ -1,0 +1,279 @@
+
+/*= AA5
+	----------------------------*/
+
+  .containerMENU3 {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 99999999;
+}
+
+.containerMENU3 .fundo{
+  position: absolute;
+  background: #003EA9;
+  background: linear-gradient(180deg, rgba(26,30,90,1) 0%, rgba(18,45,152,1) 100%);
+  width: 1366px;
+  height: 662px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+.containerMENU3 .estrela{
+  position: absolute;
+  background: url(../../img/estrela.png) no-repeat center;
+  background-size: 100%;
+  width: 1366px;
+  height: 662px;
+}
+
+.containerMENU3 .baseMenu{
+  position: absolute;
+  width: 1366px;
+  height: 662px;
+  z-index: 9999999999990;
+  overflow: hidden;
+}
+
+.containerMENU3 .baseMenu .img{
+  position: relative;
+  background: url(../../img/baseMenu3.png) no-repeat center;
+  background-size: 100%;
+  width:100%;
+  height: 100%;
+}
+
+.containerMENU3 .indicador{
+  position:absolute;
+  top:-60px;
+  left: 50%;
+  margin-left: -20px;
+  z-index: 99999999;
+  color:#ffc359;
+  display:none;
+}
+
+.containerMENU3 .quiz .indicador{
+  display:block;
+}
+
+
+.containerMENU3 .item{
+  cursor: pointer;
+  z-index: 9999999999999;
+}
+
+.containerMENU3 .item:hover .speech-bubble {
+  display: flex;
+}
+
+.containerMENU3 .item:hover .indicador {
+  display: none !important;
+}
+
+
+
+.containerMENU3 .item1{
+  position: absolute;
+  width: 86px;
+  height: 158px;
+  cursor: pointer;
+  z-index: 999999999999999;
+}
+
+.containerMENU3 .item1 .img{
+  position: relative;
+  background: url(../../img/item1M3.png) no-repeat center;
+  background-size: 100%;
+  width: 86px;
+  height: 158px;
+  cursor: pointer;
+}
+
+.containerMENU3 .item2{
+  position: absolute;
+  width: 86px;
+  height: 158px;
+  cursor: pointer;
+}
+
+.containerMENU3 .item2 .img{
+  position: relative;
+  background: url(../../img/item2M3.png) no-repeat center;
+  background-size: 100%;
+  width: 86px;
+  height: 158px;
+  cursor: pointer;
+}
+
+.containerMENU3 .item3{
+  position: absolute;
+  width: 86px;
+  height: 158px;
+  cursor: pointer;
+  z-index: 9999999999990;
+}
+
+.containerMENU3 .item3 .img{
+  position: relative;
+  background: url(../../img/item3M3.png) no-repeat center;
+  background-size: 100%;
+  width: 86px;
+  height: 158px;
+  cursor: pointer;
+}
+
+.containerMENU3 .item4{
+  position: absolute;
+  width: 86px;
+  height: 158px;
+  cursor: pointer;
+  z-index: 9999999999990;
+}
+
+.containerMENU3 .item4 .img{
+  position: relative;
+  background: url(../../img/item4M3.png) no-repeat center;
+  background-size: 100%;
+  width: 86px;
+  height: 158px;
+  cursor: pointer;
+}
+
+.containerMENU3 .planeta1{
+  position: absolute;
+  background: url(../../img/platena1.png) no-repeat center;
+  background-size: 100%;
+  width: 50px;
+  height: 50px;
+}
+
+.containerMENU3 .planeta2{
+  position: absolute;
+  background: url(../../img/platena2.png) no-repeat center;
+  background-size: 100%;
+  width: 48px;
+  height: 48px;
+}
+
+.containerMENU3 .planeta3{
+  position: absolute;
+  background: url(../../img/platena3.png) no-repeat center;
+  background-size: 100%;
+  width: 36px;
+  height: 36px;
+}
+
+.containerMENU3 .planeta4{
+  position: absolute;
+  background: url(../../img/platena4.png) no-repeat center;
+  background-size: 100%;
+  width: 62px;
+  height: 62px;
+}
+
+
+
+.containerMENU3 .hit{
+  position: absolute;
+  /* width: 117px;
+  height: 144px;
+  background-color: rgb(169, 62, 0); */
+}
+
+.containerMENU3 .speech-bubble {
+  z-index: 999999999999999999999999999;
+}
+
+.containerMENU3 .item .speech-bubble {
+	position: absolute;
+	background: #fff;
+  border-radius: .4em;
+  top: -65px;
+  left: 50%;
+  margin-left: -100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  width: 200px;
+  padding: 10px;
+  text-align: center;
+}
+
+.containerMENU3 .item .speech-bubble:after
+{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 6px solid transparent;
+	border-top-color: #fff;
+	border-bottom: 0;
+	margin-left: -6px;
+	margin-bottom: -6px;
+}
+
+
+.containerMENU3 .check{
+  color:#ffc359;
+  font-size:30px;
+  position:absolute;
+  /* top:50%; */
+  top:-40px;
+  left: 50%;
+  margin-left: -15px;
+  z-index: 99999999;
+  display: none;
+}
+
+
+.containerMENU3 .quiz{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  z-index: 999999999999999;
+  cursor: pointer;
+  display: none;
+}
+
+.containerMENU3 .quiz .quizB{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #F7B600;
+  border-radius: 50%;
+  font-size: 26px;
+  -webkit-box-shadow: 3px 1px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    3px 1px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         3px 1px 5px 0px rgba(50, 50, 50, 0.75);
+  background: linear-gradient(
+    -50deg,
+    rgb(165, 137, 176),
+    rgb(211, 92, 92)
+  );
+  color: #fff;
+  border:1px solid rgba(0, 0, 0, 0.242);
+  /* background: radial-gradient(circle, rgba(247,182,0,1) 0%, rgb(138, 79, 35) 100%); */
+  
+}
+
+.containerMENU3 .quiz .quizB i{
+  color:#7a392a
+}
+
+.containerMENU3 .quiz .quizB:hover{
+  background: linear-gradient(
+    -30deg,
+    rgb(165, 137, 176),
+    rgb(211, 92, 92)
+  );
+}

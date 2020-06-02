@@ -1,0 +1,54 @@
+<script>
+        window["aa64"] = {
+            indice: "aa64",
+            status: false
+        }
+    
+        $("body").on('navegacaoComplete', function() {
+    
+            if ((course.config[course.indice].id).toUpperCase() == ("aa64").toUpperCase()) {
+    
+                var _tela = window[course.config[course.indice].id];
+                var _containerTela = $(".container" + (_tela.indice).toUpperCase());
+    
+                //posiciona o elemento com base no tamanho real da imagem de fundo COVER
+                _containerTela.find(".posicionar").positionCSS({
+                    img_H: course.height,
+                    img_W: course.width
+                });
+    
+        
+    
+                if (_tela.status == false) {
+                    _tela.status = true;
+    
+    
+    
+                } else {
+    
+                }
+            }
+        })
+    </script>
+    
+    
+    <div class="template4 containerAA64">
+    
+        <div class="fundo posicionar animated fadeIn delay0_2" px="0" py="85"> 
+            <img src="includes/img/tela34.jpg" alt="">
+        </div>
+    
+        <div class="texto posicionar branco animated fadeIn delay0_4" px="40" py="150">
+            <div>
+                <div class="tx animated fadeInRight delay0_4">
+                    Visa Valet Shopping / Restaurantes
+                </div>
+                <div class="size22 light pb10 animated fadeInRight delay0_6">
+                    Cliente Visa não procura vaga, não perde tempo para estacionar 
+                    e não tem custo adicional com valet, com este serviço gratuito 
+                    em vários shoppings e restaurantes do Brasil.
+                </div>
+            </div>
+        </div>
+        
+    </div>

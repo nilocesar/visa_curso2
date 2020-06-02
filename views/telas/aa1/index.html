@@ -1,0 +1,67 @@
+<script>
+    window["aa1"] = {
+        indice: "aa1",
+        status: false
+    }
+
+    $("body").on('navegacaoComplete', function() {
+
+        if ((course.config[course.indice].id).toUpperCase() == ("aa1").toUpperCase()) {
+
+            var _tela = window[course.config[course.indice].id];
+            var _containerTela = $(".container" + (_tela.indice).toUpperCase());
+
+            //posiciona o elemento com base no tamanho real da imagem de fundo COVER
+            _containerTela.find(".posicionar").positionCSS({
+                img_H: course.height,
+                img_W: course.width
+            });
+
+
+            if (_tela.status == false) {
+                _tela.status = true;
+
+                _containerTela.find(".porta").on('click', function(){
+                    _containerTela.find(".porta").css('display', 'none');
+                    _containerTela.find(".portaOpen").css('display', 'block');
+
+                    setTimeout( function(){
+                        $("body").attr("nav", "next");
+                        $("body").trigger("navegacao");
+                    }, 1000* 0.7);
+                });
+
+
+            } else {
+
+            }
+        }
+    })
+</script>
+
+
+<div class="containerAA1">
+
+    <div class="fundo posicionar animated fadeIn delay0_2" px="0" py="85"> </div>
+    <div class="portaOpen posicionar animated fadeIn" px="0" py="85"> </div>
+
+    <div class="texto posicionar branco animated fadeIn delay0_4" px="170" py="230">
+        <div>
+            <div class="tx animated fadeInLeft delay0_4">
+                BEM-VINDO
+            </div>
+            <div class="size26 light pb10 animated fadeInLeft delay0_6">
+                Esta é a Ponte Aérea para o Mundo de Benefícios Visa.
+                É hora de decolar. <span class="bold">Vamos juntos?</span>
+            </div>
+            <div class="size26 gold bold pb10 animated fadeInLeft delay0_8">
+                <span>Abra a porta! </span> 
+            </div>
+        </div>
+    </div>
+
+    <div class="porta posicionar branco animated fadeIn delay0_8" px="1080" py="263">
+        <div class="animated infinite pulse"></div>
+    </div>
+
+</div>

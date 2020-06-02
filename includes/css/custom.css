@@ -1,0 +1,621 @@
+.baseInContainer {
+    position: fixed;
+    margin: 0px;
+    height: 768px;
+    width: 1366px;
+    background-color: #F6F6F7;
+    z-index: 0;
+}
+
+.baseHeader {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 1366px;
+    height: 85px;
+    background: rgb(26, 30, 90);
+    background: linear-gradient(85deg, rgba(26, 30, 90, 1) 0%, rgba(18, 45, 152, 1) 100%);
+    border-bottom: 5px solid #F7B600;
+}
+
+.baseHeader .logo {
+    position: absolute;
+    top: 25px;
+    left: 52px;
+    background: url(../img/logo.svg) no-repeat center;
+    background-size: 100%;
+    width: 105px;
+    height: 34px;
+}
+
+.baseHeader .ti {
+    position: absolute;
+    left: 195px;
+    top: 28px;
+}
+
+.baseContent {
+    position: relative;
+    height: 215px;
+    width: 1366px;
+    background: rgb(3, 4, 6);
+    background: linear-gradient(81deg, rgba(3, 4, 6, 1) 0%, rgba(11, 14, 27, 1) 20%, rgba(23, 29, 57, 1) 40%, rgba(30, 38, 76, 1) 60%, rgba(33, 42, 83, 1) 80%, rgba(34, 60, 113, 1) 100%);
+}
+
+.baseContent .content {
+    position: absolute;
+    top: 55px;
+    left: 0px;
+    width: 100%;
+}
+
+.baseFundo {
+    position: relative;
+    background: #003EA9;
+    /* width: 1265px; */
+    height: 446px;
+    width: 1366px;
+    /* box-shadow: 4px 6px 10px #00000029; */
+    /* left: 50px; */
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.icoX1 {
+    position: relative;
+    background: url('../img/it1.svg') no-repeat center;
+    width: 29px;
+    height: 33px;
+}
+
+.icoX2 {
+    position: relative;
+    background: url('../img/it2.svg') no-repeat center;
+    width: 23px;
+    height: 33px;
+}
+
+.icoX3 {
+    position: relative;
+    background: url('../img/it3.svg') no-repeat center;
+    width: 22px;
+    height: 35px;
+}
+
+.icoX4 {
+    position: relative;
+    background: url('../img/it4.svg') no-repeat center;
+    width: 26px;
+    height: 25px;
+}
+
+.icoX5 {
+    position: relative;
+    background: url('../img/it5.svg') no-repeat center;
+    width: 25px;
+    height: 24px;
+}
+
+.icoX6 {
+    position: relative;
+    background: url('../img/it6.svg') no-repeat center;
+    width: 25px;
+    height: 29px;
+}
+
+.icoX7 {
+    position: relative;
+    background: url('../img/it7.svg') no-repeat center;
+    width: 33px;
+    height: 23px;
+}
+
+.icoX8 {
+    position: relative;
+    background: url('../img/it8.svg') no-repeat center;
+    width: 26px;
+    height: 25px;
+}
+
+.icoX9 {
+    position: relative;
+    background: url('../img/it9.svg') no-repeat center;
+    width: 36px;
+    height: 20px;
+}
+
+.icoX10 {
+    position: relative;
+    background: url('../img/it10.png') no-repeat center;
+    width: 22px;
+    height: 23px;
+}
+
+.icoX11 {
+    position: relative;
+    background: url('../img/it11.svg') no-repeat center;
+    width: 32px;
+    height: 19px;
+}
+
+.icoX12 {
+    position: relative;
+    background: url('../img/it12.svg') no-repeat center;
+    width: 24px;
+    height: 24px;
+}
+
+.icoX13 {
+    position: relative;
+    background: url('../img/it13.svg') no-repeat center;
+    width: 22px;
+    height: 32px;
+}
+
+.icoX14 {
+    position: relative;
+    background: url('../img/it14.svg') no-repeat center;
+    width: 26px;
+    height: 26px;
+}
+
+.icoX15 {
+    position: relative;
+    background: url('../img/it15.svg') no-repeat center;
+    width: 22px;
+    height: 42px;
+}
+
+.icoX16 {
+    position: relative;
+    background: url('../img/it16.svg') no-repeat center;
+    width: 27px;
+    height: 27px;
+}
+
+.icoX17 {
+    position: relative;
+    background: url('../img/it17.svg') no-repeat center;
+    width: 25px;
+    height: 23px;
+}
+
+.icoX18 {
+    position: relative;
+    background: url('../img/it18.svg') no-repeat center;
+    width: 28px;
+    height: 26px;
+}
+
+.icoX19 {
+    position: relative;
+    background: url('../img/it19.svg') no-repeat center;
+    width: 22px;
+    height: 33px;
+}
+
+.icoX20 {
+    position: relative;
+    background: url('../img/it20.svg') no-repeat center;
+    width: 35px;
+    height: 30px;
+}
+
+.voltar {
+    position: absolute;
+    top: 25px;
+    left: 1242px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.voltar .ic {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.voltar .volText {
+    margin-top: 5px;
+}
+
+.voltar:hover {
+    color: #ffc359;
+}
+
+.voltar:hover .ic {
+    border-color: #ffc359;
+}
+
+.titulo2Base {
+    text-transform: uppercase;
+}
+
+.navInit {
+    display: none;
+    position: relative;
+    z-index: 999999999999999999999999999999999999999;
+}
+
+.btnPrevFundo {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    z-index: 999999999999999999999999999999999999998;
+    opacity: 0.1;
+}
+
+.btnPrevFundo .icoSet {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnPrev {
+    position: absolute;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    z-index: 999999999999999999999999999999999999999;
+}
+
+.btnPrev .icoSet {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* background-color: #003EA9; */
+    border-radius: 50%;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnPrev:hover div.icoSet {
+    background-color: #FFAA2A;
+}
+
+.btnNextFundo {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    z-index: 999999999999999999999999999999999999998;
+    opacity: 0.1;
+}
+
+.btnNextFundo .icoSet {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnNext {
+    position: absolute;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    z-index: 999999999999999999999999999999999999999;
+}
+
+.btnNext .icoSet {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnNext:hover div.icoSet {
+    background-color: #FFAA2A;
+}
+
+.btnMenuFundo {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    z-index: 999999999999999999999999999999999999998;
+    opacity: 0.1;
+}
+
+.btnMenuFundo .icoSet {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnMenuFundo .satelitetIcoX {
+    width: 40px;
+    height: 40px;
+    background: url('../img/sateliteIco.png') no-repeat center;
+    background-size: contain;
+}
+
+.btnMenu {
+    position: absolute;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    z-index: 999999999999999999999999999999999999999;
+    display: none;
+}
+
+.btnMenu .icoSet {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnMenu .satelitetIcoX {
+    width: 40px;
+    height: 40px;
+    background: url('../img/sateliteIco.png') no-repeat center;
+    background-size: contain;
+}
+
+.btnMenu:hover div.icoSet {
+    background-color: #FFAA2A;
+}
+
+.btnFaqFundo {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    z-index: 999999999999999999999999999999999999999;
+    opacity: 0.1;
+}
+
+.btnFaqFundo .icoSet {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnFaq {
+    position: absolute;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    z-index: 999999999999999999999999999999999999999;
+    display: none;
+}
+
+.btnFaq .icoSet {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnFaq:hover div.icoSet {
+    background-color: #FFAA2A;
+}
+
+.setaInativa {
+    display: none !important;
+}
+
+.tx {
+    text-transform: uppercase;
+    font-family: "light" !important;
+    font-weight: 300!important;
+    font-style: italic!important;
+    margin-bottom: 10px;
+    font-size: 36px;
+}
+
+.tx2 {
+    text-transform: uppercase;
+    font-family: "bold" !important;
+    font-weight: 300!important;
+    font-style: italic!important;
+    font-size: 30px;
+}
+
+.faq {
+    position: relative;
+    display: none;
+    z-index: 999999999999999999999999999999999999999;
+}
+
+.faq .titulo {
+    position: fixed;
+    margin: 0px;
+    height: 768px;
+    width: 1366px;
+}
+
+.faq .titulo .logo {
+    position: absolute;
+    top: 25px;
+    left: 52px;
+    background: url(../img/logo.svg) no-repeat center;
+    background-size: 100%;
+    width: 105px;
+    height: 34px;
+}
+
+.faq .titulo .ti {
+    position: absolute;
+    left: 195px;
+    top: 28px;
+}
+
+.faq .faqFundo {
+    position: absolute;
+    width: 1366px;
+    height: 768px;
+    background: linear-gradient(67deg, #C68D1F 0%, #FDCF8E 100%);
+    /* display: none; */
+}
+
+.faq .closeFAQ {
+    position: absolute;
+    color: #283272;
+    z-index: 999999999;
+    cursor: pointer;
+}
+
+.faq .closeFAQ:hover {
+    color: #003EA9;
+}
+
+::-webkit-scrollbar {
+    width: 30px;
+    height: 30px;
+}
+
+::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #003EA9;
+    /* border-top-left-radius: 15px !important;
+    border-bottom-left-radius: 15px !important; */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #394ed7;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: #3c52df;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(103, 100, 100);
+    /* border-top-right-radius: 15px !important;
+    border-bottom-right-radius: 15px !important; */
+}
+
+::-webkit-scrollbar-track:hover {
+    background: rgb(30, 29, 29);
+}
+
+::-webkit-scrollbar-track:active {
+    background: rgb(52, 51, 51);
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+.faq .faqBase {
+    position: absolute;
+    width: 1250px;
+    height: 557px;
+    /* border-radius: 15px; */
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /* border: 1px solid #fff; */
+    /* display: flex;
+    flex-direction: column; */
+    /* ie scrollbar color properties */
+    scrollbar-base-color: rgb(52, 51, 51);
+    scrollbar-face-color: #003EA9;
+    scrollbar-3dlight-color: #003EA9;
+    scrollbar-highlight-color: #003EA9;
+    scrollbar-track-color: rgb(52, 51, 51);
+    scrollbar-arrow-color: #003EA9;
+    scrollbar-shadow-color: #003EA9;
+}
+
+.faq .step {
+    position: relative;
+    padding: 50px;
+}
+
+.faq .tituloFAQ {
+    width: 100%;
+    text-align: center;
+    background-color: #ffc359;
+    border-bottom: 5px solid #283272;
+    color: #283272;
+    padding: 10px 0 5px;
+}
+
+.faq .respostaFAQ {
+    padding: 10px 50px;
+    width: 80%;
+}
+
+.faq .listFAQ {
+    display: flex;
+    flex-direction: row;
+}
+
+.faq .listFAQ div {
+    padding: 10px;
+}

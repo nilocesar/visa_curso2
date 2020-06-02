@@ -1,0 +1,168 @@
+/*= AA1
+	----------------------------*/
+
+  .template5 {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 99999999;
+}
+
+.template5 .fundo{
+  position: absolute;
+  background: url(../../img/tela15.jpg) no-repeat center;
+  background-size: cover;
+  width: 1366px;
+  height: 662px;
+}
+
+.template5 .baseTxt{
+  position: absolute;
+  top: 280px;
+  left: 30px;
+}
+
+.template5 .baseTxt .t1{ 
+  margin-bottom: 0px;
+  font-size: 34px !important;
+  line-height: 32px;
+}
+
+.template5 .texto{
+  position: absolute;
+  width: 1366px;
+  height: 300px;
+  padding: 30px;
+  overflow: hidden;
+  /* background-color: #003EA9;
+  box-shadow: 3px 6px 11px #00000057;
+  border-bottom: 10px solid #C68D1F; */
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+
+}
+
+.template5 .icoVisa{
+  position: relative;
+  width: 110px;
+  height: 110px;
+  background: url(../../img/icoVisa2.svg) no-repeat top;
+  background-size: contain;
+}
+
+.template5 .menu{
+  position: relative;
+  margin: 20px auto 5px auto;
+  width: 200px;
+  border-radius: 10px;
+  background: #C68D1F;
+  padding: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.template5 .menu:hover{
+  background: rgb(104, 74, 14);
+}
+
+.template5 .bloco{
+  position: relative;
+  width: 30%;
+  height: 100%;
+  background: #fff;
+  border-top: 5px solid #ffc359;
+  padding: 5px 20px;
+}
+
+.template5 .blocoX{
+  position: relative;
+  width: 100%;
+  background: #fff;
+  border-top: 5px solid #ffc359;
+  padding: 5px 20px;
+}
+
+.template5 .bloco2{
+  position: relative;
+  width: 50%;
+  background: #fff;
+  border-top: 5px solid #ffc359;
+  padding: 5px 20px;
+}
+
+.template5 .bloco ul{
+  margin: 10px 20px;
+  list-style: none; /* Remove default bullets */
+}
+
+.template5 .bloco li{
+  padding: 5px 0;
+}
+
+.template5 .bloco ul li::before {
+  content: "\2022";  
+  color:#ffc359; 
+  font-weight: bold; 
+  display: inline-block; 
+  width: 20px; 
+  margin-left: -25px; 
+}
+
+.template5 .bloco .list2 li::before {
+  color:#283272 !important; 
+}
+
+.template5 .removeLi::before{
+  display: none !important;
+}
+
+.template5 .btnTabela{
+  position: relative;
+  width: 200px;
+  border-radius: 10px;
+  background: #ffc359;
+  color: rgb(52, 51, 51);
+  padding: 5px;
+  cursor: pointer;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.template5 .btnTabela:hover{
+  background: #e4a73d;
+}
+
+.template5 .pop{
+  position: absolute;
+  background: #ffc359; 
+  width: 1366px;
+  height: 662px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.template5 .baseClose{
+  position: absolute;
+  width: 100%;
+  padding: 5px;
+  top: 0px;
+  /* background-color: #fff; */
+}
+
+.template5 .pop .closeX{
+  position: relative;
+  color: #283272;
+  z-index: 999999999;
+  cursor: pointer;
+  float: right;
+  margin-right: 350px;
+  margin-top: 35px;
+}
+
+.template5 .pop .closeX:hover{
+  color: #003EA9;
+}

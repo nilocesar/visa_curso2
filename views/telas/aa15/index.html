@@ -1,0 +1,78 @@
+<script>
+    window["aa15"] = {
+        indice: "aa15",
+        status: false
+    }
+
+    $("body").on('navegacaoComplete', function() {
+
+        if ((course.config[course.indice].id).toUpperCase() == ("aa15").toUpperCase()) {
+
+            var _tela = window[course.config[course.indice].id];
+            var _containerTela = $(".container" + (_tela.indice).toUpperCase());
+
+            //posiciona o elemento com base no tamanho real da imagem de fundo COVER
+            _containerTela.find(".posicionar").positionCSS({
+                img_H: course.height,
+                img_W: course.width
+            });
+
+    
+
+            if (_tela.status == false) {
+                _tela.status = true;
+
+
+
+            } else {
+
+            }
+        }
+    })
+</script>
+
+
+<div class="template5 containerAA15">
+
+    <div class="fundo posicionar animated fadeIn delay0_2" px="0" py="85"> 
+        <div class="baseTxt branco">
+            <!-- <div class="tx t1">Proteção de Compra</div> -->
+            <div class="tx2 t2">Regras Oficiais</div>
+        </div>
+    </div>
+
+    <div class="texto posicionar animated fadeIn delay0_4 cinza2 size20" px="00" py="450">
+        <div class="bloco">
+            <ul>
+                <li>
+                    Pagamento integral da compra com o cartão Visa. 
+                </li>
+                <li>
+                    Cobertura válida até 180 dias da data da compra.
+                </li>
+            </ul>
+        </div>
+        <div class="bloco">
+            <ul>
+                <li>
+                    Apresentação do B.O. em caso de roubo em até 24 horas posteriores 
+                    ao incidente. 
+                </li>
+                <li>
+                    Foto do item danificado. 
+                </li>
+            </ul>
+        </div>
+        <div class="bloco">
+            <ul>
+                <li>
+                    Compensação de valor não inclui frete ou custo de envio. 
+                </li>
+                <li>
+                    Valor de cobertura por conta no período de 12 meses. Limites por evento se aplicam. 
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+</div>

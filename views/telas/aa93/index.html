@@ -1,0 +1,67 @@
+<script>
+        window["aa93"] = {
+            indice: "aa93",
+            status: false,
+            submenu:2, // avisa qual tela de submenu tem que retornar
+            item:10 // avisa qual assunto do submenu foi visto
+        }
+    
+        $("body").on('navegacaoComplete', function() {
+    
+            if ((course.config[course.indice].id).toUpperCase() == ("aa93").toUpperCase()) {
+    
+                var _tela = window[course.config[course.indice].id];
+                var _containerTela = $(".container" + (_tela.indice).toUpperCase());
+    
+                //posiciona o elemento com base no tamanho real da imagem de fundo COVER
+                _containerTela.find(".posicionar").positionCSS({
+                    img_H: course.height,
+                    img_W: course.width
+                });
+    
+        
+    
+                if (_tela.status == false) {
+                    _tela.status = true;
+    
+                    _containerTela.find(".menu").on('click', function(){
+                        
+                        course.retornosubMenu( _tela.submenu, _tela.item );
+                    });
+    
+                } else {
+    
+                }
+            }
+        })
+    </script>
+    
+    
+    <div class="template4 containerAA93">
+    
+        <div class="fundo posicionar animated fadeIn delay0_2" px="0" py="85"> 
+            <img src="includes/img/tela11.jpg" alt="">
+        </div>
+    
+        <div class="texto posicionar branco animated fadeIn delay0_4" px="50" py="130">
+            <div>
+                <div class="circuloAA animated zoomIn delay0_4">
+                    <img src="includes/img/circuloAA93.png" alt="">
+                </div>
+                <div class="tx animated fadeInRight delay0_6">
+                    PERFIL DE CLIENTE
+                </div>
+                <div class="size22 light pb10 animated fadeInRight delay0_8">
+                    Michelle viaja muito para fazer compras, ela nem faz ideia 
+                    de tudo que existe disponível num aeroporto, muitas vezes 
+                    perdendo oportunidades para as quais ela daria valor! Ela 
+                    é um bom exemplo de alguém que se interessaria por esse benefício.
+                </div>
+                <div class="menu size30 xbold animated zoomIn delay1_4">
+                    <i class="fas fa-undo-alt"></i>
+                    Lifestyle
+                </div>
+            </div>
+        </div>
+        
+    </div>

@@ -1,0 +1,255 @@
+.template3 {
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 9999;
+}
+
+
+.template3 .leftCont {
+  position: absolute;
+  width: 1366px;
+  height: 662px;
+  background: #E9E9E9;
+}
+
+.template3 .text1 {
+  width: 650px;
+  height: 50%;
+  background: rgb(3,4,6);
+  background: linear-gradient(45deg, rgba(3,4,6,1) 0%, rgba(34,60,113,1) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+  flex-direction: column;
+}
+
+.template3 .text1 .sub1 {
+  padding: 0 100px 0 130px;
+  width: 100%;
+}
+
+.template3 .text1 .ti1 {
+  padding-bottom: 20px;
+}
+
+.template3 .leftCont .ico {
+  position: relative;
+  width: 60px;
+}
+
+.template3 .cartaoBase {
+  position: absolute;
+  width: 1054px;
+  display: flex;
+  flex-direction: column;
+}
+
+.template3 .cartaoD {
+  position: relative;
+  width: 1000px;
+  /* height: 459px; */
+}
+
+.template3 .cartao {
+  position: relative;
+}
+
+.template3 .carT {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.template3 .cartao {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.template3 .cartao .img {
+  position: relative;
+  background: url('../../img/cartao1.png') no-repeat center;
+  background-size: contain;
+  width: 197px;
+  height: 127px;
+}
+
+.template3 .cartao .color {
+  position: relative;
+  border: 2px solid red;
+  width: 70%;
+  margin-left: 25px;
+}
+
+.template3 .cartao2 .img {
+  position: relative;
+  background: url('../../img/cartao2.png') no-repeat center;
+  background-size: contain;
+  width: 197px;
+  height: 127px;
+}
+
+.template3 .cartao3 .img {
+  position: relative;
+  background: url('../../img/cartao3.png') no-repeat center;
+  background-size: contain;
+  width: 197px;
+  height: 127px;
+}
+
+.template3 .cartao4 .img {
+  position: relative;
+  background: url('../../img/cartao4.png') no-repeat center;
+  background-size: contain;
+  width: 197px;
+  height: 127px;
+}
+
+.template3 .cartao5 .img {
+  position: relative;
+  background: url('../../img/cartao5.png') no-repeat center;
+  background-size: contain;
+  width: 197px;
+  height: 127px;
+}
+
+.template3 .cartao6 .img {
+  position: relative;
+  background: url('../../img/cartao6.png') no-repeat center;
+  background-size: contain;
+  width: 197px;
+  height: 127px;
+}
+
+.template3 .cartaoInativo {
+  opacity: 0.2 !important;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray;
+}
+
+.template3 .tit{
+  position: absolute;
+  width: 715px;
+  z-index: 99999999;
+}
+
+.template3 .baseRight{
+  position: absolute;
+  width: 715px;
+  height: 662px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+  padding: 50px;
+}
+
+.template3 .item1{
+  border-bottom: 5px solid #FFAA2A;
+  border-left: 5px solid #FFAA2A;
+  /* padding: 20px 0px 40px 80px; */
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left:70px;
+  margin-top: 20px;
+}
+
+.template3 .item2{
+  border-bottom: 5px solid #FFAA2A;
+  border-right: 5px solid #FFAA2A;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-right:70px;
+}
+
+.template3 .item2x{
+  height: 280px;
+}
+
+.template3 .item2xx{
+  height: 240px;
+}
+
+.template3 .item3{
+  border-bottom: 5px solid #FFAA2A;
+  border-left: 5px solid #FFAA2A;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left:70px;
+}
+
+.template3 .item4{
+  border-right: 5px solid #FFAA2A;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-right:70px;
+}
+
+
+.template3 .ico1{
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  background: url(../../img/ico1AA9.png) no-repeat top;
+  background-size: contain;
+  top: 60px;
+  left: 0;
+}
+
+.template3 .ico2{
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  background: url(../../img/ico2AA9.png) no-repeat top;
+  background-size: contain;
+  top: 216px;
+  right: 0;
+}
+
+.template3 .ico3{
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  background: url(../../img/ico3AA9.png) no-repeat top;
+  background-size: contain;
+  top: 353px;
+  left: 0;
+}
+
+.template3 .ico3x{
+  top: 390px;
+}
+
+.template3 .ico31x{
+  top: 398px;
+}
+
+.template3 .ico4{
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  background: url(../../img/ico4AA9.png) no-repeat top;
+  background-size: contain;
+  top: 520px;
+  right: 0;
+}
