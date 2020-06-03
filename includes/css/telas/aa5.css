@@ -228,12 +228,12 @@
 	background: #fff;
   border-radius: .4em;
   top: 25px;
-  right: -110px;
+  right: -140px;
   display: flex;
   justify-content: center;
   align-items: center;
   display: none;
-  width: 100px;
+  width: 120px;
   padding: 10px;
 }
 

@@ -164,10 +164,10 @@
 
             <nivel id="menuG210" titulo="Airport Companion">
                 <nivel id="aa88" titulo="" cartoes='0' path="aa88/index.html" avancar="2"  transicao="alpha" setas="direita"   />
-                <nivel id="aa89" titulo="" cartoes='1,2,3,5' path="aa89/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa89" titulo="" cartoes='2,3' path="aa89/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
                 <nivel id="aa90" titulo="" cartoes='0' path="aa90/index.html" avancar="-1"  transicao="alpha" setas="ambas"   />
                 <nivel id="aa91" titulo="" cartoes='0' path="aa91/index.html" avancar="2"  transicao="alpha" setas="ambas"   /> 
-                <nivel id="aa92" titulo="" cartoes='1,2,3,5' path="aa92/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
+                <nivel id="aa92" titulo="" cartoes='2,3' path="aa92/index.html" avancar="2"  transicao="alpha" setas="ambas"   />
                 <nivel id="aa93" titulo="" cartoes='0' path="aa93/index.html" avancar="-1"  transicao="alpha" setas="esquerda"   />         
             </nivel>
 

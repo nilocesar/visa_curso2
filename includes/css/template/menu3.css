@@ -204,6 +204,14 @@
   text-align: center;
 }
 
+.containerMENU3 .item1 .speech-bubble {
+  top: -120px;
+}
+
+.containerMENU3 .item2 .speech-bubble {
+  top: -80px;
+}
+
 .containerMENU3 .item .speech-bubble:after
 {
 	content: '';
