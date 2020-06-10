@@ -1,55 +1,55 @@
 <script>
-        window["aa145"] = {
-            indice: "aa145",
-            status: false
-        }
-    
-        $("body").on('navegacaoComplete', function() {
-    
-            if ((course.config[course.indice].id).toUpperCase() == ("aa145").toUpperCase()) {
-    
-                var _tela = window[course.config[course.indice].id];
-                var _containerTela = $(".container" + (_tela.indice).toUpperCase());
-    
-                //posiciona o elemento com base no tamanho real da imagem de fundo COVER
-                _containerTela.find(".posicionar").positionCSS({
-                    img_H: course.height,
-                    img_W: course.width
-                });
-    
-        
-    
-                if (_tela.status == false) {
-                    _tela.status = true;
-    
-    
-    
-                } else {
-    
-                }
+    window["aa145"] = {
+        indice: "aa145",
+        status: false
+    }
+
+    $("body").on('navegacaoComplete', function() {
+
+        if ((course.config[course.indice].id).toUpperCase() == ("aa145").toUpperCase()) {
+
+            var _tela = window[course.config[course.indice].id];
+            var _containerTela = $(".container" + (_tela.indice).toUpperCase());
+
+            //posiciona o elemento com base no tamanho real da imagem de fundo COVER
+            _containerTela.find(".posicionar").positionCSS({
+                img_H: course.height,
+                img_W: course.width
+            });
+
+
+
+            if (_tela.status == false) {
+                _tela.status = true;
+
+
+
+            } else {
+
             }
-        })
-    </script>
-    
-    
-    <div class="template4 containerAA145">
-    
-        <div class="fundo posicionar animated fadeIn delay0_2" px="0" py="85"> 
-            <img src="includes/img/tela127.jpg" alt="">
-        </div>
-    
-        <div class="texto posicionar branco animated fadeIn delay0_4" px="40" py="150">
-            <div>
-                <div class="tx animated fadeInRight delay0_4">
-                    SEGURO PARA ATRASO DE BAGAGEM
-                </div>
-                <div class="size22 light pb10 animated fadeInRight delay0_6">
-                    Desembarcar em outra cidade ou país e ter de esperar algumas 
-                    horas (ou dias) para abrir as malas está na lista das maiores 
-                    decepções do mundo. Para diminuir esse incômodo, o cliente 
-                    pode contar com cobertura para despesas com itens de higiene e vestuário.
-                </div>
+        }
+    })
+</script>
+
+
+<div class="template4 containerAA145">
+
+    <div class="fundo posicionar animated fadeIn delay0_2" px="0" py="85">
+        <img src="includes/img/tela127.jpg" alt="">
+    </div>
+
+    <div class="texto posicionar branco animated fadeIn delay0_4" px="40" py="150">
+        <div>
+            <div class="icoX">
+                <div class="ico ico11 animated zoomIn delay0_4"></div>
+            </div>
+            <div class="tx animated fadeInRight delay0_4">
+                SEGURO PARA ATRASO <br>DE BAGAGEM
+            </div>
+            <div class="size22 light pb10 animated fadeInRight delay0_6">
+                Desembarcar em outra cidade ou país e ter de esperar algumas horas (ou dias) para abrir as malas está na lista das maiores decepções do mundo. Para diminuir esse incômodo, o cliente pode contar com cobertura para despesas com itens de higiene e vestuário.
             </div>
         </div>
-        
     </div>
+
+</div>

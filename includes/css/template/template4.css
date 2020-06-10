@@ -10,97 +10,259 @@
     z-index: 99999999;
 }
 
-.template4 .fundo{
-  position: absolute;
-  /* background: url(../../img/tela11.jpg) no-repeat center;
+.template4 .fundo {
+    position: absolute;
+    /* background: url(../../img/tela11.jpg) no-repeat center;
   background-size: cover; */
-  width: 1366px;
-  height: 662px;
+    width: 1366px;
+    height: 662px;
 }
 
-.template4 .fundo img{
-  position: relative;
-  width: 100%;
-  height: 100%;
+.template4 .fundo img {
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
-.template4 .texto{
-  position: absolute;
-  width: 500px;
-  height: 550px;
-  padding: 30px;
-  overflow: hidden;
-  background-color: #003EA9;
-  box-shadow: 3px 6px 11px #00000057;
-  border-bottom: 10px solid #ffc359;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.template4 .texto {
+    position: absolute;
+    width: 500px;
+    height: 550px;
+    padding: 30px;
+    overflow: hidden;
+    background-color: #003EA9;
+    box-shadow: 3px 6px 11px #00000057;
+    border-bottom: 10px solid #ffc359;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.template4 .texto2{
-  position: absolute;
-  width: 800px;
-  height: 350px;
-  padding: 30px;
-  overflow: hidden;
-  background-color: #003EA9;
-  box-shadow: 3px 6px 11px #00000057;
-  border-bottom: 10px solid #ffc359;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.template4 .tx {
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
 }
 
-.template4 .icoVisa{
-  position: relative;
-  width: 110px;
-  height: 110px;
-  background: url(../../img/icoVisa2.svg) no-repeat top;
-  background-size: contain;
-  margin: 20px auto;
+.template4 .texto2 {
+    position: absolute;
+    width: 800px;
+    height: 350px;
+    padding: 30px;
+    overflow: hidden;
+    background-color: #003EA9;
+    box-shadow: 3px 6px 11px #00000057;
+    border-bottom: 10px solid #ffc359;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.template4 .circuloAA{
-  position: relative;
-  width: 100px;
-  height: 100px;
-  /* background: url(../../img/circuloAA17.png) no-repeat top;
+.template4 .icoVisa {
+    position: relative;
+    width: 110px;
+    height: 110px;
+    background: url(../../img/icoVisa2.svg) no-repeat top;
+    background-size: contain;
+    margin: 20px auto;
+}
+
+.template4 .circuloAA {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    /* background: url(../../img/circuloAA17.png) no-repeat top;
   background-size: contain; */
-  margin: 20px auto;
+    margin: 20px auto;
 }
 
-.template4 .circuloAA img{
-  position: relative;
-  width: 100px;
-  height: 100px;
+.template4 .circuloAA img {
+    position: relative;
+    width: 100px;
+    height: 100px;
 }
 
-.template4 .menu{
-  position: relative;
-  margin: 20px auto;
-  width: 200px;
-  border-radius: 10px;
-  background: #ffc359;
-  color: rgb(52, 51, 51);
-  padding: 5px;
-  cursor: pointer;
-  text-align: center;
+.template4 .menu {
+    position: relative;
+    margin: 20px auto;
+    width: 200px;
+    border-radius: 10px;
+    background: #ffc359;
+    color: rgb(52, 51, 51);
+    padding: 5px;
+    cursor: pointer;
+    text-align: center;
 }
 
-.template4 .menu i{
-  padding-right: 10px;
-  margin-top: 5px;
+.template4 .menu i {
+    padding-right: 10px;
+    margin-top: 5px;
 }
 
-.template4 .menu:hover{
-  background: #e4a73d;
+.template4 .menu:hover {
+    background: #e4a73d;
 }
 
-.template4 .satelitetIco{
-  width: 60px;
-  height: 60px;
-  background: url('../../img/sateliteIco2.png') no-repeat center;
-  background-size: contain;
-  margin: 0 auto;
+.template4 .satelitetIco {
+    width: 60px;
+    height: 60px;
+    background: url('../../img/sateliteIco2.png') no-repeat center;
+    background-size: contain;
+    margin: 0 auto;
+}
+
+.template4 .icoX {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: 5px solid #ffc359;
+    box-shadow: 3px 6px 11px #00000057;
+}
+
+.template4 .ico {
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.template4 .icoInf {
+    width: 70px;
+    height: 70px;
+}
+
+.template4 .ico1 {
+    background: url('../../img/01ico.svg') no-repeat center;
+    background-size: contain;
+}
+
+.template4 .ico2 {
+    background: url('../../img/02ico.svg') no-repeat center;
+    background-size: contain;
+}
+
+.template4 .ico3 {
+    background: url('../../img/03ico.svg') no-repeat center;
+    background-size: contain;
+}
+
+.template4 .ico4 {
+    background: url('../../img/04ico.svg') no-repeat center;
+    background-size: contain;
+}
+
+.template4 .ico5 {
+    background: url('../../img/05ico.svg') no-repeat center;
+    background-size: contain;
+}
+
+.template4 .ico6 {
+    background: url('../../img/06ico.svg') no-repeat center;
+    background-size: contain;
+}
+
+.template4 .ico7 {
+    background: url('../../img/07ico.svg') no-repeat center;
+    background-size: contain;
+}
+
+.template4 .ico8 {
+    background: url('../../img/08ico.svg') no-repeat center;
+    background-size: contain;
+}
+
+.template4 .ico9 {
+    background: url('../../img/09ico.svg') no-repeat center;
+    background-size: contain;
+}
+
+.template4 .ico10 {
+    background: url('../../img/10ico.svg') no-repeat center;
+    background-size: contain;
+}
+
+.template4 .ico11 {
+    background: url('../../img/11ico.svg') no-repeat center;
+    background-size: contain;
+}
+
+.template4 .ico12 {
+    background: url('../../img/12ico.svg') no-repeat center;
+    background-size: contain;
+}
+
+.template4 .ico13 {
+    background: url('../../img/13ico.svg') no-repeat center;
+    background-size: contain;
+}
+
+.template4 .ico14 {
+    background: url('../../img/14ico.svg') no-repeat center;
+    background-size: contain;
+}
+
+.template4 .ico15 {
+    background: url('../../img/15ico.svg') no-repeat center;
+    background-size: contain;
+}
+
+.template4 .ico16 {
+    background: url('../../img/16ico.svg') no-repeat center;
+    background-size: contain;
+}
+
+.template4 .ico17 {
+    background: url('../../img/17ico.svg') no-repeat center;
+    background-size: contain;
+}
+
+.template4 .ico18 {
+    background: url('../../img/18ico.svg') no-repeat center;
+    background-size: contain;
+}
+
+.template4 .ico19 {
+    background: url('../../img/19ico.svg') no-repeat center;
+    background-size: contain;
+}
+
+.template4 .ico20 {
+    background: url('../../img/20ico.svg') no-repeat center;
+    background-size: contain;
+}
+
+.template4 .ico21 {
+    background: url('../../img/21ico.svg') no-repeat center;
+    background-size: contain;
+}
+
+.template4 .ico22 {
+    background: url('../../img/22ico.svg') no-repeat center;
+    background-size: contain;
+}
+
+.template4 .ico23 {
+    background: url('../../img/23ico.svg') no-repeat center;
+    background-size: contain;
+}
+
+.template4 .ico24 {
+    background: url('../../img/24ico.svg') no-repeat center;
+    background-size: contain;
+}
+
+.template4 .ico25 {
+    background: url('../../img/25ico.svg') no-repeat center;
+    background-size: contain;
+}
+
+.template4 .ico26 {
+    background: url('../../img/26ico.svg') no-repeat center;
+    background-size: contain;
 }

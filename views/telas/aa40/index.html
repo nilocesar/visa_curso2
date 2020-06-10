@@ -1,58 +1,56 @@
 <script>
-        window["aa40"] = {
-            indice: "aa40",
-            status: false
-        }
-    
-        $("body").on('navegacaoComplete', function() {
-    
-            if ((course.config[course.indice].id).toUpperCase() == ("aa40").toUpperCase()) {
-    
-                var _tela = window[course.config[course.indice].id];
-                var _containerTela = $(".container" + (_tela.indice).toUpperCase());
-    
-                //posiciona o elemento com base no tamanho real da imagem de fundo COVER
-                _containerTela.find(".posicionar").positionCSS({
-                    img_H: course.height,
-                    img_W: course.width
-                });
-    
-        
-    
-                if (_tela.status == false) {
-                    _tela.status = true;
-    
-    
-    
-                } else {
-    
-                }
+    window["aa40"] = {
+        indice: "aa40",
+        status: false
+    }
+
+    $("body").on('navegacaoComplete', function() {
+
+        if ((course.config[course.indice].id).toUpperCase() == ("aa40").toUpperCase()) {
+
+            var _tela = window[course.config[course.indice].id];
+            var _containerTela = $(".container" + (_tela.indice).toUpperCase());
+
+            //posiciona o elemento com base no tamanho real da imagem de fundo COVER
+            _containerTela.find(".posicionar").positionCSS({
+                img_H: course.height,
+                img_W: course.width
+            });
+
+
+
+            if (_tela.status == false) {
+                _tela.status = true;
+
+
+
+            } else {
+
             }
-        })
-    </script>
-    
-    
-    <div class="template4 containerAA40">
-    
-        <div class="fundo posicionar animated fadeIn delay0_2" px="0" py="85"> 
-            <img src="includes/img/tela34.jpg" alt="">
-        </div>
-    
-        <div class="texto posicionar branco animated fadeIn delay0_4" px="40" py="150">
-            <div>
-                <div class="tx animated fadeInRight delay0_4">
-                    Visa Concierge
-                </div>
-                <div class="size22 light pb10 animated fadeInRight delay0_6">
-                    Comprar os ingressos do show mais disputado da temporada. 
-                    Agendar reuniões de emergência a qualquer momento. Reservar
-                    mesa no restaurante mais estrelado da cidade. Com Visa Concierge, 
-                    o cliente dos cartões Visa Platinum e Visa Infinite tem à 
-                    sua disposição, 24 horas por dia x 7 dias por semana, 
-                    um assistente pessoal para ajudá-lo nas mais diferentes 
-                    demandas, sem custo adicional. 
-                </div>
+        }
+    })
+</script>
+
+
+<div class="template4 containerAA40">
+
+    <div class="fundo posicionar animated fadeIn delay0_2" px="0" py="85">
+        <img src="includes/img/tela34.jpg" alt="">
+    </div>
+
+    <div class="texto posicionar branco animated fadeIn delay0_4" px="40" py="150">
+        <div>
+            <div class="icoX">
+                <div class="ico ico16 animated zoomIn delay0_4"></div>
+            </div>
+            <div class="tx animated fadeInRight delay0_4">
+                Visa Concierge
+            </div>
+            <div class="size22 light pb10 animated fadeInRight delay0_6">
+                Comprar os ingressos do show mais disputado da temporada. Agendar reuniões de emergência a qualquer momento. Reservar mesa no restaurante mais estrelado da cidade. Com Visa Concierge, o cliente dos cartões Visa Platinum e Visa Infinite tem à sua disposição,
+                24 horas por dia x 7 dias por semana, um assistente pessoal para ajudá-lo nas mais diferentes demandas, sem custo adicional.
             </div>
         </div>
-        
     </div>
+
+</div>

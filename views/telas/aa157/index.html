@@ -1,54 +1,56 @@
 <script>
-        window["aa157"] = {
-            indice: "aa157",
-            status: false
-        }
-    
-        $("body").on('navegacaoComplete', function() {
-    
-            if ((course.config[course.indice].id).toUpperCase() == ("aa157").toUpperCase()) {
-    
-                var _tela = window[course.config[course.indice].id];
-                var _containerTela = $(".container" + (_tela.indice).toUpperCase());
-    
-                //posiciona o elemento com base no tamanho real da imagem de fundo COVER
-                _containerTela.find(".posicionar").positionCSS({
-                    img_H: course.height,
-                    img_W: course.width
-                });
-    
-        
-    
-                if (_tela.status == false) {
-                    _tela.status = true;
-    
-    
-    
-                } else {
-    
-                }
+    window["aa157"] = {
+        indice: "aa157",
+        status: false
+    }
+
+    $("body").on('navegacaoComplete', function() {
+
+        if ((course.config[course.indice].id).toUpperCase() == ("aa157").toUpperCase()) {
+
+            var _tela = window[course.config[course.indice].id];
+            var _containerTela = $(".container" + (_tela.indice).toUpperCase());
+
+            //posiciona o elemento com base no tamanho real da imagem de fundo COVER
+            _containerTela.find(".posicionar").positionCSS({
+                img_H: course.height,
+                img_W: course.width
+            });
+
+
+
+            if (_tela.status == false) {
+                _tela.status = true;
+
+
+
+            } else {
+
             }
-        })
-    </script>
-    
-    
-    <div class="template4 containerAA157">
-    
-        <div class="fundo posicionar animated fadeIn delay0_2" px="0" py="85"> 
-            <img src="includes/img/tela127.jpg" alt="">
-        </div>
-    
-        <div class="texto posicionar branco animated fadeIn delay0_4" px="40" py="150">
-            <div>
-                <div class="tx animated fadeInRight delay0_4">
-                    SEGURO PARA VEÍCULO <br>DE LOCADORA
-                </div>
-                <div class="size22 light pb10 animated fadeInRight delay0_6">
-                    Viajar para outra cidade ou país, alugar um carro e ter problemas com ele. Cliente Visa que passa por
-                    esse pesadelo tem acesso a um seguro que pode proteger tanto o veículo alugado como os itens
-                    comprados com o cartão Visa e deixados <br>dentro dele.
-                </div>
+        }
+    })
+</script>
+
+
+<div class="template4 containerAA157">
+
+    <div class="fundo posicionar animated fadeIn delay0_2" px="0" py="85">
+        <img src="includes/img/tela127.jpg" alt="">
+    </div>
+
+    <div class="texto posicionar branco animated fadeIn delay0_4" px="40" py="150">
+        <div>
+            <div class="icoX">
+                <div class="ico ico7 animated zoomIn delay0_4"></div>
+            </div>
+            <div class="tx animated fadeInRight delay0_4">
+                SEGURO PARA VEÍCULO <br>DE LOCADORA
+            </div>
+            <div class="size22 light pb10 animated fadeInRight delay0_6">
+                Viajar para outra cidade ou país, alugar um carro e ter problemas com ele. Cliente Visa que passa por esse pesadelo tem acesso a um seguro que pode proteger tanto o veículo alugado como os itens comprados com o cartão Visa e deixados <br>dentro
+                dele.
             </div>
         </div>
-        
     </div>
+
+</div>

@@ -341,7 +341,7 @@
     </nivel>
     <info>
         
-        <debug>false</debug>
+        <debug>true</debug>
         <cache>true</cache>
         <retornar>nao</retornar>
         <width>1366</width>

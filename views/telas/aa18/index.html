@@ -1,56 +1,56 @@
 <script>
-        window["aa18"] = {
-            indice: "aa18",
-            status: false
-        }
-    
-        $("body").on('navegacaoComplete', function() {
-    
-            if ((course.config[course.indice].id).toUpperCase() == ("aa18").toUpperCase()) {
-    
-                var _tela = window[course.config[course.indice].id];
-                var _containerTela = $(".container" + (_tela.indice).toUpperCase());
-    
-                //posiciona o elemento com base no tamanho real da imagem de fundo COVER
-                _containerTela.find(".posicionar").positionCSS({
-                    img_H: course.height,
-                    img_W: course.width
-                });
-    
-        
-    
-                if (_tela.status == false) {
-                    _tela.status = true;
-    
-    
-    
-                } else {
-    
-                }
+    window["aa18"] = {
+        indice: "aa18",
+        status: false
+    }
+
+    $("body").on('navegacaoComplete', function() {
+
+        if ((course.config[course.indice].id).toUpperCase() == ("aa18").toUpperCase()) {
+
+            var _tela = window[course.config[course.indice].id];
+            var _containerTela = $(".container" + (_tela.indice).toUpperCase());
+
+            //posiciona o elemento com base no tamanho real da imagem de fundo COVER
+            _containerTela.find(".posicionar").positionCSS({
+                img_H: course.height,
+                img_W: course.width
+            });
+
+
+
+            if (_tela.status == false) {
+                _tela.status = true;
+
+
+
+            } else {
+
             }
-        })
-    </script>
-    
-    
-    <div class="template4 containerAA18">
-    
-        <div class="fundo posicionar animated fadeIn delay0_2" px="0" py="85"> 
-            <img src="includes/img/tela12.jpg" alt="">
-        </div>
-    
-        <div class="texto posicionar branco animated fadeIn delay0_4" px="140" py="150">
-            <div>
-                <div class="tx animated fadeInRight delay0_4">
-                    PROTEÇÃO DE PREÇO
-                </div>
-                <div class="size22 light pb10 animated fadeInRight delay0_6">
-                    Imagina comprar um produto e encontrar, logo em seguida, 
-                    o mesmo item a um preço menor num anúncio impresso ou online? 
-                    É daquelas situações em que ficamos bem chateados, sempre. 
-                    Mas não precisa ser assim. Para produtos elegíveis pagos com Visa, 
-                    a diferença de preço pode ser reembolsada. Dá para acreditar?
-                </div>
+        }
+    })
+</script>
+
+
+<div class="template4 containerAA18">
+
+    <div class="fundo posicionar animated fadeIn delay0_2" px="0" py="85">
+        <img src="includes/img/tela12.jpg" alt="">
+    </div>
+
+    <div class="texto posicionar branco animated fadeIn delay0_4" px="140" py="150">
+        <div>
+            <div class="icoX">
+                <div class="ico ico4 animated zoomIn delay0_4"></div>
+            </div>
+            <div class="tx animated fadeInRight delay0_4">
+                PROTEÇÃO DE PREÇO
+            </div>
+            <div class="size22 light pb10 animated fadeInRight delay0_6">
+                Imagina comprar um produto e encontrar, logo em seguida, o mesmo item a um preço menor num anúncio impresso ou online? É daquelas situações em que ficamos bem chateados, sempre. Mas não precisa ser assim. Para produtos elegíveis pagos com Visa, a diferença
+                de preço pode ser reembolsada. Dá para acreditar?
             </div>
         </div>
-        
     </div>
+
+</div>

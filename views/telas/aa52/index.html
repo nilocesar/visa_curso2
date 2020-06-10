@@ -1,56 +1,56 @@
 <script>
-        window["aa52"] = {
-            indice: "aa52",
-            status: false
-        }
-    
-        $("body").on('navegacaoComplete', function() {
-    
-            if ((course.config[course.indice].id).toUpperCase() == ("aa52").toUpperCase()) {
-    
-                var _tela = window[course.config[course.indice].id];
-                var _containerTela = $(".container" + (_tela.indice).toUpperCase());
-    
-                //posiciona o elemento com base no tamanho real da imagem de fundo COVER
-                _containerTela.find(".posicionar").positionCSS({
-                    img_H: course.height,
-                    img_W: course.width
-                });
-    
-        
-    
-                if (_tela.status == false) {
-                    _tela.status = true;
-    
-    
-    
-                } else {
-    
-                }
+    window["aa52"] = {
+        indice: "aa52",
+        status: false
+    }
+
+    $("body").on('navegacaoComplete', function() {
+
+        if ((course.config[course.indice].id).toUpperCase() == ("aa52").toUpperCase()) {
+
+            var _tela = window[course.config[course.indice].id];
+            var _containerTela = $(".container" + (_tela.indice).toUpperCase());
+
+            //posiciona o elemento com base no tamanho real da imagem de fundo COVER
+            _containerTela.find(".posicionar").positionCSS({
+                img_H: course.height,
+                img_W: course.width
+            });
+
+
+
+            if (_tela.status == false) {
+                _tela.status = true;
+
+
+
+            } else {
+
             }
-        })
-    </script>
-    
-    
-    <div class="template4 containerAA52">
-    
-        <div class="fundo posicionar animated fadeIn delay0_2" px="0" py="85"> 
-            <img src="includes/img/tela34.jpg" alt="">
-        </div>
-    
-        <div class="texto posicionar branco animated fadeIn delay0_4" px="40" py="150">
-            <div>
-                <div class="tx animated fadeInRight delay0_4">
-                    Sala Vip
-                </div>
-                <div class="size22 light pb10 animated fadeInRight delay0_6">
-                    O tempo de espera pelos voos não é perdido para quem é 
-                    Visa Infinite. Os clientes do cartão têm acesso a mais 
-                    de 1000 salas vips do programa Lounge Key espalhados 
-                    nos aeroportos mais movimentados do mundo. Com Visa é assim: 
-                    infinitas possibilidades antes e depois do embarque.
-                </div>
+        }
+    })
+</script>
+
+
+<div class="template4 containerAA52">
+
+    <div class="fundo posicionar animated fadeIn delay0_2" px="0" py="85">
+        <img src="includes/img/tela34.jpg" alt="">
+    </div>
+
+    <div class="texto posicionar branco animated fadeIn delay0_4" px="40" py="150">
+        <div>
+            <div class="icoX">
+                <div class="ico ico17 animated zoomIn delay0_4"></div>
+            </div>
+            <div class="tx animated fadeInRight delay0_4">
+                Sala Vip
+            </div>
+            <div class="size22 light pb10 animated fadeInRight delay0_6">
+                O tempo de espera pelos voos não é perdido para quem é Visa Infinite. Os clientes do cartão têm acesso a mais de 1000 salas vips do programa Lounge Key espalhados nos aeroportos mais movimentados do mundo. Com Visa é assim: infinitas possibilidades antes
+                e depois do embarque.
             </div>
         </div>
-        
     </div>
+
+</div>
