@@ -1,9 +1,10 @@
-define(['jquery', 'jquery_scorm', 'nicescroll', 'modernizr', 'imagesloaded', 'velocity', 'componentes_jquery', "transform2d_jquery", "transform3d_jquery", 
-"transit_jquery", "easing_jquery", 'detectmobilebrowser', 'highcharts', 'exporting', 'export_data', 'print', 'hammer', 'TweenMax','TimelineMax' , 'd3', "slick" ], function ($) {
+define(['jquery', 'jquery_scorm', 'nicescroll', 'modernizr', 'imagesloaded', 'velocity', 'componentes_jquery', "transform2d_jquery", "transform3d_jquery",
+    "transit_jquery", "easing_jquery", 'detectmobilebrowser', 'highcharts', 'exporting', 'export_data', 'print', 'TweenMax', 'TimelineMax', 'd3', "slick"
+], function($) {
 
     'use strict';
 
-    var course = function () {
+    var course = function() {
         var $public = {};
         var $private = {};
 
@@ -36,49 +37,19 @@ define(['jquery', 'jquery_scorm', 'nicescroll', 'modernizr', 'imagesloaded', 've
         $public.parentBody = null;
 
         $public.pageLoaderInit = 3; /// carrega 3 página inicialmente 
-        
-        
+
+
         $public.timeExercicio = 3;
 
 
-        $public.telasExce = [
-            {
-                "t": "aa1",
-                "a": 0
-            },
-            {
-                "t": "aa2",
-                "a": 0
-            },
-            {
-                "t": "aa5", // menu
-                "a": 0
-            },
-            // {
-            //     "t": "menu1", // ponto1 - visa
-            //     "a": 0
-            // },
-            // {
-            //     "t": "menu2", // compras
-            //     "a": 0
-            // },
-            // {
-            //     "t": "menu3", // compras
-            //     "a": 0
-            // },
-            // {
-            //     "t": "menu4", // compras
-            //     "a": 0
-            // },
-            // {
-            //     "t": "menu5", // compras
-            //     "a": 0
-            // },
-        ]; /// telas exceção de carregamento - elas já são carregadas na primeira remessa
+        $public.telasExce = [{
+            "t": "aa5", // menu
+            "a": 0
+        }]; /// telas exceção de carregamento - elas já são carregadas na primeira remessa
 
         $public.padraoALL = 0;
 
-    
+
 
         //=============================================================
         // PUBLIC FUNCTIONS
@@ -119,11 +90,11 @@ define(['jquery', 'jquery_scorm', 'nicescroll', 'modernizr', 'imagesloaded', 've
         $public.liberarNavegacao = function liberarNavegacao() {
             $public.getComponente("base").liberarNavegacao();
         }
-        
-        $public.callModal = function callModal( url , _containerTela ) {
-            $public.getComponente("base").callModal( url , _containerTela );
+
+        $public.callModal = function callModal(url, _containerTela) {
+            $public.getComponente("base").callModal(url, _containerTela);
         }
-        
+
         $public.carregamento = function carregamento() {
             $public.getComponente("carregamento").carregar();
         }
@@ -179,34 +150,34 @@ define(['jquery', 'jquery_scorm', 'nicescroll', 'modernizr', 'imagesloaded', 've
         $public.completeScorm = function completeScorm() {
             $public.getComponente("scorm").completeScorm();
         }
-        
+
         $public.resetSuspendata = function resetSuspendata() {
             $public.getComponente("scorm").resetSuspendata();
         }
 
-        
+
         $public.sair = function sair() {
             $public.getComponente("base").sair();
         }
 
         $public.prevTela = function prevTela(id) {
-             $public.getComponente("base").prev(parseInt(id.split("aa")[1]));
+            $public.getComponente("base").prev(parseInt(id.split("aa")[1]));
         }
 
         $public.nextTela = function nextTela(id) {
-             $public.getComponente("base").next(parseInt(id.split("aa")[1]));
+            $public.getComponente("base").next(parseInt(id.split("aa")[1]));
         }
 
         $public.retornoMenu = function retornoMenu(item) {
 
             $public.scorm_set_suspendData("controleMenu", item);
-            
+
             var _tela = 'AA5';
             var _indice = 0;
 
-            $.each( $public.config, function(indice,item){
+            $.each($public.config, function(indice, item) {
 
-                if( String(item.id).toUpperCase() == String(_tela).toUpperCase() ){
+                if (String(item.id).toUpperCase() == String(_tela).toUpperCase()) {
                     _indice = item.indice;
                 }
             });
@@ -220,14 +191,14 @@ define(['jquery', 'jquery_scorm', 'nicescroll', 'modernizr', 'imagesloaded', 've
 
         $public.retornosubMenu = function retornosubMenu(submenu, item) {
 
-            $public.scorm_set_suspendData("submenu" + submenu , item);
-            
-            var _tela = 'menu'+ submenu;
+            $public.scorm_set_suspendData("submenu" + submenu, item);
+
+            var _tela = 'menu' + submenu;
             var _indice = 0;
 
-            $.each( $public.config, function(indice,item){
+            $.each($public.config, function(indice, item) {
 
-                if( String(item.id).toUpperCase() == String(_tela).toUpperCase() ){
+                if (String(item.id).toUpperCase() == String(_tela).toUpperCase()) {
                     _indice = item.indice;
                 }
             });
@@ -248,9 +219,9 @@ define(['jquery', 'jquery_scorm', 'nicescroll', 'modernizr', 'imagesloaded', 've
         ////////////////////////////////
 
         $private.initXML = function initXML() {
-            require(["utils/xml/xmlLoader"], function (module) {
+            require(["utils/xml/xmlLoader"], function(module) {
                 module.init($public);
-                module.create(function () {
+                module.create(function() {
                     $private.initScorm();
                 });
             });
@@ -262,9 +233,9 @@ define(['jquery', 'jquery_scorm', 'nicescroll', 'modernizr', 'imagesloaded', 've
 
 
         $private.initScorm = function initScorm() {
-            require(["utils/scorm/scorm"], function (module) {
+            require(["utils/scorm/scorm"], function(module) {
                 module.init($public);
-                module.create(function () {
+                module.create(function() {
                     $private.initBase();
                     $private.initSpeed();
                 });
@@ -279,7 +250,7 @@ define(['jquery', 'jquery_scorm', 'nicescroll', 'modernizr', 'imagesloaded', 've
 
         $private.initSpeed = function initSpeed() {
             if ($public.speed) {
-                require(["componentes/speed"], function (module) {
+                require(["componentes/speed"], function(module) {
                     module.init($public);
                 });
             }
@@ -291,7 +262,7 @@ define(['jquery', 'jquery_scorm', 'nicescroll', 'modernizr', 'imagesloaded', 've
         ////////////////////////////////
 
         $private.initBase = function initBase() {
-            require(["componentes/base"], function (module) {
+            require(["componentes/base"], function(module) {
                 module.init($public);
                 $public.setComponente("base", module);
                 $private.initNav();
@@ -300,23 +271,23 @@ define(['jquery', 'jquery_scorm', 'nicescroll', 'modernizr', 'imagesloaded', 've
 
         $private.initNav = function initNav() {
 
-            require(["utils/navegacao/carregamento"], function (module) {
+            require(["utils/navegacao/carregamento"], function(module) {
                 module.init($public);
                 $public.setComponente("carregamento", module);
             });
 
-            require(["utils/navegacao/motion"], function (module) {
+            require(["utils/navegacao/motion"], function(module) {
                 module.init($public);
                 $public.setComponente("motion", module);
             });
 
-            require(["utils/navegacao/navegacao"], function (module) {
+            require(["utils/navegacao/navegacao"], function(module) {
                 module.init($public);
                 module.create();
                 $public.setComponente("navegacao", module);
             });
 
-            require(["componentes/info"], function (module) {
+            require(["componentes/info"], function(module) {
                 module.init($public);
                 module.create();
                 $public.setComponente("info", module);
@@ -333,7 +304,7 @@ define(['jquery', 'jquery_scorm', 'nicescroll', 'modernizr', 'imagesloaded', 've
             //Iniciar após o carregamento inicial
             $("body").attr("nav", "init");
             $("body").trigger("navegacao");
-            
+
         }
 
 

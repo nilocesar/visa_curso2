@@ -1,7 +1,7 @@
-define(['jquery', 'imagesloaded'], function ($) {
+define(['jquery', 'imagesloaded'], function($) {
     'use strict';
 
-    var carregamento = function () {
+    var carregamento = function() {
         var $public = {};
         var $private = {};
         var $parent = {};
@@ -12,10 +12,26 @@ define(['jquery', 'imagesloaded'], function ($) {
         var $ac = 0;
         var $init = true;
         var $complete = false;
+        var $telaExc = false;
 
 
         $public.init = function init(parent, callNav) {
             $parent = parent;
+
+            $("body").on("navegacao", function() {
+
+                var _indice = $parent.indice;
+
+                if ($("body").attr("nav") != 'init') {
+
+                    if (!$(".telaContainer" + _indice).attr("carrregamentoCompleto")) {
+                        window.parent.iframe.preloaderInit();
+                        $telaExc = true;
+                        $private.loaderTela(_indice);
+                    }
+                }
+
+            });
         };
 
         $public.carregar = function carregar() {
@@ -29,7 +45,7 @@ define(['jquery', 'imagesloaded'], function ($) {
             $esq = _indice;
             $dir = _indice;
 
-            $.each(_config, function (index, value) {
+            $.each(_config, function(index, value) {
 
                 if (value.indice == _indice)
                     _indiceID = value.id;
@@ -114,13 +130,13 @@ define(['jquery', 'imagesloaded'], function ($) {
             }
 
             var _config = $parent.config;
-            $.each(_config, function (index, value) {
+            $.each(_config, function(index, value) {
 
                 if (value.indice == indice) {
 
                     if (!$(".telaContainer" + value.indice).attr("carrregamentoCompleto")) {
                         var _path = $parent.pathTelas + value.path;
-                        $("#" + value.id).load(_path, function () {
+                        $("#" + value.id).load(_path, function() {
 
                             var _indice = $(this).attr("indice");
                             $private.loaderImg(indice, value);
@@ -136,7 +152,7 @@ define(['jquery', 'imagesloaded'], function ($) {
             //
             var _containerImg = [];
 
-            $(".telaContainer" + value.indice).find("*").each(function (indice, item) {
+            $(".telaContainer" + value.indice).find("*").each(function(indice, item) {
 
                 if ($(item).css("background-image") != "none") {
                     if (_containerImg.indexOf($(item).css("background-image")) == -1) {
@@ -150,21 +166,21 @@ define(['jquery', 'imagesloaded'], function ($) {
 
             $(".imgloaded" + value.indice).imagesLoaded({
                 background: true
-            }).always(function (instance) {
+            }).always(function(instance) {
 
-            }).done(function (instance) {
+            }).done(function(instance) {
                 //console.log("Carregamento normal.")
                 $private.loaderRemaining(indice, value);
-            }).fail(function () {
+            }).fail(function() {
                 console.log("carregamento incorreto - erro imagem");
                 $private.loaderRemaining(indice, value);
-            }).progress(function (instance, image) {
+            }).progress(function(instance, image) {
                 var result = image.isLoaded ? 'loaded' : 'broken';
                 //console.log('image INIT is ' + result + ' for ' + image.img.src);
             });
 
             ///Garante o carregamento da tela caso dê algum problema nas imagens
-            setTimeout(function () {
+            setTimeout(function() {
 
                 if (!$(".telaContainer" + value.indice).attr("carrregamentoCompleto")) {
                     $private.loaderRemaining(indice, value);
@@ -185,40 +201,54 @@ define(['jquery', 'imagesloaded'], function ($) {
         $private.controlePreloader = function controlePreloader() {
             $contador += 1;
             var _excLength = $parent.telasExce.length;
-              
+
             if ($parent.config.length < ($parent.pageLoaderInit * 2) + _excLength) {
                 if ($contador == ($parent.pageLoaderInit * 2)) {
-                    if(!$complete){
-                        $parent.carregamentoCompleto();
-                        $complete = true;
-                    }   
-                }
-                
-                if( $contador == $parent.config.length )
-                {
-                    if(!$complete){
+                    if (!$complete) {
                         $parent.carregamentoCompleto();
                         $complete = true;
                     }
                 }
-                    
-                
+
+                if ($contador == $parent.config.length) {
+                    if (!$complete) {
+                        $parent.carregamentoCompleto();
+                        $complete = true;
+                    }
+                }
+
+
             } else {
-                
+
                 // Carrega o dobro de telas consideradas + as telas de exceções
                 if ($contador == ($parent.pageLoaderInit * 2) + _excLength) {
-                    if(!$complete){
+                    if (!$complete) {
                         $parent.carregamentoCompleto();
                         $complete = true;
                     }
                 }
-                
-                if( $contador == $parent.config.length ){
-                    if(!$complete){
+
+                if ($contador == $parent.config.length) {
+                    if (!$complete) {
                         $parent.carregamentoCompleto();
                         $complete = true;
                     }
                 }
+            }
+
+
+            if ($telaExc) {
+
+                setTimeout(function() {
+                    $("body").trigger("navegacaoComplete");
+                }, 1000 * 1);
+
+                setTimeout(function() {
+                    window.parent.iframe.preloaderComplete();
+                    console.log('loading exception screen');
+                }, 1000 * 1.6);
+
+                $telaExc = false;
             }
         }
 

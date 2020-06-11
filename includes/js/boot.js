@@ -1,6 +1,6 @@
 var course = course || {};
 var PATH_CONFIG = "./data.xml";
-(function (doc, undefined) {
+(function(doc, undefined) {
     'use strict';
     //
     require.config({
@@ -22,7 +22,6 @@ var PATH_CONFIG = "./data.xml";
             exporting: "vendor/exporting",
             export_data: "vendor/export-data",
             print: "vendor/jQuery.print.min",
-            hammer: "vendor/hammer.min",
             TweenLite: "vendor/TweenLite.min",
             TweenMax: "vendor/TweenMax.min",
             TimelineMax: "vendor/TimelineMax.min",
@@ -47,9 +46,9 @@ var PATH_CONFIG = "./data.xml";
         }
     });
 
-    require(['jquery'], function ($) {
-        require(['course'], function (_course) {
-            $(function () {
+    require(['jquery'], function($) {
+        require(['course'], function(_course) {
+            $(function() {
                 course = _course;
                 course.setCourse('PATH_CONFIG', PATH_CONFIG).init();
             });

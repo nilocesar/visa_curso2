@@ -1,8 +1,8 @@
-define(['jquery', 'jquery_scorm'], function ($) {
+define(['jquery', 'jquery_scorm'], function($) {
 
     'use strict';
 
-    var iframe = function () {
+    var iframe = function() {
         var $public = {};
         var $private = {};
 
@@ -36,6 +36,10 @@ define(['jquery', 'jquery_scorm'], function ($) {
             $private.initScorm();
 
         };
+
+        $public.preloaderInit = function preloaderInit() {
+            document.getElementById("loading").style.display = "block";
+        }
 
         $public.preloaderComplete = function preloaderComplete() {
             document.getElementById("loading").style.display = "none";
@@ -136,9 +140,9 @@ define(['jquery', 'jquery_scorm'], function ($) {
 
         $private.initScorm = function initScorm() {
 
-            require(["iframe/vendor/scorm"], function (module) {
+            require(["iframe/vendor/scorm"], function(module) {
                 module.init($public);
-                module.create(function () {
+                module.create(function() {
                     $private.initXML();
                 });
 
@@ -161,30 +165,30 @@ define(['jquery', 'jquery_scorm'], function ($) {
                 // o tipo de dados que é xml
                 dataType: "xml",
                 // antes de enviar loga "Enviando"
-                beforeSend: function () {
+                beforeSend: function() {
                     //console.log('Enviando');
                 },
                 // se terminar com sucesso loga o retorno
-                success: function (xml) {
+                success: function(xml) {
 
-                    $(xml).find('info').each(function () {
-                        $public.width = Number( $(this).find('width').text() );
-                        $public.height = Number( $(this).find('height').text() );
-                        
+                    $(xml).find('info').each(function() {
+                        $public.width = Number($(this).find('width').text());
+                        $public.height = Number($(this).find('height').text());
+
                         //
                         $private.initIframe();
                     });
-                    
-                    $(xml).find('info').find('compilador').each(function () {
+
+                    $(xml).find('info').find('compilador').each(function() {
                         $public.resize = ($private.filtroResposta($(this).find('resize').text()));
-                        
-                        if( $public.resize )
+
+                        if ($public.resize)
                             $private.resizeInit();
                     })
 
                 }
             });
-            
+
         }
 
 
@@ -196,9 +200,9 @@ define(['jquery', 'jquery_scorm'], function ($) {
             $private.dataInit();
 
 
-            $(window).resize(function () {
+            $(window).resize(function() {
                 clearTimeout($.data(this, 'resizeTimer'));
-                $.data(this, 'resizeTimer', setTimeout(function () {
+                $.data(this, 'resizeTimer', setTimeout(function() {
                     $private.dataInit();
                 }, 200));
             });
@@ -240,7 +244,7 @@ define(['jquery', 'jquery_scorm'], function ($) {
             $box.css("margin-top", (_h * scale) / 2 * -1);
 
         }
-        
+
         $private.filtroResposta = function filtroResposta(_resp) {
             var _termo = String(_resp);
 

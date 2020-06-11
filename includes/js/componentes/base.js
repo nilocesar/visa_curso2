@@ -146,9 +146,6 @@ define(['jquery'], function($) {
 
         $private.controleNavBase = function controleNavBase() {
 
-            $parent.ajudaIndice = 0;
-            $parent.calculadoraIndice = 0;
-
             $("body").on('navegacaoComplete', function() {
                 var _indice = $parent.indice;
                 var _config = $parent.config;
@@ -167,7 +164,7 @@ define(['jquery'], function($) {
                 var _heightTop = parseInt($('.topBase').css("height"));
                 $('.telaBase').css("height", window.innerHeight - _heightTop);
 
-            })
+            });
 
         }
 
@@ -244,13 +241,13 @@ define(['jquery'], function($) {
             var _custom = page.custom;
             var _container = $(".container" + id);
 
-            if (_custom == 0) {
-
+            if (!_container.find(".baseCustom").attr('interface')) {
                 page.custom = 1;
                 _container.append("<div class='faqCustom'></div>");
                 _container.find(".faqCustom").load("views/interface/faq/index.html", function() {
                     _container.prepend("<div class='baseCustom'></div>");
                     _container.find(".baseCustom").load("views/interface/custom/index.html", function() {
+                        _container.find(".baseCustom").attr('interface', 1);
                         $private.controleCustom();
                         $private.verificarStatusSetas();
                         $private.verificarConteudo();
