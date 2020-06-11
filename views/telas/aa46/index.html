@@ -22,6 +22,12 @@
             if (_tela.status == false) {
                 _tela.status = true;
 
+                _containerTela.find(".btnImportante").on('click', function() {
+                    _containerTela.find(".pop").css('display', 'flex');
+                });
+                _containerTela.find(".closeX").on('click', function() {
+                    _containerTela.find(".pop").css('display', 'none');
+                });
 
 
             } else {
@@ -49,7 +55,25 @@
             <div class="size22 light pb10 animated fadeInRight delay0_6">
                 Aproveitar um portfólio de hotéis escolhido a dedo, que oferecem serviços especiais. É possível?<br><br> Com Visa Platinum e Visa Infinite, sim. Os clientes desses cartões têm acesso a uma seleção especial de hotéis e condições especiais.
             </div>
+            <div class="animated fadeIn delay1_0">
+                <div class="btnImportante size30 animated infinite pulse"></div>
+            </div>
+            <!-- o txt esta no css -->
         </div>
     </div>
+
+    <div class="pop posicionar animated fadeIn delay0_2" px="0" py="85">
+        <div class="popInit size18 azulEscuro">
+            <div class="baseClose">
+                <div class="closeX">
+                    <i class="far fa-times-circle size40 animated zoomIn delay1_2"></i>
+                </div>
+            </div>
+            <div>
+                Cobertura sujeita a termos e condições aplicáveis, descritos em <a href="https://www.visaluxuryhotelcollection.com.br/" target="_blank">www.visaluxuryhotelcollection.com.br</a>
+            </div>
+        </div>
+    </div>
+
 
 </div>

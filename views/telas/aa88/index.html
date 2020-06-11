@@ -22,7 +22,12 @@
             if (_tela.status == false) {
                 _tela.status = true;
 
-
+                _containerTela.find(".btnImportante").on('click', function() {
+                    _containerTela.find(".pop").css('display', 'flex');
+                });
+                _containerTela.find(".closeX").on('click', function() {
+                    _containerTela.find(".pop").css('display', 'none');
+                });
 
             } else {
 
@@ -49,6 +54,22 @@
             <div class="size22 light pb10 animated fadeInRight delay0_6">
                 Aeroportos são verdadeiras cidades, com produtos, serviços e experiências incríveis e muitas vezes desconhecidas. Pensando nisso, a Visa desenvolveu um aplicativo que guia o cliente por pilares como transporte, gastronomia, compras e salas vip. São dicas,
                 promoções exclusivas, mimos e muito mais, tornando a viagem mais prazerosa.
+            </div>
+            <div class="animated fadeIn delay1_0">
+                <div class="btnImportante size30 animated infinite pulse"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pop posicionar animated fadeIn delay0_2" px="0" py="85">
+        <div class="popInit size18 azulEscuro">
+            <div class="baseClose">
+                <div class="closeX">
+                    <i class="far fa-times-circle size40 animated zoomIn delay1_2"></i>
+                </div>
+            </div>
+            <div>
+                Programa Visa Airport Companion é desenvolvido e administrado por DragonPass. Ao aderir ao Programa, o portador deve observar os Termos e Condições do Programa estipulados, bem como eventuais especificidades apresentadas pelo emissor de seu cartão.
             </div>
         </div>
     </div>

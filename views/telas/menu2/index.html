@@ -18,6 +18,10 @@
                 img_W: course.width
             });
 
+            // course.indice = 96;
+            // $("body").attr("nav", "go");
+            // $("body").trigger("navegacao");
+
             controle();
 
 
@@ -52,36 +56,35 @@
 
             function controle() {
 
-                    _containerTela.find(".item .img").removeClass('animated infinite pulse');
-                    _containerTela.find(".item .indicador").css('display','none');
+                _containerTela.find(".item .img").removeClass('animated infinite pulse');
+                _containerTela.find(".item .indicador").css('display', 'none');
 
-                    var submenu = 0;
-                    if( course.scorm_get_suspendData("submenu" + _tela.menu) ) {
-                        submenu = parseInt(course.scorm_get_suspendData("submenu" + _tela.menu));
-                        course.scorm_set_suspendData("sub_"+_tela.menu+"_"+submenu, 1);
+                var submenu = 0;
+                if (course.scorm_get_suspendData("submenu" + _tela.menu)) {
+                    submenu = parseInt(course.scorm_get_suspendData("submenu" + _tela.menu));
+                    course.scorm_set_suspendData("sub_" + _tela.menu + "_" + submenu, 1);
+                }
+
+                var i = 0;
+                var all = _containerTela.find('.item').length;
+                var _comp = true;
+
+                while (i < all) {
+                    i += 1;
+                    if (course.scorm_get_suspendData("sub_" + _tela.menu + "_" + i)) {
+                        _containerTela.find('.item' + i + ' .check').css('display', 'flex');
+                    } else {
+                        _comp = false;
                     }
+                }
 
-                    var i = 0;
-                    var all = _containerTela.find('.item').length;
-                    var _comp = true;
-
-                    while ( i < all ) {
-                        i+=1;
-                        if( course.scorm_get_suspendData("sub_"+_tela.menu+"_"+i) ){
-                            _containerTela.find('.item' + i + ' .check' ).css('display', 'flex');
-                        }
-                        else{
-                            _comp = false;
-                        }
-                    }
-
-                    if( _comp ){
-                        _containerTela.find(".quiz").css('display', 'block');
-                    }
+                if (_comp) {
+                    _containerTela.find(".quiz").css('display', 'block');
+                }
 
 
-                    _containerTela.find(".item" + (submenu+1) + ' .img' ).addClass('animated infinite pulse');
-                    //_containerTela.find(".item" + (submenu+1) + ' .indicador').css('display','block');
+                _containerTela.find(".item" + (submenu + 1) + ' .img').addClass('animated infinite pulse');
+                //_containerTela.find(".item" + (submenu+1) + ' .indicador').css('display','block');
 
             }
         }
@@ -149,7 +152,7 @@
             <i class="fas fa-check-circle"></i>
         </div>
         <div class="speech-bubble">
-            Vallet Shopping Restaurantes
+            Free Valet<br> Shopping/Restaurantes
         </div>
         <div class="hit"></div>
         <div class="animated fadeIn delay2_0">
@@ -281,7 +284,7 @@
         </div>
         <div class="quizB animated infinite pulse">
             <i class="fas fa-question"></i>
-            <div class="xbold">Quiz</div> 
+            <div class="xbold">Quiz</div>
         </div>
     </div>
 

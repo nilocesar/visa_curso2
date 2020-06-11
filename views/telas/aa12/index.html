@@ -22,6 +22,12 @@
             if (_tela.status == false) {
                 _tela.status = true;
 
+                _containerTela.find(".btnImportante").on('click', function() {
+                    _containerTela.find(".pop").css('display', 'flex');
+                });
+                _containerTela.find(".closeX").on('click', function() {
+                    _containerTela.find(".pop").css('display', 'none');
+                });
 
 
             } else {
@@ -49,6 +55,25 @@
             <div class="size22 light pb10 animated fadeInRight delay0_6">
                 Por mais cuidadosos que possamos ser, nunca estamos livres de imprevistos, aqui ou no exterior. É por isso que a Visa oferece aos clientes proteções em casos de roubo e acidentes. Seu celular pago com Visa caiu no chão? O conserto pode ser reembolsado.
                 Seu relógio foi roubado? O valor da compra pode ser compensado. Existe companhia melhor para uma viagem?
+            </div>
+            <div class="animated fadeIn delay1_0">
+                <div class="btnImportante size30 animated infinite pulse"></div>
+            </div>
+            <!-- o txt esta no css -->
+        </div>
+    </div>
+
+    <div class="pop posicionar animated fadeIn delay0_2" px="0" py="85">
+        <div class="popInit size18 azulEscuro">
+            <div class="baseClose">
+                <div class="closeX">
+                    <i class="far fa-times-circle size40 animated zoomIn delay1_2"></i>
+                </div>
+            </div>
+            <div>
+                A Visa não é provedora dos seguros. Este seguro e sua correspondente cobertura são oferecidos pela AIG Seguros Brasil S/A, CNPJ/MF n.º 33.040.981/0001-50, aos portadores de Cartões Visa elegíveis no país onde a Visa tenha contratado essas coberturas.
+                A Seguradora é responsável pela regulação do sinistro de acordo com os termos e condições da cobertura. A Visa não interfere na regulação do sinistro. Este documento contém uma descrição dos benefícios e não são apólices de seguro. O seguro
+                está sujeito aos termos e condições gerais, limitações e exclusões da apólice contratada pela Visa, sendo possíveis alterações ou cancelamento dos termos e condições gerais do seguro.
             </div>
         </div>
     </div>

@@ -22,6 +22,13 @@
             if (_tela.status == false) {
                 _tela.status = true;
 
+                _containerTela.find(".btnImportante").on('click', function() {
+                    _containerTela.find(".pop").css('display', 'flex');
+                });
+                _containerTela.find(".closeX").on('click', function() {
+                    _containerTela.find(".pop").css('display', 'none');
+                });
+
 
 
             } else {
@@ -44,10 +51,32 @@
                 <div class="ico ico23 animated zoomIn delay0_4"></div>
             </div>
             <div class="tx animated fadeInRight delay0_4">
-                Visa Valet Shopping / Restaurantes
+                Free Valet Shopping/Restaurantes
             </div>
             <div class="size22 light pb10 animated fadeInRight delay0_6">
                 Cliente Visa não procura vaga, não perde tempo para estacionar e tem vantagens com este serviço, que é gratuito em vários shoppings e restaurantes do Brasil.
+            </div>
+            <div class="animated fadeIn delay1_0">
+                <div class="btnImportante size30 animated infinite pulse"></div>
+            </div>
+            <!-- o txt esta no css -->
+        </div>
+    </div>
+
+    <div class="pop posicionar animated fadeIn delay0_2" px="0" py="85">
+        <div class="popInit size18 azulEscuro">
+            <div class="baseClose">
+                <div class="closeX">
+                    <i class="far fa-times-circle size40 animated zoomIn delay1_2"></i>
+                </div>
+            </div>
+            <div>
+                Para acessar a cortesia, acesse o site ou solicite diretamente no shopping. Abaixo a relação de shoppings participantes e suas respectivas cortesias disponíveis. Shopping Cidade Jardim: 1ª hora do serviço de valet; Iguatemi São Paulo: 1ª hora do serviço
+                de valet; Iguatemi Brasília: diária do serviço de valet; Shopping Pátio Higienópolis: 1ª hora do serviço de valet; Rio Design Barra: 2 horas do serviço de valet; Rio Design Leblon: 1ª hora do serviço de valet. Consulte termos, condições,
+                limitações e exclusões em <a href="https://www.visa.com.br/suporte/regulamentos/freevaletshopping.html" target="_blank">https://www.visa.com.br/suporte/regulamentos/freevaletshopping.html</a>.<br><br> Baixe o app Free Valet
+                Visa (disponível para iOS e Android) e cadastre-se. Ao chegar no restaurante, escaneie seu ticket do valet. Após pagar sua conta de no mínimo R$ 100 utilizando o mesmo cartão de crédito Visa Platinum ou Visa Infinite cadastrado, volte
+                ao aplicativo e valide sua cortesia. Consulte restaurantes participantes, termos, condições, limitações e exclusões em
+                <a href="https://www.visa.com.br/parceiros-visa/freevaletrestaurantes.html" target="_blank">https://www.visa.com.br/parceiros-visa/freevaletrestaurantes.html</a>.
             </div>
         </div>
     </div>

@@ -22,6 +22,13 @@
             if (_tela.status == false) {
                 _tela.status = true;
 
+                _containerTela.find(".btnImportante").on('click', function() {
+                    _containerTela.find(".pop").css('display', 'flex');
+                });
+                _containerTela.find(".closeX").on('click', function() {
+                    _containerTela.find(".pop").css('display', 'none');
+                });
+
 
 
             } else {
@@ -49,7 +56,26 @@
             <div class="size22 light pb10 animated fadeInRight delay0_6">
                 Cliente Visa não paga a primeira hora do estacionamento nos aeroportos do Rio de Janeiro (Santos Dumont), Brasília e Recife. Perfeito para quem está passando pelo aeroporto para buscar ou levar amigos.
             </div>
+            <div class="animated fadeIn delay1_0">
+                <div class="btnImportante size30 animated infinite pulse"></div>
+            </div>
+            <!-- o txt esta no css -->
         </div>
     </div>
+
+    <div class="pop posicionar animated fadeIn delay0_2" px="0" py="85">
+        <div class="popInit size18 azulEscuro">
+            <div class="baseClose">
+                <div class="closeX">
+                    <i class="far fa-times-circle size40 animated zoomIn delay1_2"></i>
+                </div>
+            </div>
+            <div>
+                Os serviços Free Valet Aeroporto e Free Parking Aeroporto são prestados por Estapar e estão sob sua responsabilidade. Consulte condições, vigências e exclusões em
+                <a href="https://www.visa.com.br/suporte/regulamentos/free-estapar-aeroportos.html" target="_blank"> www.visa.com.br/estapar</a>.
+            </div>
+        </div>
+    </div>
+
 
 </div>

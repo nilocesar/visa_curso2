@@ -22,6 +22,12 @@
             if (_tela.status == false) {
                 _tela.status = true;
 
+                _containerTela.find(".btnImportante").on('click', function() {
+                    _containerTela.find(".pop").css('display', 'flex');
+                });
+                _containerTela.find(".closeX").on('click', function() {
+                    _containerTela.find(".pop").css('display', 'none');
+                });
 
 
             } else {
@@ -48,6 +54,24 @@
             </div>
             <div class="size22 light pb10 animated fadeInRight delay0_6">
                 Perder o cartão no meio de uma viagem pode ser um pesadelo! Por isso, Visa oferece dois benefícios: requisitar um novo cartão e realizar um saque emergencial. Ufa!
+            </div>
+            <div class="animated fadeIn delay1_0">
+                <div class="btnImportante size30 animated infinite pulse"></div>
+            </div>
+            <!-- o txt esta no css -->
+        </div>
+    </div>
+
+    <div class="pop posicionar animated fadeIn delay0_2" px="0" py="85">
+        <div class="popInit size18 azulEscuro">
+            <div class="baseClose">
+                <div class="closeX">
+                    <i class="far fa-times-circle size40 animated zoomIn delay1_2"></i>
+                </div>
+            </div>
+            <div>
+                1. Para ligações feitas de telefone celular, todas as taxas de roaming são de responsabilidade do usuário.<br> 2. Chamada a cobrar através de um operador internacional.<br> O serviço não está disponível na Síria, Irã, Coreia do Norte,
+                Sudão, Cuba e Crimeia.
             </div>
         </div>
     </div>

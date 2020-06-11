@@ -1,7 +1,7 @@
-define(['jquery'], function ($) {
+define(['jquery'], function($) {
     'use strict';
 
-    var base = function () {
+    var base = function() {
         var $public = {};
         var $private = {};
         var $parent = {};
@@ -15,7 +15,7 @@ define(['jquery'], function ($) {
         $public.create = function create(complete) {
 
             $(".main").append("<div class='base'></div>");
-            $(".base").load("views/interface/base/index.html", function () {
+            $(".base").load("views/interface/base/index.html", function() {
 
                 //
                 $private.createTelasContainer();
@@ -29,38 +29,38 @@ define(['jquery'], function ($) {
         };
 
         $public.liberarNavegacao = function liberarNavegacao() {
-            
+
             var page = $parent.config[$parent.indice];
             var id = String(page.id).toUpperCase();
             var _container = $(".container" + id);
 
             _container.find(".setaDirBase").css("display", 'none');
 
-            if( page.setas == 'nenhuma' || page.setas == 'nenhum' ){
+            if (page.setas == 'nenhuma' || page.setas == 'nenhum') {
                 _container.find(".setaDirBase").css("display", 'none');
                 _container.find(".setaEsqBase").css("display", 'none');
                 return false;
             }
 
             var element = _container.find(".setaDirBase .icoSet");
-            element.on('animationend', function() { 
+            element.on('animationend', function() {
                 element.removeClass("fadeIn");
                 element.addClass("infinite pulse");
             })
-            
+
             $parent.liberado = true;
 
-            if( page.setas == 'esquerda' ){
+            if (page.setas == 'esquerda') {
                 _container.find(".setaDirBase").css("display", 'none');
                 _container.find(".setaEsqBase").css("display", 'block');
             }
 
-            if( page.setas == 'direita' ){
+            if (page.setas == 'direita') {
                 _container.find(".setaDirBase").css("display", 'block');
                 _container.find(".setaEsqBase").css("display", 'none');
             }
 
-            if( page.setas == 'ambas' ){
+            if (page.setas == 'ambas') {
                 _container.find(".setaDirBase").css("display", 'block');
                 _container.find(".setaEsqBase").css("display", 'block');
             }
@@ -75,58 +75,57 @@ define(['jquery'], function ($) {
             var _container = $(".container" + id);
             _container.find(".setaDirBase").css("display", 'none');
 
-            if( page.setas == 'nenhuma' || page.setas == 'nenhum' ){
+            if (page.setas == 'nenhuma' || page.setas == 'nenhum') {
                 _container.find(".setaDirBase").css("display", 'none');
                 _container.find(".setaEsqBase").css("display", 'none');
                 return false;
             }
 
             var _avaliada = -1;
-            if( $parent.scorm_get_suspendData("av") ){
-                var _avArray = $parent.scorm_get_suspendData("av").split('_'); 
-                
-                if( parseInt(_avArray[0]) > parseInt($parent.indice) ){
+            if ($parent.scorm_get_suspendData("av")) {
+                var _avArray = $parent.scorm_get_suspendData("av").split('_');
+
+                if (parseInt(_avArray[0]) > parseInt($parent.indice)) {
                     _avaliada = 1;
-                }
-                else{
+                } else {
                     _avaliada = parseInt(_avArray[1]);
-                }  
+                }
             }
 
 
-            if (_avaliada < 0 ) {
+            if (_avaliada < 0) {
                 return false;
             }
 
 
             var element = _container.find(".setaDirBase .icoSet");
-            element.on('animationend', function() { 
+            element.on('animationend', function() {
                 element.removeClass("fadeIn");
                 element.addClass("infinite pulse");
             })
-            
+
             $parent.liberado = true;
 
             var _indice = $parent.indice;
             var _config = $parent.config;
-            $.each(_config, function (index, value) {
+            $.each(_config, function(index, value) {
                 if (_indice == value.indice) {
                     value.visivel = true;
                 }
             });
 
 
-            if( page.setas == 'esquerda' ){
+            if (page.setas == 'esquerda') {
                 _container.find(".setaDirBase").css("display", 'none');
                 _container.find(".setaEsqBase").css("display", 'block');
             }
 
-            if( page.setas == 'direita' ){
+            if (page.setas == 'direita') {
                 _container.find(".setaDirBase").css("display", 'block');
                 _container.find(".setaEsqBase").css("display", 'none');
             }
 
-            if( page.setas == 'ambas' ){
+            if (page.setas == 'ambas') {
                 _container.find(".setaDirBase").css("display", 'block');
                 _container.find(".setaEsqBase").css("display", 'block');
             }
@@ -140,7 +139,7 @@ define(['jquery'], function ($) {
         $private.createTelasContainer = function createTelasContainer() {
             var _config = $parent.config;
 
-            $.each(_config, function (index, value) {
+            $.each(_config, function(index, value) {
                 $(".telaBase").append("<div indice=" + value.indice + " id=" + value.id + " avancar=" + value.avancar + "  carregado=" + value.carregado + " setas=" + value.setas + " tipo=" + value.tipo + " transicao=" + value.transicao + "  class='telaContainer telaContainer" + value.indice + "'></div>");
             })
         }
@@ -150,11 +149,11 @@ define(['jquery'], function ($) {
             $parent.ajudaIndice = 0;
             $parent.calculadoraIndice = 0;
 
-            $("body").on('navegacaoComplete', function () {
+            $("body").on('navegacaoComplete', function() {
                 var _indice = $parent.indice;
                 var _config = $parent.config;
 
-                $.each(_config, function (index, value) {
+                $.each(_config, function(index, value) {
                     if ($parent.indice == value.indice) {
 
                         $private.liberarMenu(index, value, _indice, _config);
@@ -173,29 +172,29 @@ define(['jquery'], function ($) {
         }
 
         $private.resetAnimate = function resetAnimate() {
-            
+
             var page = $parent.config[$parent.indice];
             var id = String(page.id).toUpperCase();
             var _containerTela = $(".container" + id);
 
-            if( window[ page.id ].status ){
-                _containerTela.find(".animated").each(function(indice, item){
+            if (window[page.id].status) {
+                _containerTela.find(".animated").each(function(indice, item) {
 
-                    if( $(item).css("display") == "block" || $(item).css("display") == "flex"  ){
+                    if ($(item).css("display") == "block" || $(item).css("display") == "flex") {
                         $(item).removeClass("animated");
                     }
 
                 });
 
                 var slideContainer = _containerTela.find('.slide-container');
-                slideContainer.slick('slickGoTo' , 0 );
+                slideContainer.slick('slickGoTo', 0);
 
             }
-            
+
         }
         $private.liberarMenu = function liberarMenu(index, value, _indice, _config) {
 
-            setTimeout(function(){
+            setTimeout(function() {
 
                 var page = $parent.config[$parent.indice];
                 var id = String(page.id).toUpperCase();
@@ -204,34 +203,34 @@ define(['jquery'], function ($) {
                 var _tela = _containerTela.find('.btnMenu').attr('tela');
                 var _indiceMenu = 0;
 
-                $.each( $parent.config, function(indice,item){
+                $.each($parent.config, function(indice, item) {
 
-                    if( String(item.id).toUpperCase() == String(_tela).toUpperCase() ){
+                    if (String(item.id).toUpperCase() == String(_tela).toUpperCase()) {
                         _indiceMenu = item.indice;
                     }
                 });
 
-                
-                if( parseInt($parent.indice) > _indiceMenu)///Acima da tela do Satelite ele libera o btn Menu
+
+                if (parseInt($parent.indice) > _indiceMenu) ///Acima da tela do Satelite ele libera o btn Menu
                 {
-                
+
                     _containerTela.find('.btnMenu').css('display', 'block');
                     _containerTela.find('.btnFaq').css('display', 'block');
-                    
-                    
-                }else{
+
+
+                } else {
                     _containerTela.find('.btnMenu').css('display', 'none');
                     _containerTela.find('.btnFaq').css('display', 'none');
                 }
 
-            }, 1000*1);
+            }, 1000 * 1);
 
         }
 
         $private.destravarStatus = function destravarStatus(index, value, _indice, _config) {
 
-            if (parseInt(value.avancar) > -1 ) {
-                setTimeout(function () {
+            if (parseInt(value.avancar) > -1) {
+                setTimeout(function() {
 
                     $private.liberarNext();
 
@@ -245,31 +244,27 @@ define(['jquery'], function ($) {
             var _custom = page.custom;
             var _container = $(".container" + id);
 
-            if( _custom == 0 ){
-                
+            if (_custom == 0) {
+
                 page.custom = 1;
                 _container.append("<div class='faqCustom'></div>");
-                _container.find(".faqCustom").load("views/interface/faq/index.html", function () {
+                _container.find(".faqCustom").load("views/interface/faq/index.html", function() {
                     _container.prepend("<div class='baseCustom'></div>");
-                    _container.find(".baseCustom").load("views/interface/custom/index.html", function () {
+                    _container.find(".baseCustom").load("views/interface/custom/index.html", function() {
                         $private.controleCustom();
                         $private.verificarStatusSetas();
                         $private.verificarConteudo();
-                        $private.posControleCustom();
-                        
                     });
                 });
 
-                
-            }
-            else{
+
+            } else {
                 $private.verificarConteudo();
-                $private.posControleCustom();
             }
         }
 
         $private.controleCustom = function controleCustom() {
-            
+
             var page = $parent.config[$parent.indice];
             var id = String(page.id).toUpperCase();
             var _container = $(".container" + id);
@@ -279,82 +274,37 @@ define(['jquery'], function ($) {
                 img_W: course.width
             });
 
-            _container.find(".voltar").on('click', function () {
+            _container.find(".voltar").on('click', function() {
 
                 $parent.indice = 0;
                 $("body").attr("nav", "go");
                 $("body").trigger("navegacao");
             });
 
-            $private.controleOutras();
-        
-        }
-
-
-        $private.controleOutras = function controleOutras() {
-
-
-            var page = $parent.config[$parent.indice];
-            var id = String(page.id).toUpperCase();
-            var _container = $(".container" + id);
-
-            if($parent.ieOLD){
-                setTimeout(function(){
-                    _container.find('.cartao').each(function(indice,item){
-                        $(item).removeClass('animated zoomIn');
-                    });
-                }, 1000* 3);
-            }
-
-
-            _container.find('.cartao').each(function(indice,item){
-                
-                $(item).addClass('cartaoInativo');
-
-                $.each($parent.config , function(indiceC, itemC){
-
-                    if( (itemC.id).toUpperCase() == id.toUpperCase()  ){
-                        
-                        $.each( itemC.cartoes , function(ind, itemX){
-                            if($(item).hasClass('cartao'+ itemX )){
-                                $(item).removeClass('cartaoInativo');
-                            }
-                        });
-                    }
-                });
-            });
-
-        }
-
-        $private.posControleCustom = function posControleCustom() {
-
-            var page = $parent.config[$parent.indice];
-            var id = String(page.id).toUpperCase();
-            var _container = $(".container" + id);
 
             $(".navInit").css("display", "block");
 
-            _container.find(".setaEsqBase").on('click', function () {
+            _container.find(".setaEsqBase").on('click', function() {
                 $("body").attr("nav", "previous");
                 $("body").trigger("navegacao");
             })
 
-            _container.find(".setaDirBase").on('click', function () {
+            _container.find(".setaDirBase").on('click', function() {
 
                 // if ($parent.liberado) {
-                    $("body").attr("nav", "next");
-                    $("body").trigger("navegacao");
+                $("body").attr("nav", "next");
+                $("body").trigger("navegacao");
                 // }
             })
 
-            _container.find(".btnMenu").on('click', function () {
+            _container.find(".btnMenu").on('click', function() {
 
                 var _tela = $(this).attr('tela');
                 var _indice = 0;
 
-                $.each( $parent.config, function(indice,item){
+                $.each($parent.config, function(indice, item) {
 
-                    if( String(item.id).toUpperCase() == String(_tela).toUpperCase() ){
+                    if (String(item.id).toUpperCase() == String(_tela).toUpperCase()) {
                         _indice = item.indice;
                     }
                 });
@@ -362,34 +312,60 @@ define(['jquery'], function ($) {
                 $parent.indice = _indice;
                 $("body").attr("nav", "go");
                 $("body").trigger("navegacao");
-               
+
             })
 
-            _container.find(".btnFaq").on('click', function () {
+            _container.find(".btnFaq").on('click', function() {
                 _container.find(".faq").css('display', 'block');
                 _container.find(".faq .step").css('display', 'none');
 
                 var page = $parent.config[$parent.indice];
                 var titulo = page.parentNivel2.titulo;
 
-                _container.find(".faq ."+ titulo + "FAQ").css('display', 'block');
-                
-                setTimeout(function(){
-                    _container.find(".faq .faqBase").animate({scrollTop :3000}, 500*1,'swing',function(){
-                        _container.find(".faq .faqBase").animate({scrollTop :0}, 300*1);
+                _container.find(".faq ." + titulo + "FAQ").css('display', 'block');
+
+                setTimeout(function() {
+                    _container.find(".faq .faqBase").animate({ scrollTop: 3000 }, 500 * 1, 'swing', function() {
+                        _container.find(".faq .faqBase").animate({ scrollTop: 0 }, 300 * 1);
                     });
-                }, 1000*1 )
-                
+                }, 1000 * 1)
+
             });
 
-            _container.find(".closeFAQ").on('click', function () {
-                _container.find(".faq").css('display', 'none');    
+            _container.find(".closeFAQ").on('click', function() {
+                _container.find(".faq").css('display', 'none');
             });
 
-           
+            if ($parent.ieOLD) {
+                setTimeout(function() {
+                    _container.find('.cartao').each(function(indice, item) {
+                        $(item).removeClass('animated zoomIn');
+                    });
+                }, 1000 * 3);
+            }
+
+
+            _container.find('.cartao').each(function(indice, item) {
+
+                $(item).addClass('cartaoInativo');
+
+                $.each($parent.config, function(indiceC, itemC) {
+
+                    if ((itemC.id).toUpperCase() == id.toUpperCase()) {
+
+                        $.each(itemC.cartoes, function(ind, itemX) {
+                            if ($(item).hasClass('cartao' + itemX)) {
+                                $(item).removeClass('cartaoInativo');
+                            }
+                        });
+                    }
+                });
+            });
+
+
         }
 
-    
+
 
         $private.verificarStatusSetas = function verificarStatusSetas() {
 
@@ -398,16 +374,15 @@ define(['jquery'], function ($) {
             var _container = $(".container" + id);
 
             _container.find(".setaDirBase").css("display", "none");
-            
+
             if (page.setas == "direita") {
                 _container.find(".setaEsqBase").css("display", "none");
                 _container.find(".setaDirBase").css("display", "block");
-            } 
-            else if (page.setas == "esquerda") {
+            } else if (page.setas == "esquerda") {
                 _container.find(".setaEsqBase").css("display", "block");
                 _container.find(".setaDirBase").css("display", "none");
             }
-            
+
 
         }
 
@@ -415,16 +390,19 @@ define(['jquery'], function ($) {
             var page = $parent.config[$parent.indice];
             var id = String(page.id).toUpperCase();
             var _container = $(".container" + id);
-            
-            if( page.setas == 'nenhuma' || page.setas == 'nenhum' ){
+
+            if (page.setas == 'nenhuma' || page.setas == 'nenhum') {
                 _container.find(".setaDirBase").css("display", 'none');
                 _container.find(".setaEsqBase").css("display", 'none');
                 return false;
             }
-            
+
 
             var _titulo1 = page.parentNivel1.titulo;
-            _container.find(".titulo1Base").text( _titulo1 );
+            _container.find(".titulo1Base").text(_titulo1);
+
+            //template 4
+            _container.find(".pop").css('display', 'none');
         }
 
 
@@ -443,7 +421,7 @@ define(['jquery'], function ($) {
             if (_indice != 0) {
                 $(".retormar").css("display", "block");
 
-                $(".retormar").find(".naoSair").on("click", function () {
+                $(".retormar").find(".naoSair").on("click", function() {
 
                     $(".retormar").css("display", "none");
 
@@ -454,24 +432,24 @@ define(['jquery'], function ($) {
 
                 });
 
-                $(".retormar").find(".simSair").on("click", function () {
+                $(".retormar").find(".simSair").on("click", function() {
                     $(".retormar").css("display", "none");
                 });
 
             }
         }
 
-        
+
 
         $private.createSair = function createSair() {
 
             $(".main").append("<div class='sairContainer'></div>");
-            $(".sairContainer").load("views/interface/sair/sair.html", function () {
-                $(".sairContainer .naoSair").on('click', function () {
+            $(".sairContainer").load("views/interface/sair/sair.html", function() {
+                $(".sairContainer .naoSair").on('click', function() {
                     $(".sairContainer").css("display", "none");
                 })
 
-                $(".sairContainer .simSair").on('click', function () {
+                $(".sairContainer .simSair").on('click', function() {
                     $private.sairCurso();
                 })
 
@@ -481,7 +459,7 @@ define(['jquery'], function ($) {
                 $(".iconSairBase").css("display", "block");
             }
 
-            $(".iconSairBase").on('click', function () {
+            $(".iconSairBase").on('click', function() {
                 $(".sairContainer").css("display", "block");
             })
         }

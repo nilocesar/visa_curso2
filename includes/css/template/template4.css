@@ -266,3 +266,71 @@
     background: url('../../img/26ico.svg') no-repeat center;
     background-size: contain;
 }
+
+.template4 .btnImportante {
+    position: relative;
+    width: 200px;
+    border-radius: 10px;
+    background: #ffc359;
+    color: rgb(52, 51, 51);
+    padding: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.template4 .btnImportante::before {
+    position: relative;
+    content: 'Importante';
+}
+
+.template4 .btnImportante:hover {
+    background: #e4a73d;
+}
+
+.template4 .pop {
+    position: absolute;
+    background: #ffc359;
+    width: 1366px;
+    height: 662px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.template4 .popInit {
+    position: relative;
+    width: 1000px;
+    /* height: 600px; */
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 3px 6px 11px #00000057;
+    padding: 60px 50px;
+}
+
+.template4 .baseClose {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.template4 .pop .closeX {
+    position: relative;
+    color: #283272;
+    z-index: 999999999;
+    cursor: pointer;
+}
+
+.template4 .pop .closeX:hover {
+    color: #003EA9;
+}
+
+.template4 a {
+    text-decoration: underline;
+    color: #003EA9;
+}
+
+.template4 a:hover {
+    text-decoration: underline;
+    color: rgb(13, 87, 213);
+}

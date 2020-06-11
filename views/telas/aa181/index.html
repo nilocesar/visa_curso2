@@ -1,55 +1,76 @@
 <script>
-        window["aa181"] = {
-            indice: "aa181",
-            status: false
-        }
-    
-        $("body").on('navegacaoComplete', function() {
-    
-            if ((course.config[course.indice].id).toUpperCase() == ("aa181").toUpperCase()) {
-    
-                var _tela = window[course.config[course.indice].id];
-                var _containerTela = $(".container" + (_tela.indice).toUpperCase());
-    
-                //posiciona o elemento com base no tamanho real da imagem de fundo COVER
-                _containerTela.find(".posicionar").positionCSS({
-                    img_H: course.height,
-                    img_W: course.width
+    window["aa181"] = {
+        indice: "aa181",
+        status: false
+    }
+
+    $("body").on('navegacaoComplete', function() {
+
+        if ((course.config[course.indice].id).toUpperCase() == ("aa181").toUpperCase()) {
+
+            var _tela = window[course.config[course.indice].id];
+            var _containerTela = $(".container" + (_tela.indice).toUpperCase());
+
+            //posiciona o elemento com base no tamanho real da imagem de fundo COVER
+            _containerTela.find(".posicionar").positionCSS({
+                img_H: course.height,
+                img_W: course.width
+            });
+
+
+
+            if (_tela.status == false) {
+                _tela.status = true;
+
+                _containerTela.find(".btnImportante").on('click', function() {
+                    _containerTela.find(".pop").css('display', 'flex');
                 });
-    
-        
-    
-                if (_tela.status == false) {
-                    _tela.status = true;
-    
-    
-    
-                } else {
-    
-                }
+                _containerTela.find(".closeX").on('click', function() {
+                    _containerTela.find(".pop").css('display', 'none');
+                });
+
+
+            } else {
+
             }
-        })
-    </script>
-    
-    
-    <div class="template4 containerAA181">
-    
-        <div class="fundo posicionar animated fadeIn delay0_2" px="0" py="85"> 
-            <img src="includes/img/tela130.jpg" alt="">
-        </div>
-    
-        <div class="texto2 posicionar branco animated fadeIn delay0_4" px="480" py="150">
-            <div>
-                <div class="tx animated fadeInRight delay0_4">
-                    SERVIÇO DE CONVENIÊNCIA EM VIAGEM
-                </div>
-                <div class="size22 light pb10 animated fadeInRight delay0_6">
-                    Organizar viagens não é fácil. Visa ajuda com uma central 
-                    de informações que descobre desde as vacinas exigidas 
-                    para o destino em questão até a localização dos 
-                    caixas eletrônicos da cidade esperada.
-                </div>
+        }
+    })
+</script>
+
+
+<div class="template4 containerAA181">
+
+    <div class="fundo posicionar animated fadeIn delay0_2" px="0" py="85">
+        <img src="includes/img/tela130.jpg" alt="">
+    </div>
+
+    <div class="texto2 posicionar branco animated fadeIn delay0_4" px="480" py="150">
+        <div>
+            <div class="tx animated fadeInRight delay0_4">
+                SERVIÇO DE CONVENIÊNCIA EM VIAGEM
+            </div>
+            <div class="size22 light pb10 animated fadeInRight delay0_6">
+                Organizar viagens não é fácil. Visa ajuda com uma central de informações que descobre desde as vacinas exigidas para o destino em questão até a localização dos caixas eletrônicos da cidade esperada.
+            </div>
+            <div class="animated fadeIn delay1_0">
+                <div class="btnImportante size30 animated infinite pulse"></div>
             </div>
         </div>
-        
     </div>
+
+    <div class="pop posicionar animated fadeIn delay0_2" px="0" py="85">
+        <div class="popInit size18 azulEscuro">
+            <div class="baseClose">
+                <div class="closeX">
+                    <i class="far fa-times-circle size40 animated zoomIn delay1_2"></i>
+                </div>
+            </div>
+            <div>
+                1. Para ligações feitas de telefone celular, todas as taxas de roaming são de responsabilidade do usuário.<br> 2. Chamada a cobrar através de um operador internacional.<br> O Serviço de Assistência de Viagem oferece somente assistência
+                e recomendações. O portador é responsável por qualquer custo incorrido com itens ou serviços solicitados.
+
+            </div>
+        </div>
+    </div>
+
+</div>

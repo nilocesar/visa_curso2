@@ -22,6 +22,12 @@
             if (_tela.status == false) {
                 _tela.status = true;
 
+                _containerTela.find(".btnImportante").on('click', function() {
+                    _containerTela.find(".pop").css('display', 'flex');
+                });
+                _containerTela.find(".closeX").on('click', function() {
+                    _containerTela.find(".pop").css('display', 'none');
+                });
 
 
             } else {
@@ -48,7 +54,24 @@
             </div>
             <div class="size22 light pb10 animated fadeInRight delay0_6">
                 Acordou resfriado no meio das férias? Está com dor de cabeça e tem que participar de reuniões?<br><br> Com Visa, é possível consultar médicos por vídeo conferência.
+            </div>
+            <div class="animated fadeIn delay1_0">
+                <div class="btnImportante size30 animated infinite pulse"></div>
+            </div>
+            <!-- o txt esta no css -->
+        </div>
+    </div>
 
+    <div class="pop posicionar animated fadeIn delay0_2" px="0" py="85">
+        <div class="popInit size18 azulEscuro">
+            <div class="baseClose">
+                <div class="closeX">
+                    <i class="far fa-times-circle size40 animated zoomIn delay1_2"></i>
+                </div>
+            </div>
+            <div>
+                Experiência digital para a assistência do Seguro de Emergência Médica Internacional. Aplica-se para assistências fora do pais de residência e para sintomas de baixa complexidade e gravidade. Necessário conectar através de dispositivo habilitado para vídeo
+                (Android e Iphone necessário <span class="book_italic">download</span> do aplicativo).
             </div>
         </div>
     </div>

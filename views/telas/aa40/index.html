@@ -22,6 +22,13 @@
             if (_tela.status == false) {
                 _tela.status = true;
 
+                _containerTela.find(".btnImportante").on('click', function() {
+                    _containerTela.find(".pop").css('display', 'flex');
+                });
+                _containerTela.find(".closeX").on('click', function() {
+                    _containerTela.find(".pop").css('display', 'none');
+                });
+
 
 
             } else {
@@ -49,6 +56,25 @@
             <div class="size22 light pb10 animated fadeInRight delay0_6">
                 Comprar os ingressos do show mais disputado da temporada. Agendar reuniões de emergência a qualquer momento. Reservar mesa no restaurante mais estrelado da cidade. Com Visa Concierge, o cliente dos cartões Visa Platinum e Visa Infinite tem à sua disposição,
                 24 horas por dia x 7 dias por semana, um assistente pessoal para ajudá-lo nas mais diferentes demandas, sem custo adicional.
+            </div>
+            <div class="animated fadeIn delay1_0">
+                <div class="btnImportante size30 animated infinite pulse"></div>
+            </div>
+            <!-- o txt esta no css -->
+        </div>
+    </div>
+
+    <div class="pop posicionar animated fadeIn delay0_2" px="0" py="85">
+        <div class="popInit size18 azulEscuro">
+            <div class="baseClose">
+                <div class="closeX">
+                    <i class="far fa-times-circle size40 animated zoomIn delay1_2"></i>
+                </div>
+            </div>
+            <div>
+                O Programa Visa Concierge e Visa Digital Concierge são administrados pela Ten Serviços de Concierge do Brasil Ltda. e atenderão as solicitações conforme disponibilidade. Pedidos absurdos, inadequados ou que atentarem contra a moral, a ética ou a lei serão
+                recusados. Estes programas são disponibilizados de forma gratuita para o portador, mas é de responsabilidade do portador dos Cartões Visa Platinum ou Visa Infinite arcar com os custos dos serviços e produtos comercializados por terceiros
+                e buscados pelo portador por meio do Visa Concierge e Visa Digital Concierge, tais como diárias de hotel, passagens aéreas, ingressos para shows e eventos e entrega de documentos, bens e serviços.
             </div>
         </div>
     </div>
