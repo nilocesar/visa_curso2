@@ -18,6 +18,8 @@ define(['jquery', 'imagesloaded'], function($) {
         $public.init = function init(parent, callNav) {
             $parent = parent;
 
+
+            // Esse ajsute no controle de carregamento - Tem ajuste nesse JS, no do iframe.js, e no base.js
             $("body").on("navegacao", function() {
 
                 var _indice = $parent.indice;
@@ -32,6 +34,7 @@ define(['jquery', 'imagesloaded'], function($) {
                 }
 
             });
+            //
         };
 
         $public.carregar = function carregar() {

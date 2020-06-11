@@ -1,10 +1,17 @@
 Estrutura HTML5 
 
 - Autor: Nilo César Lemos de Castro
-- Data: 20/03/2017
-- versão : 1.2
+- Data: 11/06/2020
+- versão : 1.3
 - Estrutura feita em HTML5 com foco e controle para conteúdos educacionais ligados a plataformas LMS ou plataformas em gerais. 
 
+## Essa versão da estrutura tem modificação no controle de carregamento das telas. 
+## Agora as telas que não foram carregadas mas foram acessadas, passam a ter um preload antes de inícia-las.
+## Arquivos modificados: 
+-> carregamento.js(completo) 
+-> base.js(_container.find(".baseCustom").attr('interface', 1)) 
+-> iframe.js( $public.preloaderInit )
+-> motion.js( delay0_6 ) opcional
 
 ...
 ## .gitignore
