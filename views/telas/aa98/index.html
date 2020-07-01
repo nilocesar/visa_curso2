@@ -23,39 +23,39 @@
                 _tela.status = true;
 
                 _containerTela.find(".confirmar").css('display', 'none');
-                _containerTela.find(".item").on('click', function(){
-                    
+                _containerTela.find(".item").on('click', function() {
+
                     _containerTela.find(".item").removeClass('itemAtivo');
                     $(this).addClass('itemAtivo');
-                    
+
                     _containerTela.find(".confirmar").css('display', 'block');
-                    
+
                 });
 
-                _containerTela.find(".confirmar").on('click', function(){
+                _containerTela.find(".confirmar").on('click', function() {
                     var _res = _containerTela.find(".itemAtivo").attr('res');
                     _containerTela.find(".item").addClass('itemInativo');
                     _containerTela.find(".confirmar").css('display', 'none');
 
                     _containerTela.find(".pop").css('display', 'block');
                     _containerTela.find(".feed").css('display', 'none');
-                    
-                    if( _res == 1 ){
+
+                    if (_res == 1) {
                         _containerTela.find(".positivo").css('display', 'block');
-                    }else{
+                    } else {
                         _containerTela.find(".negativo").css('display', 'block');
                     }
 
                 });
 
-                _containerTela.find(".closeX").on('click', function(){
-                    
+                _containerTela.find(".closeX").on('click', function() {
+
                     _containerTela.find(".pop").css('display', 'none');
                     course.liberarNavegacao();
 
-                    _containerTela.find(".item").each(function(indice, item){
-                        
-                        if($(item).attr('res') == '0'){
+                    _containerTela.find(".item").each(function(indice, item) {
+
+                        if ($(item).attr('res') == '0') {
                             $(item).addClass('erradas');
                         }
                     });
@@ -83,10 +83,7 @@
             </div>
             <div class="text size22">
                 <div>
-                    Henrique gosta de fazer mochilão com seus amigos 
-                    no exterior, muitas vezes fica complicado para ele 
-                    fazer algumas coisas como se comunicar com sua família 
-                    quando está fora. Qual benefício você indicaria para ele?
+                    Henrique gosta de fazer mochilão com seus amigos no exterior, muitas vezes fica complicado para ele fazer algumas coisas como se comunicar com sua família quando está fora. Qual benefício você indicaria para ele?
                 </div>
                 <div class="amarelo size18">
                     Selecione uma alternativa
@@ -153,14 +150,13 @@
             </div>
 
             <div class="baseText azul">
-                
+
                 <div class="feed positivo light">
                     <div class="t1">
                         Parabéns!
                     </div>
                     <div class="size30">
-                        A resposta correta é Chip 
-                        Viagem Internacional! Isso mesmo!
+                        A resposta correta é Chip Viagem Internacional! Isso mesmo!
 
                     </div>
                 </div>
@@ -170,8 +166,7 @@
                         Mais atenção!
                     </div>
                     <div class="size30">
-                        A resposta correta é Chip Viagem Internacional, assim 
-                        o cliente fica sempre ligado!
+                        A resposta correta é Chip Viagem Internacional, assim o portador de cartão fica sempre ligado!
 
                     </div>
                 </div>

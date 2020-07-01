@@ -1,56 +1,54 @@
 <script>
-        window["aa94"] = {
-            indice: "aa94",
-            status: false,
-            item:1
-        }
-    
-        $("body").on('navegacaoComplete', function() {
-    
-            if ((course.config[course.indice].id).toUpperCase() == ("aa94").toUpperCase()) {
-    
-                var _tela = window[course.config[course.indice].id];
-                var _containerTela = $(".container" + (_tela.indice).toUpperCase());
-    
-                //posiciona o elemento com base no tamanho real da imagem de fundo COVER
-                _containerTela.find(".posicionar").positionCSS({
-                    img_H: course.height,
-                    img_W: course.width
+    window["aa94"] = {
+        indice: "aa94",
+        status: false,
+        item: 1
+    }
+
+    $("body").on('navegacaoComplete', function() {
+
+        if ((course.config[course.indice].id).toUpperCase() == ("aa94").toUpperCase()) {
+
+            var _tela = window[course.config[course.indice].id];
+            var _containerTela = $(".container" + (_tela.indice).toUpperCase());
+
+            //posiciona o elemento com base no tamanho real da imagem de fundo COVER
+            _containerTela.find(".posicionar").positionCSS({
+                img_H: course.height,
+                img_W: course.width
+            });
+
+
+
+            if (_tela.status == false) {
+                _tela.status = true;
+
+                _containerTela.find(".menu").on('click', function() {
+                    $("body").attr("nav", "next");
+                    $("body").trigger("navegacao");
                 });
-    
-        
-    
-                if (_tela.status == false) {
-                    _tela.status = true;
-    
-                    _containerTela.find(".menu").on('click', function(){
-                        $("body").attr("nav", "next");
-                        $("body").trigger("navegacao");
-                    });
-    
-                } else {
-    
-                }
+
+            } else {
+
             }
-        })
-    </script>
-    
-    
-    <div class="template6 containerAA94">
-    
-        <div class="fundo posicionar animated fadeIn delay0_2" px="0" py="85"> </div>
-    
-        <div class="texto posicionar branco animated fadeIn delay0_4" px="50" py="130">
-            <div>
-                <div class="size22 light pb10 animated fadeInRight delay0_8">
-                    Agora chegou o momento de testarmos os seus conhecimentos a 
-                    respeito dos benefícios Visa, preste atenção nos perfis e selecione a 
-                    alternativa que indica o que você recomendaria para o cliente.
-                </div>
-                <div class="menu size30 xbold animated zoomIn delay1_4">
-                    Iniciar
-                </div>
+        }
+    })
+</script>
+
+
+<div class="template6 containerAA94">
+
+    <div class="fundo posicionar animated fadeIn delay0_2" px="0" py="85"> </div>
+
+    <div class="texto posicionar branco animated fadeIn delay0_4" px="50" py="130">
+        <div>
+            <div class="size22 light pb10 animated fadeInRight delay0_8">
+                Agora chegou o momento de testarmos os seus conhecimentos a respeito dos benefícios Visa, preste atenção nos perfis e selecione a alternativa que indica o que você recomendaria para o portador de cartão.
+            </div>
+            <div class="menu size30 xbold animated zoomIn delay1_4">
+                Iniciar
             </div>
         </div>
-        
     </div>
+
+</div>

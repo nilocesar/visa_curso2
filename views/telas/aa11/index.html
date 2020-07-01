@@ -1,78 +1,66 @@
 <script>
-        window["aa11"] = {
-            indice: "aa11",
-            status: false,
-            item:1
-        }
-    
-        $("body").on('navegacaoComplete', function() {
-    
-            if ((course.config[course.indice].id).toUpperCase() == ("aa11").toUpperCase()) {
-    
-                var _tela = window[course.config[course.indice].id];
-                var _containerTela = $(".container" + (_tela.indice).toUpperCase());
-    
-                //posiciona o elemento com base no tamanho real da imagem de fundo COVER
-                _containerTela.find(".posicionar").positionCSS({
-                    img_H: course.height,
-                    img_W: course.width
+    window["aa11"] = {
+        indice: "aa11",
+        status: false,
+        item: 1
+    }
+
+    $("body").on('navegacaoComplete', function() {
+
+        if ((course.config[course.indice].id).toUpperCase() == ("aa11").toUpperCase()) {
+
+            var _tela = window[course.config[course.indice].id];
+            var _containerTela = $(".container" + (_tela.indice).toUpperCase());
+
+            //posiciona o elemento com base no tamanho real da imagem de fundo COVER
+            _containerTela.find(".posicionar").positionCSS({
+                img_H: course.height,
+                img_W: course.width
+            });
+
+
+            if (_tela.status == false) {
+                _tela.status = true;
+
+                _containerTela.find(".menu").on('click', function() {
+
+                    course.retornoMenu(_tela.item);
                 });
-                
-    
-                if (_tela.status == false) {
-                    _tela.status = true;
-    
-                    _containerTela.find(".menu").on('click', function(){
-                        
-                        course.retornoMenu( _tela.item );
-                    });
-    
-                } else {
-    
-                }
+
+            } else {
+
             }
-        })
-    </script>
-    
-    
-    <div class="containerAA11">
-    
-        <div class="fundo posicionar animated fadeIn delay0_2" px="0" py="85"> 
-            <img src="includes/img/tela11.jpg" alt="">
-        </div>
-    
-        <div class="texto posicionar branco animated fadeIn delay0_4" px="55" py="120">
-            <i class="fas fa-exclamation-triangle size50 animated fadeInUp delay0_6 mb20 gold"></i>
-            <div class="tx animated fadeInUp delay0_8">
-                AVISO DE CONFIDENCIALIDADE
-            </div>
-            <div class="size22 light animated fadeInUp delay1_2">
-                Este documento é destinado unicamente a você em sua capacidade 
-                como participante dos arranjos de pagamento instituídos pela 
-                Visa no Brasil. Aceitando este documento, você reconhece que a 
-                informação contida aqui (a “Informação”) é confidencial e sujeita 
-                a restrições de confidencialidade contidas nos regulamentos 
-                operacionais da Visa e/ou outros acordos de confidencialidade, 
-                que limitam o uso da Informação. Você concorda em manter a 
-                Informação confidencial e em não usá-la para nenhum propósito 
-                além de sua capacidade como cliente da Visa e membro do sistema 
-                de pagamentos da Visa. A Informação pode apenas ser disseminada
-                dentro de sua organização conforme seja necessário, de forma a 
-                permitir sua participação no sistema de pagamento da Visa. 
-                A Informação pode constituir informação material 
-                não-pública pelas leis federais de títulos e valores dos 
-                Estados Unidos e comprar e vender ações da Visa Inc. de posse 
-                de informação não-pública pode constituir uma violação 
-                das leis federais dos Estados Unidos.                
-            </div>
-            <div class="tx animated fadeInUp delay1_6 mt10">
-                AVISOS LEGAIS
-            </div>
-            <div class="size22 light animated fadeInUp delay2_0">
-                Os prazos indicados nessa apresentação são estimados e podem sofrer alterações. 
-                O conteúdo desta apresentação não poderá ser filmado. As imagens são ilustrativas.            
-            </div>
-           
-        </div>
-        
+        }
+    })
+</script>
+
+
+<div class="containerAA11">
+
+    <div class="fundo posicionar animated fadeIn delay0_2" px="0" py="85">
+        <img src="includes/img/tela11.jpg" alt="">
     </div>
+
+    <div class="texto posicionar branco animated fadeIn delay0_4" px="55" py="120">
+        <i class="fas fa-exclamation-triangle size50 animated fadeInUp delay0_6 mb20 gold"></i>
+        <div class="tx animated fadeInUp delay0_8">
+            AVISO DE CONFIDENCIALIDADE
+        </div>
+        <div class="size20 light animated fadeInUp delay1_2">
+            Este documento é destinado unicamente a você em sua capacidade como participante dos arranjos de pagamento instituídos pela Visa no Brasil. Aceitando este documento, você reconhece que a informação contida aqui (a “Informação”) é confidencial e sujeita
+            a restrições de confidencialidade contidas nos regulamentos operacionais da Visa e/ou outros acordos de confidencialidade, que limitam o uso da Informação. Você concorda em manter a Informação confidencial e em não usá-la para nenhum propósito
+            além de sua capacidade como portador de cartão da Visa e membro do sistema de pagamentos da Visa. A Informação pode apenas ser disseminada dentro de sua organização conforme seja necessário, de forma a permitir sua participação no sistema
+            de pagamento da Visa. A Informação pode constituir informação material não-pública pelas leis federais de títulos e valores dos Estados Unidos e comprar e vender ações da Visa Inc. de posse de informação não-pública pode constituir uma violação
+            das leis federais dos Estados Unidos.
+        </div>
+        <div class="tx animated fadeInUp delay1_6 mt10">
+            AVISOS LEGAIS
+        </div>
+        <div class="size20 light animated fadeInUp delay2_0">
+            Os prazos indicados nessa apresentação são estimados e podem sofrer alterações. O conteúdo desta apresentação não poderá ser filmado. As imagens são ilustrativas.
+            <br><br> Cuba, Crimeia, Síria, Coreia do Norte e Irã não estão no mapa de cobertura dos nossos benefícios. Consulte a totalidade das condições e restrições de cada benefício no Portal de Benefícios www.visa.com/portaldebeneficios.
+        </div>
+
+    </div>
+
+</div>

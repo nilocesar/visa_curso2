@@ -1,66 +1,63 @@
 <script>
-        window["aa63"] = {
-            indice: "aa63",
-            status: false,
-            submenu:2, // avisa qual tela de submenu tem que retornar
-            item:5 // avisa qual assunto do submenu foi visto
-        }
-    
-        $("body").on('navegacaoComplete', function() {
-    
-            if ((course.config[course.indice].id).toUpperCase() == ("aa63").toUpperCase()) {
-    
-                var _tela = window[course.config[course.indice].id];
-                var _containerTela = $(".container" + (_tela.indice).toUpperCase());
-    
-                //posiciona o elemento com base no tamanho real da imagem de fundo COVER
-                _containerTela.find(".posicionar").positionCSS({
-                    img_H: course.height,
-                    img_W: course.width
+    window["aa63"] = {
+        indice: "aa63",
+        status: false,
+        submenu: 2, // avisa qual tela de submenu tem que retornar
+        item: 5 // avisa qual assunto do submenu foi visto
+    }
+
+    $("body").on('navegacaoComplete', function() {
+
+        if ((course.config[course.indice].id).toUpperCase() == ("aa63").toUpperCase()) {
+
+            var _tela = window[course.config[course.indice].id];
+            var _containerTela = $(".container" + (_tela.indice).toUpperCase());
+
+            //posiciona o elemento com base no tamanho real da imagem de fundo COVER
+            _containerTela.find(".posicionar").positionCSS({
+                img_H: course.height,
+                img_W: course.width
+            });
+
+
+
+            if (_tela.status == false) {
+                _tela.status = true;
+
+                _containerTela.find(".menu").on('click', function() {
+
+                    course.retornosubMenu(_tela.submenu, _tela.item);
                 });
-    
-        
-    
-                if (_tela.status == false) {
-                    _tela.status = true;
-    
-                    _containerTela.find(".menu").on('click', function(){
-                        
-                        course.retornosubMenu( _tela.submenu, _tela.item );
-                    });
-    
-                } else {
-    
-                }
+
+            } else {
+
             }
-        })
-    </script>
-    
-    
-    <div class="template4 containerAA63">
-    
-        <div class="fundo posicionar animated fadeIn delay0_2" px="0" py="85"> 
-            <img src="includes/img/tela11.jpg" alt="">
-        </div>
-    
-        <div class="texto posicionar branco animated fadeIn delay0_4" px="50" py="130">
-            <div>
-                <div class="circuloAA animated zoomIn delay0_4">
-                    <img src="includes/img/circuloAA51.png" alt="">
-                </div>
-                <div class="tx animated fadeInRight delay0_6">
-                    PERFIL DE CLIENTE
-                </div>
-                <div class="size22 light pb10 animated fadeInRight delay0_8">
-                    Rebeca mora no Rio, mas seus filhos moram em São Paulo. 
-                    Como eles sempre vêm visita-la, é comum que ela vá 
-                    busca-los no aeroporto. Ela adoraria ter esse benefício.
-                </div>
-                <div class="menu size30 xbold animated zoomIn delay1_4">
-                    <i class="fas fa-undo-alt"></i>
-                    Lifestyle
-                </div>
+        }
+    })
+</script>
+
+
+<div class="template4 containerAA63">
+
+    <div class="fundo posicionar animated fadeIn delay0_2" px="0" py="85">
+        <img src="includes/img/tela11.jpg" alt="">
+    </div>
+
+    <div class="texto posicionar branco animated fadeIn delay0_4" px="50" py="130">
+        <div>
+            <div class="circuloAA animated zoomIn delay0_4">
+                <img src="includes/img/circuloAA51.png" alt="">
+            </div>
+            <div class="tx animated fadeInRight delay0_6">
+                PERFIL DE portador de cartão
+            </div>
+            <div class="size22 light pb10 animated fadeInRight delay0_8">
+                Rebeca mora no Rio, mas seus filhos moram em São Paulo. Como eles sempre vêm visita-la, é comum que ela vá busca-los no aeroporto. Ela adoraria ter esse benefício.
+            </div>
+            <div class="menu size30 xbold animated zoomIn delay1_4">
+                <i class="fas fa-undo-alt"></i> Lifestyle
             </div>
         </div>
-        
     </div>
+
+</div>

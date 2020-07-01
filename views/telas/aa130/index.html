@@ -22,10 +22,10 @@
             if (_tela.status == false) {
                 _tela.status = true;
 
-                _containerTela.find(".btnTabela").on('click', function(){
+                _containerTela.find(".btnTabela").on('click', function() {
                     _containerTela.find(".pop").css('display', 'flex');
                 });
-                _containerTela.find(".closeX").on('click', function(){
+                _containerTela.find(".closeX").on('click', function() {
                     _containerTela.find(".pop").css('display', 'none');
                 });
 
@@ -39,7 +39,7 @@
 
 <div class="template5 containerAA130">
 
-    <div class="fundo posicionar animated fadeIn delay0_2" px="0" py="85"> 
+    <div class="fundo posicionar animated fadeIn delay0_2" px="0" py="85">
         <div class="baseTxt branco">
             <!-- <div class="tx t1">Sala Vip</div> -->
             <div class="tx2 t2">Regras Oficiais</div>
@@ -47,38 +47,42 @@
 
     </div>
 
-    <div class="texto posicionar animated fadeIn delay0_4 cinza2 size17" px="00" py="450">
+    <div class="texto posicionar animated fadeIn delay0_4 cinza2 size16" px="00" py="450">
         <div class="bloco bloco2">
             <ul>
                 <li>
-                    Cliente deve ter pago a passagem com um cartão Visa elegível 
-                    ou ter pago as taxas de embarque com Visa, no caso da emissão 
-                    da passagem com pontos.
+                    portador de cartão deve ter pago a passagem com um cartão Visa elegível ou ter pago as taxas de embarque com Visa, no caso da emissão da passagem com pontos.
                 </li>
                 <li>
                     Viagens internacionais com até 60 dias consecutivos.
                 </li>
-               
+                <li class="size15">
+                    Para estar segurado pelos benefícios de viagem dos cartões Visa, é necessário:<br>a) o valor total das passagens tenha sido pago com um Cartão Visa; ou <br>b) as passagens tenham sido compradas mediante resgate de pontos em programas
+                    de fidelidade, desde que as taxas de embarque e eventuais impostos devidos tenham sido pagos com um Cartão Visa; ou <br>c) não havendo incidência de taxas de embarque ou impostos, somente as passagens tenham sido compradas mediante
+                    resgate de pontos obtidos pela utilização do Cartão Visa.
+                </li>
+
             </ul>
         </div>
         <div class="bloco bloco2">
             <ul>
-               
                 <li>
-                    Cônjuge/companheiro(a) ou Dependente Econômico não 
-                    precisam estar viajando juntos para estarem segurados.
+                    Estão segurados pelo benefício o portador e qualquer pessoa para quem o portador de cartão comprar uma passagem de viagem com seu cartão Visa elegível.
+                </li>
+                <li>
+                    Cônjuge/companheiro(a) ou Dependente Econômico não precisam estar viajando juntos para estarem segurados.
                 </li>
                 <li>
                     É necessária a emissão do bilhete de seguro no Portal de Benefícios:<br>
                     <a href="https://visabenefitslac.axa-assistance.us/" target="_blank">www.visa.com.br/portaldebeneficios</a>
                 </li>
-                
+
                 <li class="removeLi">
                     <div class="btnTabela size30 animated infinite pulse">
                         Limites
                     </div>
                 </li>
-                
+
             </ul>
         </div>
 
@@ -121,7 +125,7 @@
         </div> -->
     </div>
 
-    <div class="pop posicionar animated fadeIn delay0_2" px="0" py="85"> 
+    <div class="pop posicionar animated fadeIn delay0_2" px="0" py="85">
         <div class="baseClose">
             <div class="closeX">
                 <i class="far fa-times-circle size40 animated zoomIn delay1_2"></i>
@@ -131,5 +135,5 @@
             <img src="includes/img/tabela130.png" alt="">
         </div>
     </div>
-    
+
 </div>
