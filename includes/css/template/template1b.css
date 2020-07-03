@@ -1,0 +1,123 @@
+.template1b {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 9999;
+}
+
+.template1b .leftCont {
+    position: absolute;
+    width: 1366px;
+    height: 662px;
+    background: #fff;
+}
+
+.template1b .text1 {
+    width: 650px;
+    height: 100%;
+    background: rgb(3, 4, 6);
+    background: linear-gradient(45deg, rgba(3, 4, 6, 1) 0%, rgba(34, 60, 113, 1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.template1b .text1 .ti1 {
+    padding-bottom: 20px;
+}
+
+.template1b .leftCont .ico {
+    position: relative;
+    width: 60px;
+}
+
+.template1b .rightCont {
+    position: absolute;
+    width: 754px;
+    height: 662px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.template1b .textD {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 30px 10px;
+    width: 420px;
+}
+
+.template1b .text2 {
+    width: 250px;
+}
+
+.template1b .text2 .ti2 {
+    padding-bottom: 5px;
+}
+
+.template1b .rightCont .inf2 {
+    padding-bottom: 50px;
+}
+
+.template1b .rightCont .ico {
+    position: relative;
+    width: 50px;
+    height: 34px;
+    background: url('../img/people.svg') no-repeat center;
+    background-size: 70%;
+}
+
+.template1b .cartaoD {
+    position: relative;
+    width: 800px;
+    /* height: 459px; */
+}
+
+.template1b .cartao {
+    position: relative;
+}
+
+.template1b .carT {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.template1b .cartao {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* width: 60%; */
+    padding: 10px;
+    border-bottom: 5px solid #ffc359;
+}
+
+.template1b .cartao .img {
+    position: relative;
+    background: url('../../img/cartao6.png') no-repeat center;
+    background-size: contain;
+    width: 314px;
+    height: 203px;
+    margin-right: 20px;
+}
+
+.template1b .lista {
+    position: relative;
+    padding: 20px;
+}
+
+.template1b ul {
+    list-style-type: square;
+    color: #ffc359;
+}
+
+.template1b .item {
+    color: #003EA9;
+}
