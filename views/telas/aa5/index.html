@@ -18,19 +18,19 @@
             });
 
             controle();
-    
+
 
             if (_tela.status == false) {
                 _tela.status = true;
 
-                _containerTela.find(".item").on("click", function (event) {
+                _containerTela.find(".item").on("click", function(event) {
 
                     var _telaM = $(this).attr('tela');
                     var _indice = 0;
 
-                    $.each( course.config, function(indice,item){
+                    $.each(course.config, function(indice, item) {
 
-                        if( String(item.id).toUpperCase() == String(_telaM).toUpperCase() ){
+                        if (String(item.id).toUpperCase() == String(_telaM).toUpperCase()) {
                             _indice = item.indice;
                         }
                     });
@@ -41,7 +41,7 @@
 
                 });
 
-                _containerTela.find(".popFinal .closeX").on("click", function (event) {
+                _containerTela.find(".popFinal .closeX").on("click", function(event) {
                     _containerTela.find(".popFinal").css('display', 'none');
                 });
 
@@ -49,38 +49,37 @@
 
             }
 
-            function controle(){
+            function controle() {
 
                 _containerTela.find(".item .img").removeClass('animated infinite pulse');
-                
+
                 var menu = 0;
                 var i = 0;
                 var all = _containerTela.find('.item').length;
 
-                if( course.scorm_get_suspendData("controleMenu")) {
+                if (course.scorm_get_suspendData("controleMenu")) {
                     menu = parseInt(course.scorm_get_suspendData("controleMenu"));
-                    course.scorm_set_suspendData("men_"+menu, 1);
+                    course.scorm_set_suspendData("men_" + menu, 1);
                 }
 
-                
+
                 var _comp = true;
-                while ( i < all ) {
-                    i+=1;
-                    if( course.scorm_get_suspendData("men_"+i) ){
-                        _containerTela.find('.item' + i + ' .check' ).css('display', 'flex');
-                    }
-                    else{
+                while (i < all) {
+                    i += 1;
+                    if (course.scorm_get_suspendData("men_" + i)) {
+                        _containerTela.find('.item' + i + ' .check').css('display', 'flex');
+                    } else {
                         _comp = false;
                     }
                 }
 
-                if( _comp ){
+                if (_comp) {
                     _containerTela.find(".popFinal").css('display', 'block');
                     course.completeScorm();
                 }
 
 
-                _containerTela.find(".item" + (menu+1) + ' .img' ).addClass('animated infinite pulse');
+                _containerTela.find(".item" + (menu + 1) + ' .img').addClass('animated infinite pulse');
 
             }
         }
@@ -94,7 +93,7 @@
 
     <div class="estrela posicionar animated zoomOut delay0_4" px="0" py="95"></div>
     <div class="estrela posicionar animated zoomIn delay0_4" px="0" py="95"></div>
-    
+
     <div class="planeta1 posicionar animated zoomIn delay0_6" px="420" py="180"></div>
     <div class="planeta2 posicionar animated zoomIn delay0_8" px="120" py="380"></div>
     <div class="planeta3 posicionar animated zoomIn delay1_0" px="1060" py="250"></div>
@@ -146,7 +145,7 @@
             <div class="img"></div>
         </div>
     </div>
-        
+
 
     <div class="item item5 posicionar animated fadeIn delay1_8" px="585" py="165" tela='menu4'>
         <div class="check">
@@ -192,10 +191,10 @@
                     Parabéns!
                 </div>
                 <div class="size30 light pb10 animated fadeInRight delay0_6">
-                    Você completou todos os módulos do Mundo de Benefícios VISA.
+                    Você completou todos os módulos do Mundo de Benefícios Visa.
                 </div>
             </div>
         </div>
     </div>
-    
+
 </div>

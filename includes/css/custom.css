@@ -526,6 +526,16 @@
     color: #003EA9;
 }
 
+.faq a {
+    text-decoration: underline;
+    /* color: #ffc359; */
+}
+
+.faq a:hover {
+    text-decoration: underline;
+    /* color: #e4a73d; */
+}
+
 ::-webkit-scrollbar {
     width: 30px;
     height: 30px;
