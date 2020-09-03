@@ -145,6 +145,24 @@
     align-items: center;
 }
 
+.template5 .tabela {
+    position: relative;
+    width: 1000px;
+    height: 600px;
+    background: #fff;
+    overflow-y: scroll;
+    /* background: url(../../img/tabela.svg) no-repeat top;
+    background-size: contain; */
+}
+
+.template5 .tabela div {
+    position: relative;
+    width: 100%;
+    height: 1112px;
+    background: url(../../img/tabela.svg) no-repeat top;
+    background-size: contain;
+}
+
 .template5 .baseClose {
     position: absolute;
     width: 100%;
@@ -158,7 +176,7 @@
     z-index: 999999999;
     cursor: pointer;
     float: right;
-    margin-right: 350px;
+    margin-right: 230px;
     margin-top: 35px;
 }
 
